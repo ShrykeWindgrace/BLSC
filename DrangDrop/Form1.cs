@@ -136,7 +136,6 @@ namespace DrangDrop
                 buttonPlus.BringToFront();
                 plist.RemoveAt(j);
             }
-            //relocatePanels(2);
 
         }
 
@@ -258,6 +257,7 @@ namespace DrangDrop
         private void populatePanel(Panel panel)
         {
             panel.BackColor = Color.BurlyWood;
+            panel.Width = 224;
 
             ComboBox pu = new ComboBox();
             populateCBP(pu);
@@ -283,19 +283,45 @@ namespace DrangDrop
             pst.Name = "CheckedListBoxPunct" + globalCounter.ToString();
 
 
+
             Button clBt = new Button();
             clBt.Parent = panel;
             populateXBtn(clBt);
             clBt.Name = "ButtonClosePanel" + globalCounter.ToString();
 
+            Button insBtn = new Button();
+            insBtn.Parent = panel;
+            populateIBtn(insBtn);
+            insBtn.Name = "ButtonInsertPanel" + globalCounter.ToString();
 
-            panel.Controls.Add(clBt);
-            panel.Controls.Add(ord);
-            panel.Controls.Add(ost);
-            panel.Controls.Add(pst);
-            panel.Controls.Add(pu);
+            //panel.Controls.Add(clBt);
+            //panel.Controls.Add(ord);
+            //panel.Controls.Add(ost);
+            //panel.Controls.Add(pst);
+            //panel.Controls.Add(pu);
 
             globalCounter++;//panel is done, all its child controls are activated.
+        }
+
+        private void populateIBtn(Button btn)
+        {
+            btn.Text = "+";
+            btn.Width = 24;
+            btn.Dock = DockStyle.Right;
+            btn.Click += new EventHandler(insertPanelBtn);
+        }
+
+        private void insertPanelBtn(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+            int i = plist.IndexOf((Panel)(((Button)sender).Parent))+1;
+            Panel p = new Panel();
+            populatePanel(p);
+            plist.Insert(i, p);
+            p.Visible = false;
+            this.Controls.Add(p);
+            relocatePanels();
+            p.Visible = true;
         }
 
         private void populateXBtn(Button btn)
@@ -393,6 +419,11 @@ namespace DrangDrop
         {
             //MessageBox.Show("This is the Biblatex Style creator software, v0.0.0.1\r\n © Timofey Zakrevskiy, 2014","About" , MessageBoxButtons.OK);
             ABox.Show();
+        }
+
+        private void quitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
 
