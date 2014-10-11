@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ps>
+    <p>
+      <p>none</p>
+    </p>
+    <fs>Regular</fs>
+  </ps>
+  <envsl />
+  <fs>Regular</fs>
+  <type>journal</type>
+  <changed>true</changed>
+</Field>

@@ -1,0 +1,3127 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{apa}{apa}
+    \entry{aksin}{article}{}
+      \inset{set}
+      \name{labelname}{7}{}{%
+        {{hash=9f6d9349b825c14b731c9dad57e732fe}{Aks{ı}n}{A\bibinitperiod}{{Ö}zge}{Ö\bibinitperiod}{}{}{}{}}%
+        {{hash=254b22482a3743415345f410dedc4066}{T{ü}rkmen}{T\bibinitperiod}{Hayati}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=f9be8f5362c3f1a8c57254f421602a77}{Artok}{A\bibinitperiod}{Levent}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=77dd69866c232b54a5df57d9dc4f9a3e}{{Ç}etinkaya}{Ç\bibinitperiod}{Bekir}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=3aaac037c43bc853e732168da667cd40}{Ni}{N\bibinitperiod}{Chaoying}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=1fdf353393b31bbe18cb395f16d5beec}{B{ü}y{ü}kg{ü}ng{ö}r}{B\bibinitperiod}{Orhan}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=4d35ef81c30f7e88fa30ad8da0b282fe}{{Ö}zkal}{Ö\bibinitperiod}{Erhan}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{7}{}{%
+        {{hash=9f6d9349b825c14b731c9dad57e732fe}{Aks{ı}n}{A\bibinitperiod}{{Ö}zge}{Ö\bibinitperiod}{}{}{}{}}%
+        {{hash=254b22482a3743415345f410dedc4066}{T{ü}rkmen}{T\bibinitperiod}{Hayati}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=f9be8f5362c3f1a8c57254f421602a77}{Artok}{A\bibinitperiod}{Levent}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=77dd69866c232b54a5df57d9dc4f9a3e}{{Ç}etinkaya}{Ç\bibinitperiod}{Bekir}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=3aaac037c43bc853e732168da667cd40}{Ni}{N\bibinitperiod}{Chaoying}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=1fdf353393b31bbe18cb395f16d5beec}{B{ü}y{ü}kg{ü}ng{ö}r}{B\bibinitperiod}{Orhan}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=4d35ef81c30f7e88fa30ad8da0b282fe}{{Ö}zkal}{Ö\bibinitperiod}{Erhan}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9a254e1e6cb15572fecd2039b635b9c0}
+      \strng{fullhash}{0a33d8193e8c0f08f4b806878362f41f}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labeltitle}{Effect of immobilization on catalytic characteristics of saturated Pd-N-heterocyclic carbenes in Mizoroki-Heck reactions}
+      \field{indextitle}{Effect of immobilization on catalytic characteristics}
+      \field{journaltitle}{J.~Organomet. Chem.}
+      \field{number}{13}
+      \field{title}{Effect of immobilization on catalytic characteristics of saturated Pd-N-heterocyclic carbenes in Mizoroki-Heck reactions}
+      \field{volume}{691}
+      \field{year}{2006}
+      \field{pages}{3027\bibrangedash 3036}
+    \endentry
+    \entry{almendro}{patent}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=9876a36b03f2df9f7951b85f62c485a6}{Almendro}{A\bibinitperiod}{Jos{é}\bibnamedelima L.}{J\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7bd3486b1f7e87edeb06748dd21210fd}{Mart{í}n}{M\bibinitperiod}{Jacinto}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e3e9be95539b0a47fd2ea638d9f9b5b5}{S{á}nchez}{S\bibinitperiod}{Alberto}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0b3e4f40fa82e058b41b5fe539d12994}{Nozal}{N\bibinitperiod}{Fernando}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=9876a36b03f2df9f7951b85f62c485a6}{Almendro}{A\bibinitperiod}{Jos{é}\bibnamedelima L.}{J\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7bd3486b1f7e87edeb06748dd21210fd}{Mart{í}n}{M\bibinitperiod}{Jacinto}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e3e9be95539b0a47fd2ea638d9f9b5b5}{S{á}nchez}{S\bibinitperiod}{Alberto}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0b3e4f40fa82e058b41b5fe539d12994}{Nozal}{N\bibinitperiod}{Fernando}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{3}{%
+        {countryfr}%
+        {countryuk}%
+        {countryde}%
+      }
+      \strng{namehash}{64fdd00d055710b9cb8b7a4c78d0c168}
+      \strng{fullhash}{3f750ffb72d0f0a30664dbabce895f29}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Elektromagnetisches Signalhorn}
+      \field{annotation}{This is a \texttt{patent} entry with a \texttt{location} field. The number is given in the \texttt{number} field. Note the format of the \texttt{location} field in the database file. Compare \texttt{laufenberg}, \texttt{sorace}, and \texttt{kowalik}}
+      \field{langid}{german}
+      \field{number}{EU-29702195U}
+      \field{title}{Elektromagnetisches Signalhorn}
+      \field{year}{1998}
+    \endentry
+    \entry{angenendt}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9717d2d959a4b18727868ca7928c34b4}{Angenendt}{A\bibinitperiod}{Arnold}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9717d2d959a4b18727868ca7928c34b4}{Angenendt}{A\bibinitperiod}{Arnold}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9717d2d959a4b18727868ca7928c34b4}
+      \strng{fullhash}{9717d2d959a4b18727868ca7928c34b4}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{In Honore Salvatoris}
+      \field{annotation}{A German article in a French journal. Apart from that, a typical \texttt{article} entry. Note the \texttt{indextitle} field}
+      \field{indextitle}{In Honore Salvatoris}
+      \field{journaltitle}{Revue d'Histoire Eccl{é}siastique}
+      \field{langid}{german}
+      \field{shorttitle}{In Honore Salvatoris}
+      \field{title}{In Honore Salvatoris~-- Vom Sinn und Unsinn der Patrozinienkunde}
+      \field{volume}{97}
+      \field{year}{2002}
+      \field{pages}{431\bibrangedash 456\bibrangessep 791\bibrangedash 823}
+    \endentry
+    \entry{aristotle:rhetoric}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{Aristotle}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{Aristotle}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{commentator}{1}{}{%
+        {{hash=00fe722e9ec43e694adef6cc64f67655}{Cope}{C\bibinitperiod}{Edward\bibnamedelima Meredith}{E\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=00fe722e9ec43e694adef6cc64f67655}{Cope}{C\bibinitperiod}{Edward\bibnamedelima Meredith}{E\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1877}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Rhetoric}
+      \field{annotation}{A commented edition. Note the concatenation of the \texttt{editor} and \texttt{commentator} fields as well as the \texttt{volumes}, \texttt{sorttitle}, and \texttt{indextitle} fields}
+      \field{indextitle}{Rhetoric of Aristotle, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{shorttitle}{Rhetoric}
+      \field{title}{The Rhetoric of Aristotle with a commentary by the late Edward Meredith Cope}
+      \field{volumes}{3}
+      \field{year}{1877}
+      \keyw{primary}
+    \endentry
+    \entry{aristotle:anima}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{Aristotle}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{Aristotle}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=df34a32cf482ec6b17ac2159c0dc24f0}{Hicks}{H\bibinitperiod}{Robert\bibnamedelima Drew}{R\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1907}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{De Anima}
+      \field{annotation}{A \texttt{book} entry with an \texttt{author} and an \texttt{editor}}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{title}{De Anima}
+      \field{year}{1907}
+      \keyw{primary}
+    \endentry
+    \entry{aristotle:physics}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{Aristotle}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{Aristotle}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{translator}{2}{}{%
+        {{hash=5bd828068d13bed504a8affb49588e13}{Wicksteed}{W\bibinitperiod}{P.\bibnamedelimi H.}{P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+        {{hash=a03e198d99c76abf7afdfd3c0894d0c3}{Cornford}{C\bibinitperiod}{F.\bibnamedelimi M.}{F\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {G. P. Putnam}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1929}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Physics}
+      \field{annotation}{A \texttt{book} entry with a \texttt{translator} field}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{shorttitle}{Physics}
+      \field{title}{Physics}
+      \field{year}{1929}
+      \keyw{primary}
+    \endentry
+    \entry{aristotle:poetics}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{Aristotle}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=798a01f212a8e620a6940400717a56d9}{Aristotle}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=982e446ca0ec26d79f20f1134a0665f5}{Lucas}{L\bibinitperiod}{D.\bibnamedelimi W.}{D\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press}%
+      }
+      \strng{namehash}{798a01f212a8e620a6940400717a56d9}
+      \strng{fullhash}{798a01f212a8e620a6940400717a56d9}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1968}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Poetics}
+      \field{annotation}{A \texttt{book} entry with an \texttt{author} and an \texttt{editor} as well as a \texttt{series} field}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{series}{Clarendon Aristotle}
+      \field{shorttitle}{Poetics}
+      \field{title}{Poetics}
+      \field{year}{1968}
+      \keyw{primary}
+    \endentry
+    \entry{augustine}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9b39b29f54a9cf1fa6e8c53d3c7526a8}{Augustine}{A\bibinitperiod}{Robert\bibnamedelima L.}{R\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9b39b29f54a9cf1fa6e8c53d3c7526a8}{Augustine}{A\bibinitperiod}{Robert\bibnamedelima L.}{R\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Marcel Dekker}%
+      }
+      \strng{namehash}{9b39b29f54a9cf1fa6e8c53d3c7526a8}
+      \strng{fullhash}{9b39b29f54a9cf1fa6e8c53d3c7526a8}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1995}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Heterogeneous catalysis}
+      \field{annotation}{A plain \texttt{book} entry}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{shorttitle}{Heterogeneous catalysis}
+      \field{title}{Heterogeneous catalysis for the synthetic chemist}
+      \field{year}{1995}
+    \endentry
+    \entry{averroes/hercz}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=b86dc8dbce5064d05b055e8f6f28be6b}{Averroes}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b86dc8dbce5064d05b055e8f6f28be6b}{Averroes}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=efbfc2c209dc3bc4c52e331b30be9078}{Hercz}{H\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=efbfc2c209dc3bc4c52e331b30be9078}{Hercz}{H\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {S.~Hermann}%
+      }
+      \strng{namehash}{b86dc8dbce5064d05b055e8f6f28be6b}
+      \strng{fullhash}{b86dc8dbce5064d05b055e8f6f28be6b}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1869}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Drei Abhandlungen}
+      \field{annotation}{A \texttt{book} entry. Note the concatenation of the \texttt{editor} and \texttt{translator} fields as well as the \texttt{indextitle} and \texttt{indexsorttitle} fields}
+      \field{indexsorttitle}{Drei Abhandlungen uber die Conjunction}
+      \field{indextitle}{Drei Abhandlungen {ü}ber die Conjunction}
+      \field{langid}{german}
+      \field{shorttitle}{Drei Abhandlungen}
+      \field{subtitle}{Von Averroes (Vater und Sohn), aus dem Arabischen {ü}bersetzt von Samuel Ibn Tibbon}
+      \field{title}{Drei Abhandlungen {ü}ber die Conjunction des separaten Intellects mit dem Menschen}
+      \field{year}{1869}
+      \keyw{primary}
+    \endentry
+    \entry{averroes/hannes}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=b86dc8dbce5064d05b055e8f6f28be6b}{Averroes}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{annotator}{1}{}{%
+        {{hash=bdd92d53e46eb2caca32c02b04adaa68}{Hannes}{H\bibinitperiod}{Ludwig}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b86dc8dbce5064d05b055e8f6f28be6b}{Averroes}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=bdd92d53e46eb2caca32c02b04adaa68}{Hannes}{H\bibinitperiod}{Ludwig}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=bdd92d53e46eb2caca32c02b04adaa68}{Hannes}{H\bibinitperiod}{Ludwig}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Halle an der Saale}%
+      }
+      \list{publisher}{1}{%
+        {C.~A. Kaemmerer}%
+      }
+      \strng{namehash}{b86dc8dbce5064d05b055e8f6f28be6b}
+      \strng{fullhash}{b86dc8dbce5064d05b055e8f6f28be6b}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1892}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{{Ü}ber die M{ö}glichkeit der Conjunktion}
+      \field{annotation}{An annotated edition. Note the concatenation of the \texttt{editor}, \texttt{translator}, and \texttt{annotator} fields. Also note the \texttt{shorttitle}, \texttt{indextitle}, \texttt{sorttitle}, and \texttt{indexsorttitle} fields}
+      \field{indexsorttitle}{Uber die Moglichkeit der Conjunktion}
+      \field{indextitle}{{Ü}ber die M{ö}glichkeit der Conjunktion}
+      \field{langid}{german}
+      \field{shorttitle}{{Ü}ber die M{ö}glichkeit der Conjunktion}
+      \field{title}{Des Averro{ë}s Abhandlung: \mkbibquote{{Ü}ber die M{ö}glichkeit der Conjunktion} oder \mkbibquote{{Ü}ber den materiellen Intellekt}}
+      \field{year}{1892}
+      \keyw{primary}
+    \endentry
+    \entry{averroes/bland}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=b86dc8dbce5064d05b055e8f6f28be6b}{Averroes}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b86dc8dbce5064d05b055e8f6f28be6b}{Averroes}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=6f1360d7a854c35fb4d3708e64d20467}{Bland}{B\bibinitperiod}{Kalman\bibnamedelima P.}{K\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=6f1360d7a854c35fb4d3708e64d20467}{Bland}{B\bibinitperiod}{Kalman\bibnamedelima P.}{K\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Jewish Theological Seminary of America}%
+      }
+      \strng{namehash}{b86dc8dbce5064d05b055e8f6f28be6b}
+      \strng{fullhash}{b86dc8dbce5064d05b055e8f6f28be6b}
+      \field{sortinit}{A}
+      \field{sortinithash}{c8a29dea43e9d2645817723335a4dbe8}
+      \field{labelyear}{1982}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Possibility of Conjunction}
+      \field{annotation}{A \texttt{book} entry with a \texttt{series} and a \texttt{number}. Note the concatenation of the \texttt{editor} and \texttt{translator} fields as well as the \texttt{indextitle} field}
+      \field{indextitle}{Epistle on the Possibility of Conjunction, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{7}
+      \field{series}{Moreshet: Studies in Jewish History, Literature and Thought}
+      \field{shorttitle}{Possibility of Conjunction}
+      \field{title}{The Epistle on the Possibility of Conjunction with the Active Intellect by Ibn Rushd with the Commentary of Moses Narboni}
+      \field{year}{1982}
+      \keyw{primary}
+    \endentry
+    \entry{baez/online}{online}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=ab1aafd907691f61277607d4db8b7f0c}{Baez}{B\bibinitperiod}{John\bibnamedelima C.}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fac800ea6e2e4510a0c0a8c5a6787460}{Lauda}{L\bibinitperiod}{Aaron\bibnamedelima D.}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=ab1aafd907691f61277607d4db8b7f0c}{Baez}{B\bibinitperiod}{John\bibnamedelima C.}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fac800ea6e2e4510a0c0a8c5a6787460}{Lauda}{L\bibinitperiod}{Aaron\bibnamedelima D.}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fc3ff0a625d278862a0a96a4aa4726a2}
+      \strng{fullhash}{fc3ff0a625d278862a0a96a4aa4726a2}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{extrayear}{1}
+      \field{labelyear}{2004}
+      \field{labelmonth}{10}
+      \field{labelday}{27}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Higher-Dimensional Algebra V: 2-Groups}
+      \field{annotation}{An \texttt{online} reference from arXiv. Note the \texttt{eprint} and \texttt{eprinttype} fields. Compare \texttt{baez\slash article} which is the same item given as an \texttt{article} entry with eprint information}
+      \field{day}{27}
+      \field{eprinttype}{arxiv}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{month}{10}
+      \field{title}{Higher-Dimensional Algebra V: 2-Groups}
+      \field{version}{3}
+      \field{year}{2004}
+      \verb{eprint}
+      \verb math/0307200v3
+      \endverb
+    \endentry
+    \entry{baez/article}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=ab1aafd907691f61277607d4db8b7f0c}{Baez}{B\bibinitperiod}{John\bibnamedelima C.}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fac800ea6e2e4510a0c0a8c5a6787460}{Lauda}{L\bibinitperiod}{Aaron\bibnamedelima D.}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=ab1aafd907691f61277607d4db8b7f0c}{Baez}{B\bibinitperiod}{John\bibnamedelima C.}{J\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fac800ea6e2e4510a0c0a8c5a6787460}{Lauda}{L\bibinitperiod}{Aaron\bibnamedelima D.}{A\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fc3ff0a625d278862a0a96a4aa4726a2}
+      \strng{fullhash}{fc3ff0a625d278862a0a96a4aa4726a2}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{extrayear}{2}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Higher-Dimensional Algebra V: 2-Groups}
+      \field{annotation}{An \texttt{article} with \texttt{eprint} and \texttt{eprinttype} fields. Note that the arXiv reference is transformed into a clickable link if \texttt{hyperref} support has been enabled. Compare \texttt{baez\slash online}, which is the same item given as an \texttt{online} entry}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{Theory and Applications of Categories}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{Higher-Dimensional Algebra V: 2-Groups}
+      \field{version}{3}
+      \field{volume}{12}
+      \field{year}{2004}
+      \field{pages}{423\bibrangedash 491}
+      \verb{eprint}
+      \verb math/0307200v3
+      \endverb
+    \endentry
+    \entry{bertram}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=8a5b475249c01d8aa99f2275128c1037}{Bertram}{B\bibinitperiod}{Aaron}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=60f0568f0258e96055aef41b438ecbd2}{Wentworth}{W\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=8a5b475249c01d8aa99f2275128c1037}{Bertram}{B\bibinitperiod}{Aaron}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=60f0568f0258e96055aef41b438ecbd2}{Wentworth}{W\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4be7c21774d86b9e1f65ca280181467e}
+      \strng{fullhash}{4be7c21774d86b9e1f65ca280181467e}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{labelyear}{1996}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Gromov invariants}
+      \field{annotation}{An \texttt{article} entry with a \texttt{volume} and a \texttt{number} field}
+      \field{journaltitle}{J.~Amer. Math. Soc.}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{2}
+      \field{shorttitle}{Gromov invariants}
+      \field{title}{Gromov invariants for holomorphic maps on Riemann surfaces}
+      \field{volume}{9}
+      \field{year}{1996}
+      \field{pages}{529\bibrangedash 571}
+    \endentry
+    \entry{brandt}{incollection}{useprefix=false}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=01eba99704ac332242eefcc8f2c28b4e}{Brandt}{B\bibinitperiod}{Ahasver}{A\bibinitperiod}{von}{v\bibinitperiod}{}{}}%
+        {{uniquename=0,hash=6b09e2f7cba0e1319277a1a6f40e4f8f}{Hoffmann}{H\bibinitperiod}{Erich}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=01eba99704ac332242eefcc8f2c28b4e}{Brandt}{B\bibinitperiod}{Ahasver}{A\bibinitperiod}{von}{v\bibinitperiod}{}{}}%
+        {{uniquename=0,hash=6b09e2f7cba0e1319277a1a6f40e4f8f}{Hoffmann}{H\bibinitperiod}{Erich}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=1ca741f51a7b9cb35656fe3ae1d668d7}{Seibt}{S\bibinitperiod}{Ferdinand}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Stuttgart}%
+      }
+      \list{publisher}{1}{%
+        {Klett-Cotta}%
+      }
+      \strng{namehash}{6dbed1afa0580647e3895e8b6c348948}
+      \strng{fullhash}{6dbed1afa0580647e3895e8b6c348948}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{labelyear}{1987}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Die nordischen L{ä}nder}
+      \field{annotation}{An \texttt{incollection} entry with a \texttt{series} and a \texttt{number}. Note the format of the printed name and compare the \texttt{useprefix} option in the \texttt{options} field as well as \texttt{vangennep}. Also note the \texttt{indextitle, and \texttt{indexsorttitle} fields}}
+      \field{booktitle}{Europa im Hoch- und Sp{ä}tmittelalter}
+      \field{indexsorttitle}{Nordischen Lander von der Mitte des 11. Jahrhunderts bis 1448}
+      \field{indextitle}{Nordischen L{ä}nder von der Mitte des 11.~Jahrhunderts bis 1448, Die}
+      \field{langid}{german}
+      \field{number}{2}
+      \field{series}{Handbuch der europ{ä}ischen Geschichte}
+      \field{shorttitle}{Die nordischen L{ä}nder}
+      \field{title}{Die nordischen L{ä}nder von der Mitte des 11.~Jahrhunderts bis 1448}
+      \field{year}{1987}
+      \field{pages}{884\bibrangedash 917}
+    \endentry
+    \entry{chiu}{report}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=89a37095edbaf0f6c5e1aafba6917616}{Chiu}{C\bibinitperiod}{Willy\bibnamedelima W.}{W\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=803686c01e611c1d24df6752c9503876}{Chow}{C\bibinitperiod}{We\bibnamedelima Min}{W\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=89a37095edbaf0f6c5e1aafba6917616}{Chiu}{C\bibinitperiod}{Willy\bibnamedelima W.}{W\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=803686c01e611c1d24df6752c9503876}{Chow}{C\bibinitperiod}{We\bibnamedelima Min}{W\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {IBM}%
+      }
+      \strng{namehash}{7437970ec15b3678b1e1507a150e0b1b}
+      \strng{fullhash}{7437970ec15b3678b1e1507a150e0b1b}
+      \field{sortinit}{C}
+      \field{sortinithash}{dd0e4ddd17488a6ebf12cd6de2f2c237}
+      \field{labelyear}{1978}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{A Hybrid Hierarchical Model of a Multiple Virtual Storage (MVS) Operating System}
+      \field{annotation}{This is a \texttt{report} entry for a research report. Note the format of the \texttt{type} field in the database file which uses a localization key. The number of the report is given in the \texttt{number} field. Also note the \texttt{sorttitle} and \texttt{indextitle} fields}
+      \field{indextitle}{Hybrid Hierarchical Model, A}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{RC-6947}
+      \field{title}{A Hybrid Hierarchical Model of a Multiple Virtual Storage (MVS) Operating System}
+      \field{type}{resreport}
+      \field{year}{1978}
+    \endentry
+    \entry{cicero}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=97c3cd84b5b0668c976f405b96e52806}{Cicero}{C\bibinitperiod}{Marcus\bibnamedelima Tullius}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{afterword}{1}{}{%
+        {{hash=cae8b8542e653c49edf36eb27467d953}{Thraede}{T\bibinitperiod}{Klaus}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=97c3cd84b5b0668c976f405b96e52806}{Cicero}{C\bibinitperiod}{Marcus\bibnamedelima Tullius}{M\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=9f06c8d5931eb50eba66c87ef1600402}{Blank-Sangmeister}{B\bibinithyphendelim S\bibinitperiod}{Ursula}{U\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=9f06c8d5931eb50eba66c87ef1600402}{Blank-Sangmeister}{B\bibinithyphendelim S\bibinitperiod}{Ursula}{U\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{2}{%
+        {langlatin}%
+        {langgerman}%
+      }
+      \list{location}{1}{%
+        {Stuttgart}%
+      }
+      \list{publisher}{1}{%
+        {Reclam}%
+      }
+      \strng{namehash}{97c3cd84b5b0668c976f405b96e52806}
+      \strng{fullhash}{97c3cd84b5b0668c976f405b96e52806}
+      \field{sortinit}{C}
+      \field{sortinithash}{dd0e4ddd17488a6ebf12cd6de2f2c237}
+      \field{labelyear}{1995}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{De natura deorum}
+      \field{annotation}{A bilingual edition of Cicero's \emph{De natura deorum}, with a German translation. Note the format of the \texttt{language} field in the database file, the concatenation of the \texttt{editor} and \texttt{translator} fields, and the \texttt{afterword} field}
+      \field{indextitle}{De natura deorum}
+      \field{langid}{german}
+      \field{shorttitle}{De natura deorum}
+      \field{title}{De natura deorum. {Ü}ber das Wesen der G{ö}tter}
+      \field{year}{1995}
+    \endentry
+    \entry{coleridge}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=8fb8fce0f819bc4617413b830ba1c4f9}{Coleridge}{C\bibinitperiod}{Samuel\bibnamedelima Taylor}{S\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=8fb8fce0f819bc4617413b830ba1c4f9}{Coleridge}{C\bibinitperiod}{Samuel\bibnamedelima Taylor}{S\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=e60f2aa47530c9b4f0fc0cd825c0f7e2}{Coburn}{C\bibinitperiod}{Kathleen}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=1144db391210ec053011b07a5565048d}{Engell}{E\bibinitperiod}{James}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=71d9fd014d1cf7e90296ee04bf865cf6}{Bate}{B\bibinitperiod}{W.\bibnamedelimi Jackson}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Routledge {and} Kegan Paul}%
+      }
+      \strng{namehash}{8fb8fce0f819bc4617413b830ba1c4f9}
+      \strng{fullhash}{8fb8fce0f819bc4617413b830ba1c4f9}
+      \field{sortinit}{C}
+      \field{sortinithash}{dd0e4ddd17488a6ebf12cd6de2f2c237}
+      \field{labelyear}{1983}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Biographia literaria}
+      \field{annotation}{One (partial) volume of a multivolume book. This is a \texttt{book} entry with a \texttt{volume} and a \texttt{part} field which explicitly refers to the second (physical) part of the seventh (logical) volume. Also note the \texttt{series} and \texttt{number} fields}
+      \field{indextitle}{Biographia literaria}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{maintitle}{The collected works of Samuel Taylor Coleridge}
+      \field{number}{75}
+      \field{part}{2}
+      \field{series}{Bollingen Series}
+      \field{shorttitle}{Biographia literaria}
+      \field{title}{Biographia literaria, or Biographical sketches of my literary life and opinions}
+      \field{volume}{7}
+      \field{year}{1983}
+    \endentry
+    \entry{cotton}{book}{}
+      \name{labelname}{4}{}{%
+        {{uniquename=0,hash=44661b19d1168b289c928b33dde1a575}{Cotton}{C\bibinitperiod}{Frank\bibnamedelima Albert}{F\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e1942252e9752c9cc6eaf1e3e38cfa81}{Wilkinson}{W\bibinitperiod}{Geoffrey}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e9332a2ab2cdbcc7ab5a34503bb0bdd7}{Murillio}{M\bibinitperiod}{Carlos\bibnamedelima A.}{C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6a2d357cec9902154443ce225a3a71cc}{Bochmann}{B\bibinitperiod}{Manfred}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=44661b19d1168b289c928b33dde1a575}{Cotton}{C\bibinitperiod}{Frank\bibnamedelima Albert}{F\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e1942252e9752c9cc6eaf1e3e38cfa81}{Wilkinson}{W\bibinitperiod}{Geoffrey}{G\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e9332a2ab2cdbcc7ab5a34503bb0bdd7}{Murillio}{M\bibinitperiod}{Carlos\bibnamedelima A.}{C\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=6a2d357cec9902154443ce225a3a71cc}{Bochmann}{B\bibinitperiod}{Manfred}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Chichester}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{a91775dad56aff8e30351d591f7f0308}
+      \strng{fullhash}{668b8f3b4631fd1be0f95a68f347b934}
+      \field{sortinit}{C}
+      \field{sortinithash}{dd0e4ddd17488a6ebf12cd6de2f2c237}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Advanced inorganic chemistry}
+      \field{annotation}{A \texttt{book} entry with \arabic{author} authors and an \texttt{edition} field. By default, long \texttt{author} and \texttt{editor} lists are automatically truncated. This is configurable}
+      \field{edition}{6}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{title}{Advanced inorganic chemistry}
+      \field{year}{1999}
+    \endentry
+    \entry{doody}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=936cee5fdd47aac6238f650db8b23a07}{Doody}{D\bibinitperiod}{Terrence}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=936cee5fdd47aac6238f650db8b23a07}{Doody}{D\bibinitperiod}{Terrence}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{936cee5fdd47aac6238f650db8b23a07}
+      \strng{fullhash}{936cee5fdd47aac6238f650db8b23a07}
+      \field{sortinit}{D}
+      \field{sortinithash}{a01c54d1737685bc6dbf0ea0673fa44c}
+      \field{labelyear}{1974}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Hemingway's Style and Jake's Narration}
+      \field{annotation}{An \texttt{article} entry cited as an excerpt from a \texttt{collection} entry. Note the format of the \texttt{related} and \texttt{relatedstring} fields}
+      \field{journaltitle}{The Journal of Narrative Technique}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{3}
+      \field{relatedstring}{\autocap{e}xcerpt in}
+      \field{title}{Hemingway's Style and Jake's Narration}
+      \field{volume}{4}
+      \field{year}{1974}
+      \field{related}{1e63d4bbc14872275675171be2dfa906}
+      \field{pages}{212\bibrangedash 225}
+    \endentry
+    \entry{gaonkar}{collection}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5cd8e43426c04859809adfe504e3bad4}{Gaonkar}{G\bibinitperiod}{Dilip\bibnamedelima Parameshwar}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{uniquename=0,hash=5cd8e43426c04859809adfe504e3bad4}{Gaonkar}{G\bibinitperiod}{Dilip\bibnamedelima Parameshwar}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{2}{%
+        {Durham}%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Duke University Press}%
+      }
+      \strng{namehash}{5cd8e43426c04859809adfe504e3bad4}
+      \strng{fullhash}{5cd8e43426c04859809adfe504e3bad4}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{extrayear}{1}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Alternative Modernities}
+      \field{annotation}{This is a \texttt{collection} entry. Note the format of the \texttt{location} field in the database file as well as the \texttt{isbn} field}
+      \field{isbn}{0-822-32714-7}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{Alternative Modernities}
+      \field{year}{2001}
+    \endentry
+    \entry{gaonkar:in}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5cd8e43426c04859809adfe504e3bad4}{Gaonkar}{G\bibinitperiod}{Dilip\bibnamedelima Parameshwar}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5cd8e43426c04859809adfe504e3bad4}{Gaonkar}{G\bibinitperiod}{Dilip\bibnamedelima Parameshwar}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=5cd8e43426c04859809adfe504e3bad4}{Gaonkar}{G\bibinitperiod}{Dilip\bibnamedelima Parameshwar}{D\bibinitperiod\bibinitdelim P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{2}{%
+        {Durham}%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Duke University Press}%
+      }
+      \strng{namehash}{5cd8e43426c04859809adfe504e3bad4}
+      \strng{fullhash}{5cd8e43426c04859809adfe504e3bad4}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{extrayear}{2}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{On Alternative Modernities}
+      \field{booktitle}{Alternative Modernities}
+      \field{isbn}{0-822-32714-7}
+      \field{title}{On Alternative Modernities}
+      \field{year}{2001}
+      \field{pages}{1\bibrangedash 23}
+    \endentry
+    \entry{geer}{thesis}{useprefix=false}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fd3d620c4db77185113386020788d6fd}{Geer}{G\bibinitperiod}{Ingrid}{I\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fd3d620c4db77185113386020788d6fd}{Geer}{G\bibinitperiod}{Ingrid}{I\bibinitperiod}{de}{d\bibinitperiod}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Uppsala Universitet}%
+      }
+      \list{location}{1}{%
+        {Uppsala}%
+      }
+      \strng{namehash}{fd3d620c4db77185113386020788d6fd}
+      \strng{fullhash}{fd3d620c4db77185113386020788d6fd}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labelyear}{1985}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Earl, Saint, Bishop, Skald~-- and Music}
+      \field{annotation}{This is a typical \texttt{thesis} entry for a PhD thesis. Note the \texttt{type} field in the database file which uses a localization key. Also note the format of the printed name and compare the \texttt{useprefix} option in the \texttt{options} field as well as \texttt{vangennep}}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{subtitle}{The Orkney Earldom of the Twelfth Century. A Musicological Study}
+      \field{title}{Earl, Saint, Bishop, Skald~-- and Music}
+      \field{type}{phdthesis}
+      \field{year}{1985}
+    \endentry
+    \entry{gerhardt}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=7e73fdf5533c178f5851695103520aca}{Gerhardt}{G\bibinitperiod}{Michael\bibnamedelima J.}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=7e73fdf5533c178f5851695103520aca}{Gerhardt}{G\bibinitperiod}{Michael\bibnamedelima J.}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{2}{%
+        {Durham}%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Duke University Press}%
+      }
+      \strng{namehash}{7e73fdf5533c178f5851695103520aca}
+      \strng{fullhash}{7e73fdf5533c178f5851695103520aca}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Federal Appointments Process}
+      \field{annotation}{This is a \texttt{book} entry. Note the format of the \texttt{location} field as well as the \texttt{sorttitle} and \texttt{indextitle} fields}
+      \field{indextitle}{Federal Appointments Process, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{shorttitle}{Federal Appointments Process}
+      \field{subtitle}{A Constitutional and Historical Analysis}
+      \field{title}{The Federal Appointments Process}
+      \field{year}{2000}
+    \endentry
+    \entry{gillies}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=91b9a33167764dedd5c39c951a4e8715}{Gillies}{G\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=91b9a33167764dedd5c39c951a4e8715}{Gillies}{G\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{91b9a33167764dedd5c39c951a4e8715}
+      \strng{fullhash}{91b9a33167764dedd5c39c951a4e8715}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labelyear}{1933}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Herder and the Preparation of Goethe's Idea of World Literature}
+      \field{annotation}{An \texttt{article} entry with a \texttt{series} and a \texttt{volume} field. Note that format of the \texttt{series} field in the database file}
+      \field{journaltitle}{Publications of the English Goethe Society}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{series}{newseries}
+      \field{title}{Herder and the Preparation of Goethe's Idea of World Literature}
+      \field{volume}{9}
+      \field{year}{1933}
+      \field{pages}{46\bibrangedash 67}
+    \endentry
+    \entry{stdmodel}{set}{}
+      \set{glashow,weinberg,salam}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=eb3f242602109f5bdbeb41fdd990fcc0}{Glashow}{G\bibinitperiod}{Sheldon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=eb3f242602109f5bdbeb41fdd990fcc0}{Glashow}{G\bibinitperiod}{Sheldon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eb3f242602109f5bdbeb41fdd990fcc0}
+      \strng{fullhash}{eb3f242602109f5bdbeb41fdd990fcc0}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labelyear}{1961}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Partial Symmetries of Weak Interactions}
+      \field{annotation}{A \texttt{set} with three members discussing the standard model of particle physics. The \texttt{crossref} field in the \texttt{@set} entry and the \texttt{entryset} field in each set member entry is needed only when using BibTeX as the backend}
+      \field{journaltitle}{Nucl.~Phys.}
+      \field{title}{Partial Symmetries of Weak Interactions}
+      \field{volume}{22}
+      \field{year}{1961}
+      \field{pages}{579\bibrangedash 588}
+    \endentry
+    \entry{glashow}{article}{}
+      \inset{stdmodel}
+      \name{labelname}{1}{}{%
+        {{hash=eb3f242602109f5bdbeb41fdd990fcc0}{Glashow}{G\bibinitperiod}{Sheldon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=eb3f242602109f5bdbeb41fdd990fcc0}{Glashow}{G\bibinitperiod}{Sheldon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eb3f242602109f5bdbeb41fdd990fcc0}
+      \strng{fullhash}{eb3f242602109f5bdbeb41fdd990fcc0}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labeltitle}{Partial Symmetries of Weak Interactions}
+      \field{journaltitle}{Nucl.~Phys.}
+      \field{title}{Partial Symmetries of Weak Interactions}
+      \field{volume}{22}
+      \field{year}{1961}
+      \field{pages}{579\bibrangedash 588}
+    \endentry
+    \entry{gonzalez}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fcaff22df23e7c7916304fae9e1dd70a}{Gonzalez}{G\bibinitperiod}{Ray}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcaff22df23e7c7916304fae9e1dd70a}{Gonzalez}{G\bibinitperiod}{Ray}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Tucson}%
+      }
+      \list{publisher}{1}{%
+        {The University of Arizona Press}%
+      }
+      \strng{namehash}{fcaff22df23e7c7916304fae9e1dd70a}
+      \strng{fullhash}{fcaff22df23e7c7916304fae9e1dd70a}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Ghost of John Wayne}
+      \field{annotation}{A collection of short stories. This is a \texttt{book} entry. Note the \texttt{sorttitle} and \texttt{indextitle} fields in the database file. There's also an \texttt{isbn} field}
+      \field{indextitle}{Ghost of John Wayne and Other Stories, The}
+      \field{isbn}{0-816-52066-6}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{shorttitle}{Ghost of John Wayne}
+      \field{title}{The Ghost of John Wayne and Other Stories}
+      \field{year}{2001}
+    \endentry
+    \entry{companion}{book}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=0743efb276e9219ee664a9b3dbd60619}{Goossens}{G\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9355edd511e3f6fdd880ee98722a53fb}{Mittelbach}{M\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e341c89f7bb5be4f5a050618c0b63942}{Samarin}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=0743efb276e9219ee664a9b3dbd60619}{Goossens}{G\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9355edd511e3f6fdd880ee98722a53fb}{Mittelbach}{M\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e341c89f7bb5be4f5a050618c0b63942}{Samarin}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{c9360c9dfd6325e6130c89834e8874a7}
+      \strng{fullhash}{369a4e878eb8157d94588ee72e0b486b}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labelyear}{1994}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{LaTeX Companion}
+      \field{annotation}{A book with three authors. Note the formatting of the author list. By default, only the first name is reversed in the bibliography}
+      \field{edition}{1}
+      \field{indextitle}{LaTeX Companion, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{pagetotal}{528}
+      \field{shorttitle}{LaTeX Companion}
+      \field{title}{The LaTeX Companion}
+      \field{year}{1994}
+    \endentry
+    \entry{hammond}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=2c8830d09f180019fbb3c09acbfbd13a}{Hammond}{H\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2c8830d09f180019fbb3c09acbfbd13a}{Hammond}{H\bibinitperiod}{Christopher}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{2}{%
+        {International Union of Crystallography}%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{2c8830d09f180019fbb3c09acbfbd13a}
+      \strng{fullhash}{2c8830d09f180019fbb3c09acbfbd13a}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Crystallography and diffraction}
+      \field{annotation}{A \texttt{book} entry. Note the \texttt{sorttitle} and \texttt{indextitle} fields as well as the format of the \texttt{publisher} field}
+      \field{indextitle}{Basics of crystallography and diffraction, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{shorttitle}{Crystallography and diffraction}
+      \field{title}{The basics of crystallography and diffraction}
+      \field{year}{1997}
+    \endentry
+    \entry{set}{set}{}
+      \set{herrmann,aksin,yoon}
+      \name{labelname}{5}{}{%
+        {{uniquename=0,hash=aa1a2c66bf52b23789b077a79ac34863}{Herrmann}{H\bibinitperiod}{Wolfgang\bibnamedelima A.}{W\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=57712aaab28359e2c7c8d2a2083182a9}{{Ö}fele}{Ö\bibinitperiod}{Karl}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=62fb2873e64cc7ceb41185f3348026d2}{Schneider}{S\bibinitperiod}{Sabine\bibnamedelima K.}{S\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c915dc113fe7da08baa2f6657521d6f3}{Herdtweck}{H\bibinitperiod}{Eberhardt}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e68dd7d542c2d811a8efc088ba823af8}{Hoffmann}{H\bibinitperiod}{Stephan\bibnamedelima D.}{S\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{uniquename=0,hash=aa1a2c66bf52b23789b077a79ac34863}{Herrmann}{H\bibinitperiod}{Wolfgang\bibnamedelima A.}{W\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=57712aaab28359e2c7c8d2a2083182a9}{{Ö}fele}{Ö\bibinitperiod}{Karl}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=62fb2873e64cc7ceb41185f3348026d2}{Schneider}{S\bibinitperiod}{Sabine\bibnamedelima K.}{S\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c915dc113fe7da08baa2f6657521d6f3}{Herdtweck}{H\bibinitperiod}{Eberhardt}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e68dd7d542c2d811a8efc088ba823af8}{Hoffmann}{H\bibinitperiod}{Stephan\bibnamedelima D.}{S\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c566cfb5cdd7c8104dbc7d081f5eaf15}
+      \strng{fullhash}{b4b6d3b4f12b2664ffa3dfdd986e3325}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{A carbocyclic carbene as an efficient catalyst ligand for C--C coupling reactions}
+      \field{annotation}{A \texttt{set} with three members. The \texttt{crossref} field in the \texttt{@set} entry and the \texttt{entryset} field in each set member entry is needed only when using BibTeX as the backend}
+      \field{indextitle}{Carbocyclic carbene as an efficient catalyst, A}
+      \field{journaltitle}{Angew.~Chem. Int.~Ed.}
+      \field{number}{23}
+      \field{title}{A carbocyclic carbene as an efficient catalyst ligand for C--C coupling reactions}
+      \field{volume}{45}
+      \field{year}{2006}
+      \field{pages}{3859\bibrangedash 3862}
+    \endentry
+    \entry{herrmann}{article}{}
+      \inset{set}
+      \name{labelname}{5}{}{%
+        {{hash=aa1a2c66bf52b23789b077a79ac34863}{Herrmann}{H\bibinitperiod}{Wolfgang\bibnamedelima A.}{W\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=57712aaab28359e2c7c8d2a2083182a9}{{Ö}fele}{Ö\bibinitperiod}{Karl}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=62fb2873e64cc7ceb41185f3348026d2}{Schneider}{S\bibinitperiod}{Sabine\bibnamedelima K.}{S\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=c915dc113fe7da08baa2f6657521d6f3}{Herdtweck}{H\bibinitperiod}{Eberhardt}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=e68dd7d542c2d811a8efc088ba823af8}{Hoffmann}{H\bibinitperiod}{Stephan\bibnamedelima D.}{S\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{5}{}{%
+        {{hash=aa1a2c66bf52b23789b077a79ac34863}{Herrmann}{H\bibinitperiod}{Wolfgang\bibnamedelima A.}{W\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=57712aaab28359e2c7c8d2a2083182a9}{{Ö}fele}{Ö\bibinitperiod}{Karl}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=62fb2873e64cc7ceb41185f3348026d2}{Schneider}{S\bibinitperiod}{Sabine\bibnamedelima K.}{S\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+        {{hash=c915dc113fe7da08baa2f6657521d6f3}{Herdtweck}{H\bibinitperiod}{Eberhardt}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=e68dd7d542c2d811a8efc088ba823af8}{Hoffmann}{H\bibinitperiod}{Stephan\bibnamedelima D.}{S\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c566cfb5cdd7c8104dbc7d081f5eaf15}
+      \strng{fullhash}{b4b6d3b4f12b2664ffa3dfdd986e3325}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labeltitle}{A carbocyclic carbene as an efficient catalyst ligand for C--C coupling reactions}
+      \field{indextitle}{Carbocyclic carbene as an efficient catalyst, A}
+      \field{journaltitle}{Angew.~Chem. Int.~Ed.}
+      \field{number}{23}
+      \field{title}{A carbocyclic carbene as an efficient catalyst ligand for C--C coupling reactions}
+      \field{volume}{45}
+      \field{year}{2006}
+      \field{pages}{3859\bibrangedash 3862}
+    \endentry
+    \entry{iliad}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=6808487b571183152e1d42e214d27a6f}{Homer}{H\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=6808487b571183152e1d42e214d27a6f}{Homer}{H\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{introduction}{1}{}{%
+        {{hash=563ed7c1e0ea0c94734b2132aa467dbb}{Latacz}{L\bibinitperiod}{Joachim}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=050ad6d0b7194f77b4e79f6959e320b0}{Schadewaldt}{S\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{2}{%
+        {D{ü}sseldorf}%
+        {Z{ü}rich}%
+      }
+      \list{publisher}{1}{%
+        {Artemis \& Winkler}%
+      }
+      \strng{namehash}{6808487b571183152e1d42e214d27a6f}
+      \strng{fullhash}{6808487b571183152e1d42e214d27a6f}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Ilias}
+      \field{annotation}{A German translation of the \emph{Iliad}. Note the \texttt{translator} and \texttt{introduction} fields and the format of the \texttt{location} field in the database file. Also note the \texttt{sorttitle} and \texttt{indextitle} fields}
+      \field{edition}{3}
+      \field{indextitle}{Ilias, Die}
+      \field{langid}{german}
+      \field{shorttitle}{Ilias}
+      \field{title}{Die Ilias}
+      \field{year}{2004}
+    \endentry
+    \entry{murray}{article}{}
+      \name{labelname}{14}{}{%
+        {{uniquename=0,hash=f1bafaf959660d1c3ca82d486ce5a651}{Hostetler}{H\bibinitperiod}{Michael\bibnamedelima J.}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=de9f774c929dc661b4180b07f5eb62f3}{Wingate}{W\bibinitperiod}{Julia\bibnamedelima E.}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=76100791c221471771c6bf1dbbc0975d}{Zhong}{Z\bibinitperiod}{Chuan-Jian}{C\bibinithyphendelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=34c410f87490dd022093780c69640413}{Harris}{H\bibinitperiod}{Jay\bibnamedelima E.}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a803710eddd16b95e91f420c0081985c}{Vachet}{V\bibinitperiod}{Richard\bibnamedelima W.}{R\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=38d1db37321ac524d14a116e74123685}{Clark}{C\bibinitperiod}{Michael\bibnamedelima R.}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=969c673c8b05314f89a822ecfbead6af}{Londono}{L\bibinitperiod}{J.\bibnamedelimi David}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fc6cda30bdeb421b5b57ef2d1ce6f92b}{Green}{G\bibinitperiod}{Stephen\bibnamedelima J.}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=69dcde2965d0ce8a53fae463355f36f5}{Stokes}{S\bibinitperiod}{Jennifer\bibnamedelima J.}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8cfed260a429843a4846ad8d83f9a09f}{Wignall}{W\bibinitperiod}{George\bibnamedelima D.}{G\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=71a4aee3f5124c9c94825634735417be}{Glish}{G\bibinitperiod}{Gary\bibnamedelima L.}{G\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9406f7f2b15056febb90692ae05e8620}{Porter}{P\bibinitperiod}{Marc\bibnamedelima D.}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f8d80918767d0ce7f535453dc016c327}{Evans}{E\bibinitperiod}{Neal\bibnamedelima D.}{N\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=98688e58f25c10d275f9d15d31ba3396}{Murray}{M\bibinitperiod}{Royce\bibnamedelima W.}{R\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{14}{}{%
+        {{uniquename=0,hash=f1bafaf959660d1c3ca82d486ce5a651}{Hostetler}{H\bibinitperiod}{Michael\bibnamedelima J.}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=de9f774c929dc661b4180b07f5eb62f3}{Wingate}{W\bibinitperiod}{Julia\bibnamedelima E.}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=76100791c221471771c6bf1dbbc0975d}{Zhong}{Z\bibinitperiod}{Chuan-Jian}{C\bibinithyphendelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=34c410f87490dd022093780c69640413}{Harris}{H\bibinitperiod}{Jay\bibnamedelima E.}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a803710eddd16b95e91f420c0081985c}{Vachet}{V\bibinitperiod}{Richard\bibnamedelima W.}{R\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=38d1db37321ac524d14a116e74123685}{Clark}{C\bibinitperiod}{Michael\bibnamedelima R.}{M\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=969c673c8b05314f89a822ecfbead6af}{Londono}{L\bibinitperiod}{J.\bibnamedelimi David}{J\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fc6cda30bdeb421b5b57ef2d1ce6f92b}{Green}{G\bibinitperiod}{Stephen\bibnamedelima J.}{S\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=69dcde2965d0ce8a53fae463355f36f5}{Stokes}{S\bibinitperiod}{Jennifer\bibnamedelima J.}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8cfed260a429843a4846ad8d83f9a09f}{Wignall}{W\bibinitperiod}{George\bibnamedelima D.}{G\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=71a4aee3f5124c9c94825634735417be}{Glish}{G\bibinitperiod}{Gary\bibnamedelima L.}{G\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=9406f7f2b15056febb90692ae05e8620}{Porter}{P\bibinitperiod}{Marc\bibnamedelima D.}{M\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f8d80918767d0ce7f535453dc016c327}{Evans}{E\bibinitperiod}{Neal\bibnamedelima D.}{N\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=98688e58f25c10d275f9d15d31ba3396}{Murray}{M\bibinitperiod}{Royce\bibnamedelima W.}{R\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7ba00ed438c44a2270c14ba95a7fc011}
+      \strng{fullhash}{61836f4684b2615842b68c26479f6ec2}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Alkanethiolate gold cluster molecules}
+      \field{annotation}{An \texttt{article} entry with \arabic{author} authors. By default, long author and editor lists are automatically truncated. This is configurable}
+      \field{indextitle}{Alkanethiolate gold cluster molecules}
+      \field{journaltitle}{Langmuir}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{1}
+      \field{shorttitle}{Alkanethiolate gold cluster molecules}
+      \field{subtitle}{Core and monolayer properties as a function of core size}
+      \field{title}{Alkanethiolate gold cluster molecules with core diameters from 1.5 to 5.2~nm}
+      \field{volume}{14}
+      \field{year}{1998}
+      \field{pages}{17\bibrangedash 30}
+    \endentry
+    \entry{hyman}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=b5e326c5b9e8faa3c305eb33d5eb35e0}{Hyman}{H\bibinitperiod}{Arthur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=b5e326c5b9e8faa3c305eb33d5eb35e0}{Hyman}{H\bibinitperiod}{Arthur}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=a32a37788a55d2d74160fa5351f0823c}{O'Meara}{O\bibinitperiod}{Dominic\bibnamedelima J.}{D\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Washington, D.C.}%
+      }
+      \list{publisher}{1}{%
+        {The Catholic University of America Press}%
+      }
+      \strng{namehash}{b5e326c5b9e8faa3c305eb33d5eb35e0}
+      \strng{fullhash}{b5e326c5b9e8faa3c305eb33d5eb35e0}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labelyear}{1981}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Aristotle's Theory of the Intellect}
+      \field{annotation}{An \texttt{incollection} entry with a \texttt{series} and \texttt{number} field}
+      \field{booktitle}{Studies in Aristotle}
+      \field{indextitle}{Aristotle's Theory of the Intellect}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{9}
+      \field{series}{Studies in Philosophy and the History of Philosophy}
+      \field{shorttitle}{Aristotle's Theory of the Intellect}
+      \field{title}{Aristotle's Theory of the Intellect and its Interpretation by Averroes}
+      \field{year}{1981}
+      \field{pages}{161\bibrangedash 191}
+      \keyw{secondary}
+    \endentry
+    \entry{itzhaki}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=a83ffdafe2b3678ffede0b568cfe59d5}{Itzhaki}{I\bibinitperiod}{Nissan}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=a83ffdafe2b3678ffede0b568cfe59d5}{Itzhaki}{I\bibinitperiod}{Nissan}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a83ffdafe2b3678ffede0b568cfe59d5}
+      \strng{fullhash}{a83ffdafe2b3678ffede0b568cfe59d5}
+      \field{sortinit}{I}
+      \field{sortinithash}{b2e302e575c74beffcc96ef7059003aa}
+      \field{labelyear}{1996}
+      \field{labelmonth}{03}
+      \field{labelday}{11}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Some remarks on 't Hooft's S-matrix for black holes}
+      \field{abstract}{We discuss the limitations of 't Hooft's proposal for the black hole S-matrix. We find that the validity of the S-matrix implies violation of the semi-classical approximation at scales large compared to the Planck scale. We also show that the effect of the centrifugal barrier on the S-matrix is crucial even for large transverse distances.}
+      \field{annotation}{An \texttt{online} reference from arXiv. Note the \texttt{eprint} and \texttt{eprinttype} fields. Also note that the arXiv reference is transformed into a clickable link if \texttt{hyperref} support has been enabled}
+      \field{day}{11}
+      \field{eprinttype}{arxiv}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{month}{03}
+      \field{title}{Some remarks on 't Hooft's S-matrix for black holes}
+      \field{version}{1}
+      \field{year}{1996}
+      \verb{eprint}
+      \verb hep-th/9603067
+      \endverb
+    \endentry
+    \entry{jaffe}{collection}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=49f38af6e4d180319337a9f4811be391}{Jaff{é}}{J\bibinitperiod}{Philipp}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{uniquename=0,hash=49f38af6e4d180319337a9f4811be391}{Jaff{é}}{J\bibinitperiod}{Philipp}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editora}{3}{}{%
+        {{hash=8ea4746dccf2d06f5296496acc495061}{Loewenfeld}{L\bibinitperiod}{Samuel}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=889837d9d140334ae937b3a8620022e9}{Kaltenbrunner}{K\bibinitperiod}{Ferdinand}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=dffb039de9ee1f3511b29b872ad1e997}{Ewald}{E\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Leipzig}%
+      }
+      \strng{namehash}{49f38af6e4d180319337a9f4811be391}
+      \strng{fullhash}{49f38af6e4d180319337a9f4811be391}
+      \field{sortinit}{J}
+      \field{sortinithash}{f75b22df8c340a961dce37019e29107f}
+      \field{labelyear}{1885\bibdatedash 1888}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Regesta Pontificum Romanorum}
+      \field{annotation}{A \texttt{collection} entry with \texttt{edition} and \texttt{volumes} fields. Note the \texttt{editora} and \texttt{editoratype} fields}
+      \field{edition}{2}
+      \field{editoratype}{redactor}
+      \field{endyear}{1888}
+      \field{indextitle}{Regesta Pontificum Romanorum}
+      \field{shorttitle}{Regesta Pontificum Romanorum}
+      \field{title}{Regesta Pontificum Romanorum ab condita ecclesia ad annum post Christum natum \textsc{mcxcviii}}
+      \field{volumes}{2}
+      \field{year}{1885}
+    \endentry
+    \entry{kant:kpv}{inbook}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=e1e09a59acd7633f469747be85d5edc0}{Kant}{K\bibinitperiod}{Immanuel}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e1e09a59acd7633f469747be85d5edc0}{Kant}{K\bibinitperiod}{Immanuel}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{bookauthor}{1}{}{%
+        {{hash=e1e09a59acd7633f469747be85d5edc0}{Kant}{K\bibinitperiod}{Immanuel}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Walter de Gruyter}%
+      }
+      \strng{namehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{fullhash}{e1e09a59acd7633f469747be85d5edc0}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{1}
+      \field{labelyear}{1968}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Kritik der praktischen Vernunft}
+      \field{annotation}{An edition of Kant's \emph{Collected Works}, volume five. This is an \texttt{inbook} entry which explicitly refers to the \emph{Critique of Practical Reason} only, not to the entire fifth volume. Note the \texttt{author} and \texttt{bookauthor} fields in the database file. By default, the \texttt{bookauthor} is omitted if the values of the \texttt{author} and \texttt{bookauthor} fields are identical}
+      \field{booktitle}{Kritik der praktischen Vernunft. Kritik der Urtheilskraft}
+      \field{langid}{german}
+      \field{maintitle}{Kants Werke. Akademie Textausgabe}
+      \field{shorthand}{KpV}
+      \field{shorttitle}{Kritik der praktischen Vernunft}
+      \field{title}{Kritik der praktischen Vernunft}
+      \field{volume}{5}
+      \field{year}{1968}
+      \field{pages}{1\bibrangedash 163}
+    \endentry
+    \entry{kant:ku}{inbook}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=e1e09a59acd7633f469747be85d5edc0}{Kant}{K\bibinitperiod}{Immanuel}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e1e09a59acd7633f469747be85d5edc0}{Kant}{K\bibinitperiod}{Immanuel}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{bookauthor}{1}{}{%
+        {{hash=e1e09a59acd7633f469747be85d5edc0}{Kant}{K\bibinitperiod}{Immanuel}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Walter de Gruyter}%
+      }
+      \strng{namehash}{e1e09a59acd7633f469747be85d5edc0}
+      \strng{fullhash}{e1e09a59acd7633f469747be85d5edc0}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{2}
+      \field{labelyear}{1968}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Kritik der Urtheilskraft}
+      \field{annotation}{An edition of Kant's \emph{Collected Works}, volume five. This is an \texttt{inbook} entry which explicitly refers to the \emph{Critique of Judgment} only, not to the entire fifth volume}
+      \field{booktitle}{Kritik der praktischen Vernunft. Kritik der Urtheilskraft}
+      \field{langid}{german}
+      \field{maintitle}{Kants Werke. Akademie Textausgabe}
+      \field{shorthand}{KU}
+      \field{title}{Kritik der Urtheilskraft}
+      \field{volume}{5}
+      \field{year}{1968}
+      \field{pages}{165\bibrangedash 485}
+    \endentry
+    \entry{kastenholz}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=3f07189c6a7ba8359dae22ff45697b5f}{Kastenholz}{K\bibinitperiod}{M.\bibnamedelimi A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dcda10d0157cc85d47172386b3db0271}{H{ü}nenberger}{H\bibinitperiod}{Philippe\bibnamedelima H.}{P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=3f07189c6a7ba8359dae22ff45697b5f}{Kastenholz}{K\bibinitperiod}{M.\bibnamedelimi A.}{M\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=dcda10d0157cc85d47172386b3db0271}{H{ü}nenberger}{H\bibinitperiod}{Philippe\bibnamedelima H.}{P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{33ecfa0a3353e04a7efd26aeaa1ad489}
+      \strng{fullhash}{33ecfa0a3353e04a7efd26aeaa1ad489}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Computation of methodology\hyphen independent ionic solvation free energies from molecular simulations}
+      \field{abstract}{The computation of ionic solvation free energies from atomistic simulations is a surprisingly difficult problem that has found no satisfactory solution for more than 15 years. The reason is that the charging free energies evaluated from such simulations are affected by very large errors. One of these is related to the choice of a specific convention for summing up the contributions of solvent charges to the electrostatic potential in the ionic cavity, namely, on the basis of point charges within entire solvent molecules (M scheme) or on the basis of individual point charges (P scheme). The use of an inappropriate convention may lead to a charge-independent offset in the calculated potential, which depends on the details of the summation scheme, on the quadrupole-moment trace of the solvent molecule, and on the approximate form used to represent electrostatic interactions in the system. However, whether the M or P scheme (if any) represents the appropriate convention is still a matter of on-going debate. The goal of the present article is to settle this long-standing controversy by carefully analyzing (both analytically and numerically) the properties of the electrostatic potential in molecular liquids (and inside cavities within them).}
+      \field{annotation}{An \texttt{article} entry with an \texttt{eid} and a \texttt{doi} field. Note that the \textsc{doi} is transformed into a clickable link if \texttt{hyperref} support has been enabled}
+      \field{eid}{124106}
+      \field{indextitle}{Computation of ionic solvation free energies}
+      \field{journaltitle}{J.~Chem. Phys.}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{subtitle}{I. The electrostatic potential in molecular liquids}
+      \field{title}{Computation of methodology\hyphen independent ionic solvation free energies from molecular simulations}
+      \field{volume}{124}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1063/1.2172593
+      \endverb
+    \endentry
+    \entry{knuth:ct}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{1}
+      \field{labelyear}{1984\bibdatedash 1986}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Computers \& Typesetting}
+      \field{annotation}{A five-volume book cited as a whole. This is a \texttt{book} entry, note the \texttt{volumes} field}
+      \field{endyear}{1986}
+      \field{indexsorttitle}{Computers & Typesetting}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{Computers \& Typesetting}
+      \field{volumes}{5}
+      \field{year}{1984}
+    \endentry
+    \entry{knuth:ct:related}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{2}
+      \field{labelyear}{1984\bibdatedash 1986}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Computers \& Typesetting}
+      \field{annotation}{A five-volume book cited as a whole and related to its individual volumes. Note the \texttt{related} and \texttt{relatedtype} fields}
+      \field{endyear}{1986}
+      \field{indexsorttitle}{Computers & Typesetting}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{relatedtype}{multivolume}
+      \field{title}{Computers \& Typesetting}
+      \field{volumes}{5}
+      \field{year}{1984}
+      \field{related}{f55f8e1cbdd4a615ff07edab779847d8,c7fd5f8937a975807671a061c3ca6e9c,ef844e35021ba2eda1303628da99cef4,b2708b1f875c953fbe40f5f39c88a6b4,e68389c3254254814dc01b935466a5ab}
+    \endentry
+    \entry{knuth:ct:a}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labelyear}{1984}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{\TeX book}
+      \field{annotation}{The first volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields. We want this volume to be listed after the entry referring to the entire five-volume set. Also note the \texttt{indextitle} and \texttt{indexsorttitle} fields. Indexing packages that don't generate robust index entries require some control sequences to be protected from expansion}
+      \field{indexsorttitle}{The TeXbook}
+      \field{indextitle}{\protect\TeX book, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{shorttitle}{\TeX book}
+      \field{title}{The \TeX book}
+      \field{volume}{A}
+      \field{year}{1984}
+    \endentry
+    \entry{f55f8e1cbdd4a615ff07edab779847d8}{book}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{\TeX book}
+      \field{clonesourcekey}{knuth:ct:a}
+      \field{annotation}{The first volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields. We want this volume to be listed after the entry referring to the entire five-volume set. Also note the \texttt{indextitle} and \texttt{indexsorttitle} fields. Indexing packages that don't generate robust index entries require some control sequences to be protected from expansion}
+      \field{indexsorttitle}{The TeXbook}
+      \field{indextitle}{\protect\TeX book, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{shorttitle}{\TeX book}
+      \field{title}{The \TeX book}
+      \field{volume}{A}
+      \field{year}{1984}
+    \endentry
+    \entry{knuth:ct:b}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{1}
+      \field{labelyear}{1986}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{\TeX}
+      \field{annotation}{The second volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields. Also note the \texttt{indexsorttitle} field}
+      \field{indexsorttitle}{TeX: The Program}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{shorttitle}{\TeX}
+      \field{title}{\TeX: The Program}
+      \field{volume}{B}
+      \field{year}{1986}
+    \endentry
+    \entry{c7fd5f8937a975807671a061c3ca6e9c}{book}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{\TeX}
+      \field{clonesourcekey}{knuth:ct:b}
+      \field{annotation}{The second volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields. Also note the \texttt{indexsorttitle} field}
+      \field{indexsorttitle}{TeX: The Program}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{shorttitle}{\TeX}
+      \field{title}{\TeX: The Program}
+      \field{volume}{B}
+      \field{year}{1986}
+    \endentry
+    \entry{knuth:ct:c}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{2}
+      \field{labelyear}{1986}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{METAFONTbook}
+      \field{annotation}{The third volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields as well as the \texttt{indextitle} field}
+      \field{indextitle}{METAFONTbook, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{shorttitle}{METAFONTbook}
+      \field{title}{The METAFONTbook}
+      \field{volume}{C}
+      \field{year}{1986}
+    \endentry
+    \entry{ef844e35021ba2eda1303628da99cef4}{book}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{METAFONTbook}
+      \field{clonesourcekey}{knuth:ct:c}
+      \field{annotation}{The third volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields as well as the \texttt{indextitle} field}
+      \field{indextitle}{METAFONTbook, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{shorttitle}{METAFONTbook}
+      \field{title}{The METAFONTbook}
+      \field{volume}{C}
+      \field{year}{1986}
+    \endentry
+    \entry{knuth:ct:d}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{3}
+      \field{labelyear}{1986}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{METAFONT}
+      \field{annotation}{The fourth volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{shorttitle}{METAFONT}
+      \field{title}{METAFONT: The Program}
+      \field{volume}{D}
+      \field{year}{1986}
+    \endentry
+    \entry{b2708b1f875c953fbe40f5f39c88a6b4}{book}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{METAFONT}
+      \field{clonesourcekey}{knuth:ct:d}
+      \field{annotation}{The fourth volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{shorttitle}{METAFONT}
+      \field{title}{METAFONT: The Program}
+      \field{volume}{D}
+      \field{year}{1986}
+    \endentry
+    \entry{knuth:ct:e}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{4}
+      \field{labelyear}{1986}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Computer Modern Typefaces}
+      \field{annotation}{The fifth volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{title}{Computer Modern Typefaces}
+      \field{volume}{E}
+      \field{year}{1986}
+    \endentry
+    \entry{e68389c3254254814dc01b935466a5ab}{book}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=fcbea740aeb72b8e941e0d4aa9f6a9c6}{Knuth}{K\bibinitperiod}{Donald\bibnamedelima E.}{D\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Reading, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \strng{fullhash}{fcbea740aeb72b8e941e0d4aa9f6a9c6}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Computer Modern Typefaces}
+      \field{clonesourcekey}{knuth:ct:e}
+      \field{annotation}{The fifth volume of a five-volume book. Note the \texttt{sorttitle} and \texttt{sortyear} fields}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{maintitle}{Computers \& Typesetting}
+      \field{title}{Computer Modern Typefaces}
+      \field{volume}{E}
+      \field{year}{1986}
+    \endentry
+    \entry{kowalik}{patent}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=fb066a273bc04cde36c3cca1b4f09fc9}{Kowalik}{K\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0afbeda63a9fb003c5c1f858fdffb686}{Isard}{I\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=fb066a273bc04cde36c3cca1b4f09fc9}{Kowalik}{K\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=0afbeda63a9fb003c5c1f858fdffb686}{Isard}{I\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5ae00a24b8af02ee6c722a0eb7ab2e4c}
+      \strng{fullhash}{5ae00a24b8af02ee6c722a0eb7ab2e4c}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labelyear}{1995}
+      \field{labelmonth}{01}
+      \field{labelday}{11}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Estimateur d'un d{é}faut de fonctionnement d'un modulateur en quadrature et {é}tage de modulation l'utilisant}
+      \field{annotation}{This is a \texttt{patent} entry for a French patent request with a full date. The number is given in the \texttt{number} field. Note the format of the \texttt{type} and \texttt{date} fields in the database file. Compare \texttt{almendro}, \texttt{laufenberg}, and \texttt{sorace}}
+      \field{day}{11}
+      \field{indextitle}{Estimateur d'un d{é}faut de fonctionnement}
+      \field{langid}{french}
+      \field{month}{01}
+      \field{number}{9500261}
+      \field{title}{Estimateur d'un d{é}faut de fonctionnement d'un modulateur en quadrature et {é}tage de modulation l'utilisant}
+      \field{type}{patreqfr}
+      \field{year}{1995}
+    \endentry
+    \entry{kullback}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=34c5bbf9876c37127c3abe4e7d7a7198}{Kullback}{K\bibinitperiod}{Solomon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=34c5bbf9876c37127c3abe4e7d7a7198}{Kullback}{K\bibinitperiod}{Solomon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{34c5bbf9876c37127c3abe4e7d7a7198}
+      \strng{fullhash}{34c5bbf9876c37127c3abe4e7d7a7198}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labelyear}{1959}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Information Theory and Statistics}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{Information Theory and Statistics}
+      \field{year}{1959}
+    \endentry
+    \entry{7963607e635f427aafeffbf28942c3bb}{book}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=34c5bbf9876c37127c3abe4e7d7a7198}{Kullback}{K\bibinitperiod}{Solomon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=34c5bbf9876c37127c3abe4e7d7a7198}{Kullback}{K\bibinitperiod}{Solomon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{34c5bbf9876c37127c3abe4e7d7a7198}
+      \strng{fullhash}{34c5bbf9876c37127c3abe4e7d7a7198}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{labeltitle}{Information Theory and Statistics}
+      \field{clonesourcekey}{kullback}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{Information Theory and Statistics}
+      \field{year}{1959}
+    \endentry
+    \entry{kullback:reprint}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=34c5bbf9876c37127c3abe4e7d7a7198}{Kullback}{K\bibinitperiod}{Solomon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=34c5bbf9876c37127c3abe4e7d7a7198}{Kullback}{K\bibinitperiod}{Solomon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{origpublisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{34c5bbf9876c37127c3abe4e7d7a7198}
+      \strng{fullhash}{34c5bbf9876c37127c3abe4e7d7a7198}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{1}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Information Theory and Statistics}
+      \field{annotation}{A reprint of the \texttt{kullback} entry. Note the format of \texttt{origyear} and \texttt{origpublisher}. These fields are not used by the standard bibliography styles}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{origyear}{1959}
+      \field{title}{Information Theory and Statistics}
+      \field{year}{1997}
+    \endentry
+    \entry{kullback:related}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=34c5bbf9876c37127c3abe4e7d7a7198}{Kullback}{K\bibinitperiod}{Solomon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=34c5bbf9876c37127c3abe4e7d7a7198}{Kullback}{K\bibinitperiod}{Solomon}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{34c5bbf9876c37127c3abe4e7d7a7198}
+      \strng{fullhash}{34c5bbf9876c37127c3abe4e7d7a7198}
+      \field{sortinit}{K}
+      \field{sortinithash}{33bf4c961fa093ee6a297ccbd88eacc0}
+      \field{extrayear}{2}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Information Theory and Statistics}
+      \field{annotation}{A reprint of the \texttt{kullback} entry. Note the format of the \texttt{related} and \texttt{relatedtype} fields}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{relatedtype}{origpubin}
+      \field{title}{Information Theory and Statistics}
+      \field{year}{1997}
+      \field{related}{7963607e635f427aafeffbf28942c3bb}
+    \endentry
+    \entry{laufenberg}{patent}{}
+      \name{labelname}{12}{}{%
+        {{uniquename=0,hash=666f459ff4fda46a3dfd0a6d716b0bf8}{Laufenberg}{L\bibinitperiod}{Xaver}{X\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=03d6afa159ec546b18a56fb512b162ba}{Eynius}{E\bibinitperiod}{Dominique}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f422f3660fa514a46e17b7b48df4d9eb}{Suelzle}{S\bibinitperiod}{Helmut}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=82f458c265c83ee9d4a4d98a9a438053}{Usbeck}{U\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=abfffcac42d08e6218a1c6f0620682cd}{Spaeth}{S\bibinitperiod}{Matthias}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=81100ef72f7bd0641716f8bac8092b5e}{Neuser-Hoffmann}{N\bibinithyphendelim H\bibinitperiod}{Miriam}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d95a4417699fae86275522f465d1d93c}{Myrzik}{M\bibinitperiod}{Christian}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2bdd013f1939d4ddc923b2c4b36e2762}{Schmid}{S\bibinitperiod}{Manfred}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4e8d3998dfe19e2189c3534cfe7a1bc9}{Nietfeld}{N\bibinitperiod}{Franz}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=361c7832157a1df6e4673df123c51e2a}{Thiel}{T\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=38839fbb1f5607c7f725596965610705}{Braun}{B\bibinitperiod}{Harald}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7a69a855210ccf7f720b70e9826cd020}{Ebner}{E\bibinitperiod}{Norbert}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{12}{}{%
+        {{uniquename=0,hash=666f459ff4fda46a3dfd0a6d716b0bf8}{Laufenberg}{L\bibinitperiod}{Xaver}{X\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=03d6afa159ec546b18a56fb512b162ba}{Eynius}{E\bibinitperiod}{Dominique}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=f422f3660fa514a46e17b7b48df4d9eb}{Suelzle}{S\bibinitperiod}{Helmut}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=82f458c265c83ee9d4a4d98a9a438053}{Usbeck}{U\bibinitperiod}{Stephan}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=abfffcac42d08e6218a1c6f0620682cd}{Spaeth}{S\bibinitperiod}{Matthias}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=81100ef72f7bd0641716f8bac8092b5e}{Neuser-Hoffmann}{N\bibinithyphendelim H\bibinitperiod}{Miriam}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d95a4417699fae86275522f465d1d93c}{Myrzik}{M\bibinitperiod}{Christian}{C\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2bdd013f1939d4ddc923b2c4b36e2762}{Schmid}{S\bibinitperiod}{Manfred}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4e8d3998dfe19e2189c3534cfe7a1bc9}{Nietfeld}{N\bibinitperiod}{Franz}{F\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=361c7832157a1df6e4673df123c51e2a}{Thiel}{T\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=38839fbb1f5607c7f725596965610705}{Braun}{B\bibinitperiod}{Harald}{H\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7a69a855210ccf7f720b70e9826cd020}{Ebner}{E\bibinitperiod}{Norbert}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{holder}{3}{}{%
+        {{hash=dd84539d029e9c45a9de61bbb2954c6e}{{Robert\bibnamedelimb Bosch\bibnamedelimb GmbH}}{R\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=f05fb105646e6b775eb43b4ac7bc95a5}{{Daimler\bibnamedelimb Chrysler\bibnamedelimb AG}}{D\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=2e9d43cf73603ed007ccdba09c877741}{{Bayerische\bibnamedelimb Motoren\bibnamedelimb Werke\bibnamedelimb AG}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{2c496f42530d249a80f978e6d1a2eaae}
+      \strng{fullhash}{1eaf1ecdc7b90de0ce973c150bc91521}
+      \field{sortinit}{L}
+      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
+      \field{labelyear}{2006}
+      \field{labelmonth}{09}
+      \field{labelday}{13}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Elektrische Einrichtung und Betriebsverfahren}
+      \field{abstract}{The invention relates to an electric device comprising a generator, in particular for use in the vehicle electric system of a motor vehicle and a controller for controlling the generator voltage. The device is equipped with a control zone, in which the voltage is controlled and zones, in which the torque is controlled. The invention also relates to methods for operating a device of this type.}
+      \field{annotation}{This is a \texttt{patent} entry with a \texttt{holder} field. Note the format of the \texttt{type} and \texttt{location} fields in the database file. Compare \texttt{almendro}, \texttt{sorace}, and \texttt{kowalik}}
+      \field{day}{13}
+      \field{langid}{german}
+      \field{month}{09}
+      \field{number}{1700367}
+      \field{title}{Elektrische Einrichtung und Betriebsverfahren}
+      \field{type}{patenteu}
+      \field{year}{2006}
+      \verb{file}
+      \verb http://v3.espacenet.com/textdoc?IDX=EP1700367
+      \endverb
+    \endentry
+    \entry{loh}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=3a746d7f00ad75f739d44919c98c60b7}{Loh}{L\bibinitperiod}{Nin\bibnamedelima C.}{N\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=3a746d7f00ad75f739d44919c98c60b7}{Loh}{L\bibinitperiod}{Nin\bibnamedelima C.}{N\bibinitperiod\bibinitdelim C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Massachusetts Institute of Technology}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Mass.}%
+      }
+      \strng{namehash}{3a746d7f00ad75f739d44919c98c60b7}
+      \strng{fullhash}{3a746d7f00ad75f739d44919c98c60b7}
+      \field{sortinit}{L}
+      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
+      \field{labelyear}{1992}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{High-Resolution Micromachined Interferometric Accelerometer}
+      \field{annotation}{This is a typical \texttt{thesis} entry for an MA thesis. Note the \texttt{type} field in the database file which uses a localization key}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{High-Resolution Micromachined Interferometric Accelerometer}
+      \field{type}{mathesis}
+      \field{year}{1992}
+    \endentry
+    \entry{malinowski}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=50657fee63cb31c3b9d6111bd8dbb6ff}{Malinowski}{M\bibinitperiod}{Bronis{ł}aw}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=50657fee63cb31c3b9d6111bd8dbb6ff}{Malinowski}{M\bibinitperiod}{Bronis{ł}aw}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Routledge {and} Kegan Paul}%
+      }
+      \strng{namehash}{50657fee63cb31c3b9d6111bd8dbb6ff}
+      \strng{fullhash}{50657fee63cb31c3b9d6111bd8dbb6ff}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labelyear}{1972}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Argonauts}
+      \field{annotation}{This is a \texttt{book} entry. Note the format of the \texttt{publisher} and \texttt{edition} fields as well as the \texttt{subtitle} field}
+      \field{edition}{8}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{shorttitle}{Argonauts}
+      \field{subtitle}{An account of native enterprise and adventure in the Archipelagoes of Melanesian New Guinea}
+      \field{title}{Argonauts of the Western Pacific}
+      \field{year}{1972}
+    \endentry
+    \entry{markey}{online}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9b9d49a73a3e877cd87f4aa91604d8d6}{Markey}{M\bibinitperiod}{Nicolas}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9b9d49a73a3e877cd87f4aa91604d8d6}{Markey}{M\bibinitperiod}{Nicolas}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9b9d49a73a3e877cd87f4aa91604d8d6}
+      \strng{fullhash}{9b9d49a73a3e877cd87f4aa91604d8d6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labelyear}{2005}
+      \field{labelmonth}{10}
+      \field{labelday}{16}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Tame the BeaST}
+      \field{annotation}{An \texttt{online} entry for a tutorial. Note the format of the \texttt{date} field (\texttt{yyyy-mm-dd}) in the database file.}
+      \field{day}{16}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{month}{10}
+      \field{subtitle}{The B to X of BibTeX}
+      \field{title}{Tame the BeaST}
+      \field{urlday}{01}
+      \field{urlmonth}{10}
+      \field{urlyear}{2006}
+      \field{version}{1.3}
+      \field{year}{2005}
+      \verb{url}
+      \verb http://tug.ctan.org/tex-archive/info/bibtex/tamethebeast/ttb_en.pdf
+      \endverb
+    \endentry
+    \entry{maron}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=c20ff5d64b1c462c68c756c4c2966182}{Maron}{M\bibinitperiod}{Monika}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=c20ff5d64b1c462c68c756c4c2966182}{Maron}{M\bibinitperiod}{Monika}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{1}{}{%
+        {{hash=dff5dd01466614775635e1b082feb973}{Goldstein}{G\bibinitperiod}{Brigitte}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Lincoln}%
+      }
+      \list{publisher}{1}{%
+        {University of Nebraska Press}%
+      }
+      \strng{namehash}{c20ff5d64b1c462c68c756c4c2966182}
+      \strng{fullhash}{c20ff5d64b1c462c68c756c4c2966182}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Animal Triste}
+      \field{annotation}{An English translation of a German novel with a French title. In other words: a \texttt{book} entry with a \texttt{translator} field. Note the \texttt{origlanguage} field which is concatenated with the \texttt{translator}}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{origlanguage}{german}
+      \field{shorttitle}{Animal Triste}
+      \field{title}{Animal Triste}
+      \field{year}{2000}
+    \endentry
+    \entry{massa}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=3f8dabe11903d955a0ab19ff5b2c7e7f}{Massa}{M\bibinitperiod}{Werner}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=3f8dabe11903d955a0ab19ff5b2c7e7f}{Massa}{M\bibinitperiod}{Werner}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Spinger}%
+      }
+      \strng{namehash}{3f8dabe11903d955a0ab19ff5b2c7e7f}
+      \strng{fullhash}{3f8dabe11903d955a0ab19ff5b2c7e7f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Crystal structure determination}
+      \field{annotation}{A \texttt{book} entry with an \texttt{edition} field}
+      \field{edition}{2}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{title}{Crystal structure determination}
+      \field{year}{2004}
+    \endentry
+    \entry{matuz:doody}{collection}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=cf369effe2b1de0066543cc38f7f8369}{Matuz}{M\bibinitperiod}{Roger}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{uniquename=0,hash=cf369effe2b1de0066543cc38f7f8369}{Matuz}{M\bibinitperiod}{Roger}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Detroit}%
+      }
+      \list{publisher}{1}{%
+        {Gale}%
+      }
+      \strng{namehash}{cf369effe2b1de0066543cc38f7f8369}
+      \strng{fullhash}{cf369effe2b1de0066543cc38f7f8369}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labelyear}{1990}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Contemporary Literary Criticism}
+      \field{annotation}{A \texttt{collection} entry providing the excerpt information for the \texttt{doody} entry. Note the format of the \texttt{pages} field}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{Contemporary Literary Criticism}
+      \field{volume}{61}
+      \field{year}{1990}
+      \field{pages}{204\bibrangedash 208}
+    \endentry
+    \entry{1e63d4bbc14872275675171be2dfa906}{collection}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=cf369effe2b1de0066543cc38f7f8369}{Matuz}{M\bibinitperiod}{Roger}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=cf369effe2b1de0066543cc38f7f8369}{Matuz}{M\bibinitperiod}{Roger}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Detroit}%
+      }
+      \list{publisher}{1}{%
+        {Gale}%
+      }
+      \strng{namehash}{cf369effe2b1de0066543cc38f7f8369}
+      \strng{fullhash}{cf369effe2b1de0066543cc38f7f8369}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labeltitle}{Contemporary Literary Criticism}
+      \field{clonesourcekey}{matuz:doody}
+      \field{annotation}{A \texttt{collection} entry providing the excerpt information for the \texttt{doody} entry. Note the format of the \texttt{pages} field}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{Contemporary Literary Criticism}
+      \field{volume}{61}
+      \field{year}{1990}
+      \field{pages}{204\bibrangedash 208}
+    \endentry
+    \entry{moore}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9c50084c68d91fab87727bc63f4551bf}
+      \strng{fullhash}{9c50084c68d91fab87727bc63f4551bf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labelyear}{1965}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Cramming more components onto integrated circuits}
+      \field{journaltitle}{Electronics}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{8}
+      \field{title}{Cramming more components onto integrated circuits}
+      \field{volume}{38}
+      \field{year}{1965}
+      \field{pages}{114\bibrangedash 117}
+    \endentry
+    \entry{a595aab986c3206e1a637f4f18d41f62}{article}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9c50084c68d91fab87727bc63f4551bf}
+      \strng{fullhash}{9c50084c68d91fab87727bc63f4551bf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labeltitle}{Cramming more components onto integrated circuits}
+      \field{clonesourcekey}{moore}
+      \field{journaltitle}{Electronics}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{8}
+      \field{title}{Cramming more components onto integrated circuits}
+      \field{volume}{38}
+      \field{year}{1965}
+      \field{pages}{114\bibrangedash 117}
+    \endentry
+    \entry{moore:related}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9c50084c68d91fab87727bc63f4551bf}{Moore}{M\bibinitperiod}{Gordon\bibnamedelima E.}{G\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9c50084c68d91fab87727bc63f4551bf}
+      \strng{fullhash}{9c50084c68d91fab87727bc63f4551bf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Cramming more components onto integrated circuits}
+      \field{annotation}{A reprint of Moore's law. Note the \texttt{related} and \texttt{relatedtype} fields}
+      \field{journaltitle}{Proceedings of the {IEEE}}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{1}
+      \field{relatedtype}{reprintfrom}
+      \field{title}{Cramming more components onto integrated circuits}
+      \field{volume}{86}
+      \field{year}{1998}
+      \field{related}{a595aab986c3206e1a637f4f18d41f62}
+      \field{pages}{82\bibrangedash 85}
+    \endentry
+    \entry{moraux}{inproceedings}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=521f34dd2d9205cdfd39d5f6075187ee}{Moraux}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=521f34dd2d9205cdfd39d5f6075187ee}{Moraux}{M\bibinitperiod}{Paul}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=38a4f6a6d39e3d3be41e8476a072ce87}{Lloyd}{L\bibinitperiod}{G.\bibnamedelimi E.\bibnamedelimi R.}{G\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=138fd7ec19279f19a0248ad99fd12565}{Owen}{O\bibinitperiod}{G.\bibnamedelimi E.\bibnamedelimi L.}{G\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{521f34dd2d9205cdfd39d5f6075187ee}
+      \strng{fullhash}{521f34dd2d9205cdfd39d5f6075187ee}
+      \field{sortinit}{M}
+      \field{sortinithash}{4203d16473bc940d4ac780773cb7c5dd}
+      \field{labelyear}{1979}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{\emph{De Anima} dans la tradition gr{è}cque}
+      \field{annotation}{This is a typical \texttt{inproceedings} entry. Note the \texttt{booksubtitle}, \texttt{shorttitle}, \texttt{indextitle}, and \texttt{indexsorttitle} fields. Also note the \texttt{eventdate} field.}
+      \field{booktitle}{Aristotle on Mind and the Senses}
+      \field{booktitleaddon}{Proceedings of the Seventh Symposium Aristotelicum}
+      \field{eventyear}{1975}
+      \field{indexsorttitle}{De Anima dans la tradition grecque}
+      \field{indextitle}{\emph{De Anima} dans la tradition gr{è}cque, Le}
+      \field{langid}{french}
+      \field{shorttitle}{\emph{De Anima} dans la tradition gr{è}cque}
+      \field{subtitle}{Quelques aspects de l'interpretation du trait{é}, de Theophraste {à} Themistius}
+      \field{title}{Le \emph{De Anima} dans la tradition gr{è}cque}
+      \field{year}{1979}
+      \field{pages}{281\bibrangedash 324}
+      \keyw{secondary}
+    \endentry
+    \entry{nietzsche:ksa}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5d199ea59b68f8edfff8c5ae07d60d68}{Nietzsche}{N\bibinitperiod}{Friedrich}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5d199ea59b68f8edfff8c5ae07d60d68}{Nietzsche}{N\bibinitperiod}{Friedrich}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=edd7ffac9b0b1c753c82c92ba425fc8e}{Colli}{C\bibinitperiod}{Giorgio}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=b9cccca44025ad690e24b910101b53d2}{Montinari}{M\bibinitperiod}{Mazzino}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{3}{%
+        {M{ü}nchen}%
+        {Berlin}%
+        {New York}%
+      }
+      \list{publisher}{2}{%
+        {Deutscher Taschenbuch-Verlag}%
+        {Walter de Gruyter}%
+      }
+      \strng{namehash}{5d199ea59b68f8edfff8c5ae07d60d68}
+      \strng{fullhash}{5d199ea59b68f8edfff8c5ae07d60d68}
+      \field{sortinit}{N}
+      \field{sortinithash}{a52ecf374d1aa02cdea5f29be4dad56c}
+      \field{extrayear}{1}
+      \field{labelyear}{1988}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{S{ä}mtliche Werke}
+      \field{annotation}{The critical edition of Nietzsche's works. This is a \texttt{book} entry referring to a 15-volume work as a whole. Note the \texttt{volumes} field and the format of the \texttt{publisher} and \texttt{location} fields in the database file. Also note the \texttt{sorttitle} and \texttt{sortyear} fields which are used to fine-tune the sorting order of the bibliography. We want this item listed first in the bibliography}
+      \field{edition}{2}
+      \field{indexsorttitle}{Samtliche Werke}
+      \field{langid}{german}
+      \field{subtitle}{Kritische Studienausgabe}
+      \field{title}{S{ä}mtliche Werke}
+      \field{volumes}{15}
+      \field{year}{1988}
+    \endentry
+    \entry{nietzsche:ksa1}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5d199ea59b68f8edfff8c5ae07d60d68}{Nietzsche}{N\bibinitperiod}{Friedrich}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5d199ea59b68f8edfff8c5ae07d60d68}{Nietzsche}{N\bibinitperiod}{Friedrich}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{bookauthor}{1}{}{%
+        {{hash=5d199ea59b68f8edfff8c5ae07d60d68}{Nietzsche}{N\bibinitperiod}{Friedrich}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=edd7ffac9b0b1c753c82c92ba425fc8e}{Colli}{C\bibinitperiod}{Giorgio}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=b9cccca44025ad690e24b910101b53d2}{Montinari}{M\bibinitperiod}{Mazzino}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{3}{%
+        {M{ü}nchen}%
+        {Berlin}%
+        {New York}%
+      }
+      \list{publisher}{2}{%
+        {Deutscher Taschenbuch-Verlag}%
+        {Walter de Gruyter}%
+      }
+      \strng{namehash}{5d199ea59b68f8edfff8c5ae07d60d68}
+      \strng{fullhash}{5d199ea59b68f8edfff8c5ae07d60d68}
+      \field{sortinit}{N}
+      \field{sortinithash}{a52ecf374d1aa02cdea5f29be4dad56c}
+      \field{extrayear}{2}
+      \field{labelyear}{1988}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{S{ä}mtliche Werke I}
+      \field{annotation}{A single volume from the critical edition of Nietzsche's works. This \texttt{book} entry explicitly refers to the first volume only. Note the \texttt{title} and \texttt{maintitle} fields. Also note the \texttt{sorttitle} and \texttt{sortyear} fields. We want this entry to be listed after the entry referring to the entire edition}
+      \field{edition}{2}
+      \field{indexsorttitle}{Samtliche Werke I}
+      \field{indextitle}{S{ä}mtliche Werke I}
+      \field{langid}{german}
+      \field{mainsubtitle}{Kritische Studienausgabe}
+      \field{maintitle}{S{ä}mtliche Werke}
+      \field{shorttitle}{S{ä}mtliche Werke I}
+      \field{title}{Die Geburt der Trag{ö}die. Unzeitgem{ä}{ß}e Betrachtungen I--IV. Nachgelassene Schriften 1870--1973}
+      \field{volume}{1}
+      \field{year}{1988}
+    \endentry
+    \entry{nietzsche:historie}{inbook}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5d199ea59b68f8edfff8c5ae07d60d68}{Nietzsche}{N\bibinitperiod}{Friedrich}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5d199ea59b68f8edfff8c5ae07d60d68}{Nietzsche}{N\bibinitperiod}{Friedrich}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{bookauthor}{1}{}{%
+        {{hash=5d199ea59b68f8edfff8c5ae07d60d68}{Nietzsche}{N\bibinitperiod}{Friedrich}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=edd7ffac9b0b1c753c82c92ba425fc8e}{Colli}{C\bibinitperiod}{Giorgio}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=b9cccca44025ad690e24b910101b53d2}{Montinari}{M\bibinitperiod}{Mazzino}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{3}{%
+        {M{ü}nchen}%
+        {Berlin}%
+        {New York}%
+      }
+      \list{publisher}{2}{%
+        {Deutscher Taschenbuch-Verlag}%
+        {Walter de Gruyter}%
+      }
+      \strng{namehash}{5d199ea59b68f8edfff8c5ae07d60d68}
+      \strng{fullhash}{5d199ea59b68f8edfff8c5ae07d60d68}
+      \field{sortinit}{N}
+      \field{sortinithash}{a52ecf374d1aa02cdea5f29be4dad56c}
+      \field{extrayear}{3}
+      \field{labelyear}{1988}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Vom Nutzen und Nachtheil der Historie}
+      \field{annotation}{A single essay from the critical edition of Nietzsche's works. This \texttt{inbook} entry explicitly refers to an essay found in the first volume. Note the \texttt{title}, \texttt{booktitle}, and \texttt{maintitle} fields. Also note the \texttt{sorttitle} and \texttt{sortyear} fields. We want this entry to be listed after the entry referring to the entire first volume}
+      \field{booktitle}{Die Geburt der Trag{ö}die. Unzeitgem{ä}{ß}e Betrachtungen I--IV. Nachgelassene Schriften 1870--1973}
+      \field{indexsorttitle}{Vom Nutzen und Nachtheil der Historie fur das Leben}
+      \field{indextitle}{Vom Nutzen und Nachtheil der Historie f{ü}r das Leben}
+      \field{langid}{german}
+      \field{mainsubtitle}{Kritische Studienausgabe}
+      \field{maintitle}{S{ä}mtliche Werke}
+      \field{shorttitle}{Vom Nutzen und Nachtheil der Historie}
+      \field{subtitle}{Vom Nutzen und Nachtheil der Historie f{ü}r das Leben}
+      \field{title}{Unzeitgem{ä}sse Betrachtungen. Zweites St{ü}ck}
+      \field{volume}{1}
+      \field{year}{1988}
+      \field{pages}{243\bibrangedash 334}
+    \endentry
+    \entry{nussbaum}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5fde8324968f94bc9b0e59c04b53b613}{Nussbaum}{N\bibinitperiod}{Martha}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5fde8324968f94bc9b0e59c04b53b613}{Nussbaum}{N\bibinitperiod}{Martha}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Princeton}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{5fde8324968f94bc9b0e59c04b53b613}
+      \strng{fullhash}{5fde8324968f94bc9b0e59c04b53b613}
+      \field{sortinit}{N}
+      \field{sortinithash}{a52ecf374d1aa02cdea5f29be4dad56c}
+      \field{labelyear}{1978}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Aristotle's \mkbibquote{De Motu Animalium}}
+      \field{annotation}{A \texttt{book} entry. Note the \texttt{sorttitle} and \texttt{indexsorttitle} fields and the markup of the quotes in the database file}
+      \field{indexsorttitle}{Aristotle's De Motu Animalium}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{title}{Aristotle's \mkbibquote{De Motu Animalium}}
+      \field{year}{1978}
+      \keyw{secondary}
+    \endentry
+    \entry{cms}{manual}{}
+      \list{location}{1}{%
+        {Chicago, Ill.}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \field{sortinit}{o}
+      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Chicago Manual of Style}
+      \field{annotation}{This is a \texttt{manual} entry without an \texttt{author} or \texttt{editor}. Note the \texttt{label} field in the database file which is provided for author-year citation styles. Also note the \texttt{sorttitle} and \texttt{indextitle} fields. By default, all entries without an \texttt{author} or \texttt{editor} are alphabetized by \texttt{title} but we want this entry to be alphabetized under \enquote*{C} rather than \enquote*{T}. There's also an \texttt{isbn} field}
+      \field{edition}{15}
+      \field{indextitle}{Chicago Manual of Style, The}
+      \field{isbn}{0-226-10403-6}
+      \field{label}{CMS}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{shorttitle}{Chicago Manual of Style}
+      \field{subtitle}{The Essential Guide for Writers, Editors, and Publishers}
+      \field{title}{The Chicago Manual of Style}
+      \field{year}{2003}
+    \endentry
+    \entry{britannica}{collection}{useeditor=false}
+      \name{editor}{1}{}{%
+        {{hash=e1aacddf4fa8fa612f4e65bc87d39f8e}{Preece}{P\bibinitperiod}{Warren\bibnamedelima E.}{W\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Chicago, Ill.}%
+      }
+      \list{publisher}{1}{%
+        {Encyclop{æ}dia Britannica}%
+      }
+      \field{sortinit}{o}
+      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Encyclop{æ}dia Britannica}
+      \field{annotation}{This is a \texttt{collection} entry for an encyclopedia. Note the \texttt{useeditor} option in the \texttt{options} field as well as the \texttt{sorttitle} field. We want this entry to be cited and alphabetized by title even though there is an editor. In addition to that, we want the title to be alphabetized under \enquote*{E} rather than \enquote*{T}. Also note the \texttt{label} field which is provided for author-year citation styles}
+      \field{edition}{15}
+      \field{indextitle}{Encyclop{æ}dia Britannica, The New}
+      \field{label}{EB}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{shorttitle}{Encyclop{æ}dia Britannica}
+      \field{title}{The New Encyclop{æ}dia Britannica}
+      \field{volumes}{32}
+      \field{year}{2003}
+    \endentry
+    \entry{ctan}{online}{}
+      \field{sortinit}{o}
+      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{CTAN}
+      \field{annotation}{This is an \texttt{online} entry. The \textsc{url}, which is given in the \texttt{url} field, is transformed into a clickable link if \texttt{hyperref} support has been enabled. Note the format of the \texttt{urldate} field (\texttt{yyyy-mm-dd}) in the database file. Also note the \texttt{label} field which may be used as a fallback by citation styles which need an \texttt{author} and\slash or a \texttt{year}}
+      \field{label}{CTAN}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{subtitle}{The Comprehensive TeX Archive Network}
+      \field{title}{CTAN}
+      \field{urlday}{01}
+      \field{urlmonth}{10}
+      \field{urlyear}{2006}
+      \field{year}{2006}
+      \verb{url}
+      \verb http://www.ctan.org
+      \endverb
+    \endentry
+    \entry{jcg}{periodical}{}
+      \field{sortinit}{o}
+      \field{sortinithash}{59512cfd31be1dcef4def024230bdc1d}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Computers and Graphics}
+      \field{annotation}{This is a \texttt{periodical} entry with an \texttt{issn} field.}
+      \field{issn}{0097-8493}
+      \field{issuetitle}{Semantic {3D} Media and Content}
+      \field{number}{4}
+      \field{title}{Computers and Graphics}
+      \field{volume}{35}
+      \field{year}{2011}
+    \endentry
+    \entry{padhye}{report}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=ff5f2ad1629acf52018ec470b61bf2c9}{Padhye}{P\bibinitperiod}{Jitendra}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=027505ddad967453bf6e57a5c7bb760e}{Firoiu}{F\bibinitperiod}{Victor}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=294e701b042477b3b60dee2c602a0be7}{Towsley}{T\bibinitperiod}{Don}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=ff5f2ad1629acf52018ec470b61bf2c9}{Padhye}{P\bibinitperiod}{Jitendra}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=027505ddad967453bf6e57a5c7bb760e}{Firoiu}{F\bibinitperiod}{Victor}{V\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=294e701b042477b3b60dee2c602a0be7}{Towsley}{T\bibinitperiod}{Don}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of Massachusetts}%
+      }
+      \list{location}{1}{%
+        {Amherst, Mass.}%
+      }
+      \strng{namehash}{cd40f6e12202eef4ddbfaa8195e83952}
+      \strng{fullhash}{6e5d06e107e1641d3c3f48b3329c39df}
+      \field{sortinit}{P}
+      \field{sortinithash}{b8af9282ac256b81613dc9012a0ac921}
+      \field{labelyear}{1999}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{A Stochastic Model of TCP Reno Congestion Avoidance and Control}
+      \field{abstract}{The steady state performance of a bulk transfer TCP flow (i.e. a flow with a large amount of data to send, such as FTP transfers) may be characterized by three quantities. The first is the send rate, which is the amount of data sent by the sender in unit time. The second is the throughput, which is the amount of data received by the receiver in unit time. Note that the throughput will always be less than or equal to the send rate due to losses. Finally, the number of non-duplicate packets received by the receiver in unit time gives us the goodput of the connection. The goodput is always less than or equal to the throughput, since the receiver may receive two copies of the same packet due to retransmissions by the sender. In a previous paper, we presented a simple model for predicting the steady state send rate of a bulk transfer TCP flow as a function of loss rate and round trip time. In this paper, we extend that work in two ways. First, we analyze the performance of bulk transfer TCP flows using more precise, stochastic analysis. Second, we build upon the previous analysis to provide both an approximate formula as well as a more accurate stochastic model for the steady state throughput of a bulk transfer TCP flow.}
+      \field{annotation}{This is a \texttt{report} entry for a technical report. Note the format of the \texttt{type} field in the database file which uses a localization key. The number of the report is given in the \texttt{number} field. Also note the \texttt{sorttitle} and \texttt{indextitle} fields}
+      \field{indextitle}{Stochastic Model of TCP Reno Congestion Avoidance and Control, A}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{99-02}
+      \field{title}{A Stochastic Model of TCP Reno Congestion Avoidance and Control}
+      \field{type}{techreport}
+      \field{year}{1999}
+      \verb{file}
+      \verb ftp://gaia.cs.umass.edu/pub/Padhey99-markov.ps
+      \endverb
+    \endentry
+    \entry{piccato}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=5496cedfe867015e425d54207088ebff}{Piccato}{P\bibinitperiod}{Pablo}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=5496cedfe867015e425d54207088ebff}{Piccato}{P\bibinitperiod}{Pablo}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{2}{%
+        {Durham}%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Duke University Press}%
+      }
+      \strng{namehash}{5496cedfe867015e425d54207088ebff}
+      \strng{fullhash}{5496cedfe867015e425d54207088ebff}
+      \field{sortinit}{P}
+      \field{sortinithash}{b8af9282ac256b81613dc9012a0ac921}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{City of Suspects}
+      \field{annotation}{This is a \texttt{book} entry. Note the format of the \texttt{location} field in the database file}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{shorttitle}{City of Suspects}
+      \field{subtitle}{Crime in Mexico City, 1900--1931}
+      \field{title}{City of Suspects}
+      \field{year}{2001}
+    \endentry
+    \entry{pines}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=f6c65cf4858401d2e6b93d562bdd4bd1}{Pines}{P\bibinitperiod}{Shlomo}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=f6c65cf4858401d2e6b93d562bdd4bd1}{Pines}{P\bibinitperiod}{Shlomo}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=acd4c72ab3813ceb1d86eb7681ff1d3f}{Twersky}{T\bibinitperiod}{Isadore}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Mass.}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{f6c65cf4858401d2e6b93d562bdd4bd1}
+      \strng{fullhash}{f6c65cf4858401d2e6b93d562bdd4bd1}
+      \field{sortinit}{P}
+      \field{sortinithash}{b8af9282ac256b81613dc9012a0ac921}
+      \field{labelyear}{1979}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Limitations of Human Knowledge}
+      \field{annotation}{A typical \texttt{incollection} entry. Note the \texttt{indextitle} field}
+      \field{booktitle}{Studies in Medieval Jewish History and Literature}
+      \field{indextitle}{Limitations of Human Knowledge According to Al-Farabi, ibn Bajja, and Maimonides, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{shorttitle}{Limitations of Human Knowledge}
+      \field{title}{The Limitations of Human Knowledge According to Al-Farabi, ibn Bajja, and Maimonides}
+      \field{year}{1979}
+      \field{pages}{82\bibrangedash 109}
+      \keyw{secondary}
+    \endentry
+    \entry{reese}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=7c73b571a33320e72d2d87ff821579fd}{Reese}{R\bibinitperiod}{Trevor\bibnamedelima R.}{T\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=7c73b571a33320e72d2d87ff821579fd}{Reese}{R\bibinitperiod}{Trevor\bibnamedelima R.}{T\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7c73b571a33320e72d2d87ff821579fd}
+      \strng{fullhash}{7c73b571a33320e72d2d87ff821579fd}
+      \field{sortinit}{R}
+      \field{sortinithash}{ff5a3533ecf9d5a03ff60b1e1389b63d}
+      \field{labelyear}{1958}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Georgia in Anglo-Spanish Diplomacy, 1736-1739}
+      \field{annotation}{An \texttt{article} entry with a \texttt{series} and a \texttt{volume} field. Note the format of the series. If the value of the \texttt{series} field is an integer, this number is printed as an ordinal and the string \enquote*{series} is appended automatically}
+      \field{journaltitle}{William and Mary Quarterly}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{series}{3}
+      \field{title}{Georgia in Anglo-Spanish Diplomacy, 1736-1739}
+      \field{volume}{15}
+      \field{year}{1958}
+      \field{pages}{168\bibrangedash 190}
+    \endentry
+    \entry{salam}{inproceedings}{}
+      \inset{stdmodel}
+      \name{labelname}{1}{}{%
+        {{hash=5196fd7e08485dbc6a7dd05adc133fdf}{Salam}{S\bibinitperiod}{Abdus}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=5196fd7e08485dbc6a7dd05adc133fdf}{Salam}{S\bibinitperiod}{Abdus}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=d0ec890e59163c24c111a08d2a4be982}{Svartholm}{S\bibinitperiod}{Nils}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Stockholm}%
+      }
+      \list{publisher}{1}{%
+        {Almquist \& Wiksell}%
+      }
+      \strng{namehash}{5196fd7e08485dbc6a7dd05adc133fdf}
+      \strng{fullhash}{5196fd7e08485dbc6a7dd05adc133fdf}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labeltitle}{Weak and Electromagnetic Interactions}
+      \field{booksubtitle}{Relativistic groups and analyticity}
+      \field{booktitle}{Elementary particle theory}
+      \field{booktitleaddon}{Proceedings of the Eighth Nobel Symposium}
+      \field{eventday}{19}
+      \field{eventendday}{25}
+      \field{eventendmonth}{05}
+      \field{eventendyear}{1968}
+      \field{eventmonth}{05}
+      \field{eventyear}{1968}
+      \field{title}{Weak and Electromagnetic Interactions}
+      \field{venue}{Aspen{ä}sgarden, Lerum}
+      \field{year}{1968}
+      \field{pages}{367\bibrangedash 377}
+    \endentry
+    \entry{sarfraz}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=db1c458b08100b2813bc4426d8d96be6}{Sarfraz}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=da7a593c759d4e2c74c25e4379e07f81}{Razzak}{R\bibinitperiod}{M.\bibnamedelimi F.\bibnamedelimi A.}{M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=db1c458b08100b2813bc4426d8d96be6}{Sarfraz}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=da7a593c759d4e2c74c25e4379e07f81}{Razzak}{R\bibinitperiod}{M.\bibnamedelimi F.\bibnamedelimi A.}{M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4957800eb0cccf296d7a1fd140540e24}
+      \strng{fullhash}{4957800eb0cccf296d7a1fd140540e24}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Technical section: {An} algorithm for automatic capturing of the font outlines}
+      \field{annotation}{An \texttt{article} entry with an \texttt{issn} field}
+      \field{issn}{0097-8493}
+      \field{journaltitle}{Computers and Graphics}
+      \field{number}{5}
+      \field{title}{Technical section: {An} algorithm for automatic capturing of the font outlines}
+      \field{volume}{26}
+      \field{year}{2002}
+      \field{pages}{795\bibrangedash 804}
+    \endentry
+    \entry{shore}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=93f17724cbd884231ef39a73755ef5bb}{Shore}{S\bibinitperiod}{Bradd}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=93f17724cbd884231ef39a73755ef5bb}{Shore}{S\bibinitperiod}{Bradd}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{93f17724cbd884231ef39a73755ef5bb}
+      \strng{fullhash}{93f17724cbd884231ef39a73755ef5bb}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labelyear}{1991}
+      \field{labelmonth}{03}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Twice-Born, Once Conceived}
+      \field{annotation}{An \texttt{article} entry with \texttt{series}, \texttt{volume}, and \texttt{number} fields. Note the format of the \texttt{series} which is a localization key}
+      \field{journaltitle}{American Anthropologist}
+      \field{month}{03}
+      \field{number}{1}
+      \field{series}{newseries}
+      \field{subtitle}{Meaning Construction and Cultural Cognition}
+      \field{title}{Twice-Born, Once Conceived}
+      \field{volume}{93}
+      \field{year}{1991}
+      \field{pages}{9\bibrangedash 27}
+    \endentry
+    \entry{sigfridsson}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=484061f383fb3b729627e12ab42c1963}{Sigfridsson}{S\bibinitperiod}{Emma}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b7e299b632e5db12681c2decc8ce023f}{Ryde}{R\bibinitperiod}{Ulf}{U\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=484061f383fb3b729627e12ab42c1963}{Sigfridsson}{S\bibinitperiod}{Emma}{E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b7e299b632e5db12681c2decc8ce023f}{Ryde}{R\bibinitperiod}{Ulf}{U\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d9015d9f08448ab0cb194bd964d7b44b}
+      \strng{fullhash}{d9015d9f08448ab0cb194bd964d7b44b}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Comparison of methods for deriving atomic charges from the electrostatic potential and moments}
+      \field{abstract}{Four methods for deriving partial atomic charges from the quantum chemical electrostatic potential (CHELP, CHELPG, Merz-Kollman, and RESP) have been compared and critically evaluated. It is shown that charges strongly depend on how and where the potential points are selected. Two alternative methods are suggested to avoid the arbitrariness in the point-selection schemes and van der Waals exclusion radii: CHELP-BOW, which also estimates the charges from the electrostatic potential, but with potential points that are Boltzmann-weighted after their occurrence in actual simulations using the energy function of the program in which the charges will be used, and CHELMO, which estimates the charges directly from the electrostatic multipole moments. Different criteria for the quality of the charges are discussed.}
+      \field{annotation}{An \texttt{article} entry with \texttt{volume}, \texttt{number}, and \texttt{doi} fields. Note that the \textsc{doi} is transformed into a clickable link if \texttt{hyperref} support has been enabled}
+      \field{indextitle}{Methods for deriving atomic charges}
+      \field{journaltitle}{Journal of Computational Chemistry}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{number}{4}
+      \field{title}{Comparison of methods for deriving atomic charges from the electrostatic potential and moments}
+      \field{volume}{19}
+      \field{year}{1998}
+      \field{pages}{377\bibrangedash 395}
+      \verb{doi}
+      \verb 10.1002/(SICI)1096-987X(199803)19:4<377::AID-JCC1>3.0.CO;2-P
+      \endverb
+    \endentry
+    \entry{sorace}{patent}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=d9cc4e4a238277ac7f5651ad4e31f67a}{Sorace}{S\bibinitperiod}{Ronald\bibnamedelima E.}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a22d17cf81c75b9b9d5bdd5a2e012e89}{Reinhardt}{R\bibinitperiod}{Victor\bibnamedelima S.}{V\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b4af269983b89b3ab4e157d6525dc122}{Vaughn}{V\bibinitperiod}{Steven\bibnamedelima A.}{S\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=d9cc4e4a238277ac7f5651ad4e31f67a}{Sorace}{S\bibinitperiod}{Ronald\bibnamedelima E.}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a22d17cf81c75b9b9d5bdd5a2e012e89}{Reinhardt}{R\bibinitperiod}{Victor\bibnamedelima S.}{V\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b4af269983b89b3ab4e157d6525dc122}{Vaughn}{V\bibinitperiod}{Steven\bibnamedelima A.}{S\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{holder}{1}{}{%
+        {{hash=3a74d100d8ccfe41c28888cd44714d77}{{Hughes\bibnamedelimb Aircraft\bibnamedelimb Company}}{H\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{66868835802280c03559c468f715de00}
+      \strng{fullhash}{98393f41b534afa96933af81fe26a240}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labelyear}{1997}
+      \field{labelmonth}{09}
+      \field{labelday}{16}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{High-Speed Digital-to-RF Converter}
+      \field{annotation}{This is a \texttt{patent} entry with a \texttt{holder} field. Note the format of the \texttt{type} and \texttt{date} fields in the database file. Compare \texttt{almendro}, \texttt{laufenberg}, and \texttt{kowalik}}
+      \field{day}{16}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{month}{09}
+      \field{number}{5668842}
+      \field{title}{High-Speed Digital-to-RF Converter}
+      \field{type}{patentus}
+      \field{year}{1997}
+    \endentry
+    \entry{spiegelberg}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=67164e704021f81da210f2639633677a}{Spiegelberg}{S\bibinitperiod}{Herbert}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=67164e704021f81da210f2639633677a}{Spiegelberg}{S\bibinitperiod}{Herbert}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{67164e704021f81da210f2639633677a}
+      \strng{fullhash}{67164e704021f81da210f2639633677a}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labelyear}{1969}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Intention und Intentionalit{ä}t}
+      \field{annotation}{An \texttt{article} entry. Note the \texttt{sorttitle} and \texttt{indexsorttitle} fields and the markup of the quotes in the database file}
+      \field{indexsorttitle}{Intention und Intentionalitat in der Scholastik, bei Brentano und Husserl}
+      \field{journaltitle}{Studia Philosophica}
+      \field{langid}{german}
+      \field{shorttitle}{Intention und Intentionalit{ä}t}
+      \field{title}{\mkbibquote{Intention} und \mkbibquote{Intentionalit{ä}t} in der Scholastik, bei Brentano und Husserl}
+      \field{volume}{29}
+      \field{year}{1969}
+      \field{pages}{189\bibrangedash 216}
+    \endentry
+    \entry{springer}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=e6ea97cef4d3bf1e5b7fbeacecdaf6e2}{Springer}{S\bibinitperiod}{Otto}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e6ea97cef4d3bf1e5b7fbeacecdaf6e2}{Springer}{S\bibinitperiod}{Otto}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e6ea97cef4d3bf1e5b7fbeacecdaf6e2}
+      \strng{fullhash}{e6ea97cef4d3bf1e5b7fbeacecdaf6e2}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labelyear}{1950}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Mediaeval Pilgrim Routes}
+      \field{annotation}{A plain \texttt{article} entry}
+      \field{journaltitle}{Mediaeval Studies}
+      \field{langid}{english}
+      \field{langidopts}{variant=british}
+      \field{shorttitle}{Mediaeval Pilgrim Routes}
+      \field{title}{Mediaeval Pilgrim Routes from Scandinavia to Rome}
+      \field{volume}{12}
+      \field{year}{1950}
+      \field{pages}{92\bibrangedash 122}
+    \endentry
+    \entry{vangennep}{book}{useprefix}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=ca1b550e12da4bc31b72f223a635da02}{Gennep}{G\bibinitperiod}{Arnold}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ca1b550e12da4bc31b72f223a635da02}{Gennep}{G\bibinitperiod}{Arnold}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {Nourry}%
+      }
+      \strng{namehash}{ca1b550e12da4bc31b72f223a635da02}
+      \strng{fullhash}{ca1b550e12da4bc31b72f223a635da02}
+      \field{sortinit}{v}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{extrayear}{1}
+      \field{labelyear}{1909}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Rites de passage}
+      \field{annotation}{A \texttt{book} entry. Note the format of the printed name and compare the \texttt{useprefix} option in the \texttt{options} field as well as \texttt{brandt} and \texttt{geer}}
+      \field{indextitle}{Rites de passage, Les}
+      \field{langid}{french}
+      \field{shorttitle}{Rites de passage}
+      \field{title}{Les rites de passage}
+      \field{year}{1909}
+    \endentry
+    \entry{vangennep:related}{book}{useprefix}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=ca1b550e12da4bc31b72f223a635da02}{Gennep}{G\bibinitperiod}{Arnold}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ca1b550e12da4bc31b72f223a635da02}{Gennep}{G\bibinitperiod}{Arnold}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {Nourry}%
+      }
+      \strng{namehash}{ca1b550e12da4bc31b72f223a635da02}
+      \strng{fullhash}{ca1b550e12da4bc31b72f223a635da02}
+      \field{sortinit}{v}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{extrayear}{2}
+      \field{labelyear}{1909}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Rites de passage}
+      \field{annotation}{A variant of the \texttt{vangennep} entry related to its translation. Note the format of the \texttt{related} and \texttt{relatedtype} fields}
+      \field{indextitle}{Rites de passage, Les}
+      \field{langid}{french}
+      \field{relatedtype}{bytranslator}
+      \field{shorttitle}{Rites de passage}
+      \field{title}{Les rites de passage}
+      \field{year}{1909}
+      \field{related}{be4997a317b29ab58b939e0004088d04}
+    \endentry
+    \entry{fe9c98794cc735d4f8147ad6e9af7e7f}{book}{dataonly}
+      \name{labelname}{1}{}{%
+        {{hash=ca1b550e12da4bc31b72f223a635da02}{Gennep}{G\bibinitperiod}{Arnold}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=ca1b550e12da4bc31b72f223a635da02}{Gennep}{G\bibinitperiod}{Arnold}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {Nourry}%
+      }
+      \strng{namehash}{ca1b550e12da4bc31b72f223a635da02}
+      \strng{fullhash}{ca1b550e12da4bc31b72f223a635da02}
+      \field{sortinit}{v}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{labeltitle}{Rites de passage}
+      \field{clonesourcekey}{vangennep}
+      \field{annotation}{A \texttt{book} entry. Note the format of the printed name and compare the \texttt{useprefix} option in the \texttt{options} field as well as \texttt{brandt} and \texttt{geer}}
+      \field{indextitle}{Rites de passage, Les}
+      \field{langid}{french}
+      \field{shorttitle}{Rites de passage}
+      \field{title}{Les rites de passage}
+      \field{year}{1909}
+    \endentry
+    \entry{vangennep:trans}{book}{useprefix}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=ca1b550e12da4bc31b72f223a635da02}{Gennep}{G\bibinitperiod}{Arnold}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=ca1b550e12da4bc31b72f223a635da02}{Gennep}{G\bibinitperiod}{Arnold}{A\bibinitperiod}{van}{v\bibinitperiod}{}{}}%
+      }
+      \name{translator}{2}{}{%
+        {{hash=d80b8978244f13cbf93c2006784cac43}{Vizedom}{V\bibinitperiod}{Monika\bibnamedelima B.}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=98eabdcd966dc7a19d0e3239cc99381f}{Caffee}{C\bibinitperiod}{Gabrielle\bibnamedelima L.}{G\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{ca1b550e12da4bc31b72f223a635da02}
+      \strng{fullhash}{ca1b550e12da4bc31b72f223a635da02}
+      \field{sortinit}{v}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{labelyear}{1960}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Rites of Passage}
+      \field{annotation}{A translation of the \texttt{vangennep} entry. Note the \texttt{translator} and \texttt{origlanguage} fields. Compare with the \texttt{vangennep:related} entry.}
+      \field{indextitle}{Rites of Passage, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{origlanguage}{french}
+      \field{shorttitle}{Rites of Passage}
+      \field{title}{The Rites of Passage}
+      \field{year}{1960}
+    \endentry
+    \entry{vazques-de-parga}{book}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=9caaaea500894b66f133f12758af3cb4}{V{á}zques{\bibnamedelimb de\bibnamedelimb }Parga}{V\bibinitperiod}{Luis}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7a8ed79d152f0015311ef91f5474668b}{Lacarra}{L\bibinitperiod}{Jos{é}\bibnamedelima Mar{í}a}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d5707c29f7352fdf71a59a61d2f6cdb8}{Ur{í}a\bibnamedelima R{í}u}{U\bibinitperiod\bibinitdelim R\bibinitperiod}{Juan}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=9caaaea500894b66f133f12758af3cb4}{V{á}zques{\bibnamedelimb de\bibnamedelimb }Parga}{V\bibinitperiod}{Luis}{L\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=7a8ed79d152f0015311ef91f5474668b}{Lacarra}{L\bibinitperiod}{Jos{é}\bibnamedelima Mar{í}a}{J\bibinitperiod\bibinitdelim M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d5707c29f7352fdf71a59a61d2f6cdb8}{Ur{í}a\bibnamedelima R{í}u}{U\bibinitperiod\bibinitdelim R\bibinitperiod}{Juan}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Pamplona}%
+      }
+      \list{publisher}{1}{%
+        {Iberdrola}%
+      }
+      \strng{namehash}{06006b07efbba2e2f68b69ddfd23a21e}
+      \strng{fullhash}{2451a9d10b4c7a718130ba5097e40e09}
+      \field{sortinit}{V}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Peregrinaciones}
+      \field{annotation}{A multivolume book cited as a whole. This is a \texttt{book} entry with \texttt{volumes}, \texttt{note}, \texttt{sorttitle}, and \texttt{indextitle} fields}
+      \field{indextitle}{Peregrinaciones a Santiago de Compostela, Las}
+      \field{langid}{spanish}
+      \field{note}{Ed. facs. de la realizada en 1948--49}
+      \field{shorttitle}{Peregrinaciones}
+      \field{title}{Las Peregrinaciones a Santiago de Compostela}
+      \field{volumes}{3}
+      \field{year}{1993}
+    \endentry
+    \entry{vizedom:related}{book}{usetranslator}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=d80b8978244f13cbf93c2006784cac43}{Vizedom}{V\bibinitperiod}{Monika\bibnamedelima B.}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=98eabdcd966dc7a19d0e3239cc99381f}{Caffee}{C\bibinitperiod}{Gabrielle\bibnamedelima L.}{G\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{2}{}{%
+        {{uniquename=0,hash=d80b8978244f13cbf93c2006784cac43}{Vizedom}{V\bibinitperiod}{Monika\bibnamedelima B.}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=98eabdcd966dc7a19d0e3239cc99381f}{Caffee}{C\bibinitperiod}{Gabrielle\bibnamedelima L.}{G\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{7a3c612fcaf35738516fecef8e880fd0}
+      \strng{fullhash}{7a3c612fcaf35738516fecef8e880fd0}
+      \field{sortinit}{V}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{labelyear}{1960}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Rites of Passage}
+      \field{annotation}{A translated work from \texttt{vangennep}. Note the format of the \texttt{related} and \texttt{relatedtype} fields}
+      \field{indextitle}{Rites of Passage, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{relatedtype}{translationof}
+      \field{shorttitle}{Rites of Passage}
+      \field{title}{The Rites of Passage}
+      \field{year}{1960}
+      \field{related}{fe9c98794cc735d4f8147ad6e9af7e7f}
+    \endentry
+    \entry{be4997a317b29ab58b939e0004088d04}{book}{dataonly}
+      \name{labelname}{2}{}{%
+        {{hash=d80b8978244f13cbf93c2006784cac43}{Vizedom}{V\bibinitperiod}{Monika\bibnamedelima B.}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=98eabdcd966dc7a19d0e3239cc99381f}{Caffee}{C\bibinitperiod}{Gabrielle\bibnamedelima L.}{G\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{translator}{2}{}{%
+        {{hash=d80b8978244f13cbf93c2006784cac43}{Vizedom}{V\bibinitperiod}{Monika\bibnamedelima B.}{M\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=98eabdcd966dc7a19d0e3239cc99381f}{Caffee}{C\bibinitperiod}{Gabrielle\bibnamedelima L.}{G\bibinitperiod\bibinitdelim L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{7a3c612fcaf35738516fecef8e880fd0}
+      \strng{fullhash}{7a3c612fcaf35738516fecef8e880fd0}
+      \field{sortinit}{V}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{labeltitle}{Rites of Passage}
+      \field{clonesourcekey}{vizedom:related}
+      \field{annotation}{A translated work from \texttt{vangennep}. Note the format of the \texttt{related} and \texttt{relatedtype} fields}
+      \field{indextitle}{Rites of Passage, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{relatedtype}{translationof}
+      \field{shorttitle}{Rites of Passage}
+      \field{title}{The Rites of Passage}
+      \field{year}{1960}
+      \field{related}{fe9c98794cc735d4f8147ad6e9af7e7f}
+    \endentry
+    \entry{wassenberg}{online}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=00ec2d6f96e977422cec21a17ee67242}{Wassenberg}{W\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=be6c7f12620ef1a8d1d85d96d476a158}{Sanders}{S\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=00ec2d6f96e977422cec21a17ee67242}{Wassenberg}{W\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=be6c7f12620ef1a8d1d85d96d476a158}{Sanders}{S\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8e9b50053ae4672e9d4ff841341a8b7}
+      \strng{fullhash}{b8e9b50053ae4672e9d4ff841341a8b7}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{labelyear}{2010}
+      \field{labelmonth}{08}
+      \field{labelday}{17}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Faster Radix Sort via Virtual Memory and Write-Combining}
+      \field{abstract}{Sorting algorithms are the deciding factor for the performance of common operations such as removal of duplicates or database sort-merge joins. This work focuses on 32-bit integer keys, optionally paired with a 32-bit value. We present a fast radix sorting algorithm that builds upon a microarchitecture-aware variant of counting sort}
+      \field{annotation}{A recent \texttt{online} reference from arXiv using the new (April 2007 onward) identifier format. Note the \texttt{eprint}, \texttt{eprinttype}, and \texttt{eprintclass} fields. Also note that the arXiv reference is transformed into a clickable link if \texttt{hyperref} support has been enabled}
+      \field{day}{17}
+      \field{eprintclass}{cs.DS}
+      \field{eprinttype}{arxiv}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{month}{08}
+      \field{title}{Faster Radix Sort via Virtual Memory and Write-Combining}
+      \field{version}{1}
+      \field{year}{2010}
+      \verb{eprint}
+      \verb 1008.2849v1
+      \endverb
+    \endentry
+    \entry{weinberg}{article}{}
+      \inset{stdmodel}
+      \name{labelname}{1}{}{%
+        {{hash=15e144c72b0b9d10db00ddc6d37a19e6}{Weinberg}{W\bibinitperiod}{Steven}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=15e144c72b0b9d10db00ddc6d37a19e6}{Weinberg}{W\bibinitperiod}{Steven}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{fullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{labeltitle}{A Model of Leptons}
+      \field{journaltitle}{Phys.~Rev.~Lett.}
+      \field{title}{A Model of Leptons}
+      \field{volume}{19}
+      \field{year}{1967}
+      \field{pages}{1264\bibrangedash 1266}
+    \endentry
+    \entry{westfahl:frontier}{collection}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=dd4c0e40628e106b641ac3b9ce2e8b18}{Westfahl}{W\bibinitperiod}{Gary}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{uniquename=0,hash=dd4c0e40628e106b641ac3b9ce2e8b18}{Westfahl}{W\bibinitperiod}{Gary}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{2}{%
+        {Westport, Conn.}%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Greenwood}%
+      }
+      \strng{namehash}{dd4c0e40628e106b641ac3b9ce2e8b18}
+      \strng{fullhash}{dd4c0e40628e106b641ac3b9ce2e8b18}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{extrayear}{1}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Space and Beyond}
+      \field{annotation}{This is a \texttt{collection} entry. Note the format of the \texttt{location} field as well as the \texttt{subtitle} and \texttt{booksubtitle} fields}
+      \field{booksubtitle}{The Frontier Theme in Science Fiction}
+      \field{booktitle}{Space and Beyond}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{subtitle}{The Frontier Theme in Science Fiction}
+      \field{title}{Space and Beyond}
+      \field{year}{2000}
+    \endentry
+    \entry{westfahl:space}{incollection}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=dd4c0e40628e106b641ac3b9ce2e8b18}{Westfahl}{W\bibinitperiod}{Gary}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=dd4c0e40628e106b641ac3b9ce2e8b18}{Westfahl}{W\bibinitperiod}{Gary}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{uniquename=0,hash=dd4c0e40628e106b641ac3b9ce2e8b18}{Westfahl}{W\bibinitperiod}{Gary}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{2}{%
+        {Westport, Conn.}%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Greenwood}%
+      }
+      \strng{namehash}{dd4c0e40628e106b641ac3b9ce2e8b18}
+      \strng{fullhash}{dd4c0e40628e106b641ac3b9ce2e8b18}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{extrayear}{2}
+      \field{labelyear}{2000}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{The True Frontier}
+      \field{annotation}{A cross-referenced article from a \texttt{collection}. This is an \texttt{incollection} entry with a \texttt{crossref} field. Note the \texttt{subtitle} and \texttt{indextitle} fields}
+      \field{booksubtitle}{The Frontier Theme in Science Fiction}
+      \field{booktitle}{Space and Beyond}
+      \strng{crossref}{westfahl:frontier}
+      \field{indextitle}{True Frontier, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{subtitle}{Confronting and Avoiding the Realities of Space in American Science Fiction Films}
+      \field{title}{The True Frontier}
+      \field{year}{2000}
+      \field{pages}{55\bibrangedash 65}
+    \endentry
+    \entry{wilde}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=068b52ec919d1d2dd18d7f9d15ae7bf3}{Wilde}{W\bibinitperiod}{Oscar}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=068b52ec919d1d2dd18d7f9d15ae7bf3}{Wilde}{W\bibinitperiod}{Oscar}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Leonard Smithers {and} Company}%
+      }
+      \strng{namehash}{068b52ec919d1d2dd18d7f9d15ae7bf3}
+      \strng{fullhash}{068b52ec919d1d2dd18d7f9d15ae7bf3}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{labelyear}{1899}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{The Importance of Being Earnest: A Trivial Comedy for Serious People}
+      \field{annotation}{A \texttt{book} with \texttt{eprint} and \texttt{eprinttype} fields.}
+      \field{eprinttype}{googlebooks}
+      \field{series}{English and American drama of the Nineteenth Century}
+      \field{title}{The Importance of Being Earnest: A Trivial Comedy for Serious People}
+      \field{year}{1899}
+      \verb{eprint}
+      \verb 4HIWAAAAYAAJ
+      \endverb
+    \endentry
+    \entry{worman}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=045c9cb614b0ed4bfdd1e37d400e2a7b}{Worman}{W\bibinitperiod}{Nancy}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=045c9cb614b0ed4bfdd1e37d400e2a7b}{Worman}{W\bibinitperiod}{Nancy}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Austin}%
+      }
+      \list{publisher}{1}{%
+        {University of Texas Press}%
+      }
+      \strng{namehash}{045c9cb614b0ed4bfdd1e37d400e2a7b}
+      \strng{fullhash}{045c9cb614b0ed4bfdd1e37d400e2a7b}
+      \field{sortinit}{W}
+      \field{sortinithash}{e560dae78a85a037c3da51c61467873a}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{Cast of Character}
+      \field{annotation}{A \texttt{book} entry. Note the \texttt{sorttitle} and \texttt{indextitle} fields}
+      \field{indextitle}{Cast of Character, The}
+      \field{langid}{english}
+      \field{langidopts}{variant=american}
+      \field{shorttitle}{Cast of Character}
+      \field{subtitle}{Style in Greek Literature}
+      \field{title}{The Cast of Character}
+      \field{year}{2002}
+    \endentry
+    \entry{yoon}{article}{}
+      \inset{set}
+      \name{labelname}{4}{}{%
+        {{hash=1cd180a384beaec90556c707792a915d}{Yoon}{Y\bibinitperiod}{Myeong\bibnamedelima S.}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=950fd963e3bfbd49bd0d9f642eff35e2}{Ryu}{R\bibinitperiod}{Dowook}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=71fd64c0a1c4671289f011f4348fa0fa}{Kim}{K\bibinitperiod}{Jeongryul}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=059700d26c0e03f45adb6fd658ae7a9d}{Ahn}{A\bibinitperiod}{Kyo\bibnamedelima Han}{K\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=1cd180a384beaec90556c707792a915d}{Yoon}{Y\bibinitperiod}{Myeong\bibnamedelima S.}{M\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+        {{hash=950fd963e3bfbd49bd0d9f642eff35e2}{Ryu}{R\bibinitperiod}{Dowook}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=71fd64c0a1c4671289f011f4348fa0fa}{Kim}{K\bibinitperiod}{Jeongryul}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=059700d26c0e03f45adb6fd658ae7a9d}{Ahn}{A\bibinitperiod}{Kyo\bibnamedelima Han}{K\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{101d6ef5382cb69cc6631845cb80b10d}
+      \strng{fullhash}{6841672715c8a110839132ca8aa597a4}
+      \field{sortinit}{Y}
+      \field{sortinithash}{29d12db4e709b19996b4b797fbeec132}
+      \field{labeltitle}{Palladium pincer complexes with reduced bond angle strain: efficient catalysts for the Heck reaction}
+      \field{indextitle}{Palladium pincer complexes}
+      \field{journaltitle}{Organometallics}
+      \field{number}{10}
+      \field{title}{Palladium pincer complexes with reduced bond angle strain: efficient catalysts for the Heck reaction}
+      \field{volume}{25}
+      \field{year}{2006}
+      \field{pages}{2409\bibrangedash 2411}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

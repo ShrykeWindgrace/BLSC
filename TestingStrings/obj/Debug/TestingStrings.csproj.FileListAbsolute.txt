@@ -1,0 +1,21 @@
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\bin\Debug\TestingStrings.exe.config
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\bin\Debug\TestingStrings.exe
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\bin\Debug\TestingStrings.pdb
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\obj\Debug\TestingStrings.csprojResolveAssemblyReference.cache
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\obj\Debug\TestingStrings.Form1.resources
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\obj\Debug\TestingStrings.Properties.Resources.resources
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\obj\Debug\TestingStrings.csproj.GenerateResource.Cache
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\obj\Debug\TestingStrings.exe
+c:\users\ts\documents\visual studio 2013\Projects\TestingStrings\TestingStrings\obj\Debug\TestingStrings.pdb
+C:\Users\TS\Dropbox\BLSC\TestingStrings\TestingStrings\bin\Debug\TestingStrings.exe.config
+C:\Users\TS\Dropbox\BLSC\TestingStrings\TestingStrings\obj\Debug\TestingStrings.exe
+C:\Users\TS\Dropbox\BLSC\TestingStrings\TestingStrings\obj\Debug\TestingStrings.pdb
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\bin\Debug\TestingStrings.exe.config
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\obj\Debug\TestingStrings.exe
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\obj\Debug\TestingStrings.pdb
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\obj\Debug\TestingStrings.csprojResolveAssemblyReference.cache
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\obj\Debug\TestingStrings.Form1.resources
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\obj\Debug\TestingStrings.Properties.Resources.resources
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\obj\Debug\TestingStrings.csproj.GenerateResource.Cache
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\bin\Debug\TestingStrings.exe
+C:\Users\TZ\Dropbox\BLSC\TestingStrings\TestingStrings\bin\Debug\TestingStrings.pdb

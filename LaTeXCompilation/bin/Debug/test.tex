@@ -1,0 +1,19 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[
+    backend=biber,
+    style=testStyle,
+    defernumbers=true,
+    %firstinits=true,
+    %natbib=true,
+    %url=false, 
+    %doi=true,
+    %eprint=false
+]{biblatex}
+\addbibresource{biblatex-example.bib}
+\begin{document}
+This is a test file for biber/biblatex combo. Quote \cite{pines} and \cite{loh}.
+	\nocite{*}
+	\printbibliography
+[type=book]
+\end{document}
