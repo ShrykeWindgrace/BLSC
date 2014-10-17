@@ -8,6 +8,7 @@ using LaTeXCompilation;
 
 namespace DrangDrop
 {
+    public enum EType {article=0, book =1 };
     class Entry
     {
         public List<Field> fields;
