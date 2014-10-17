@@ -20,13 +20,17 @@ namespace DrangDrop
         }
         public override string ToString(){
             switch (etype)
-            case EEType.article:
-
-            return "article";
-            case EEType.book:
-            return "book";
-            default:
-            return "article1";
+            {
+                case EEType.article:
+                    return "article";
+                    //break;
+                case EEType.book:
+                    return "book";
+                    //break;
+                default:
+                    return "error";
+                    //break;
+            }
         }
 
     }
@@ -34,7 +38,13 @@ namespace DrangDrop
     {
         public List<Field> fields;
         public bool changedFlag;
-
+        public EType etype;
+        public Entry()
+        {
+            etype = new EType();
+            changedFlag = false;
+            fields = new List<Field>();
+        }
 
         public void resetDefault() { }//this will reset the order of elements to default; also it will strike down the flag "changedFlag"
         public void exportToControlStrings(string FieldFormats, string FieldOrder)

@@ -7,3 +7,12 @@ C:\Users\TZ\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilat
 C:\Users\TZ\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.exe
 C:\Users\TZ\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.pdb
 C:\Users\TZ\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.csprojResolveAssemblyReference.cache
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\bin\Debug\LaTeXCompilation.exe.config
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\bin\Debug\LaTeXCompilation.exe
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\bin\Debug\LaTeXCompilation.pdb
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.csprojResolveAssemblyReference.cache
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.Form1.resources
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.Properties.Resources.resources
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.csproj.GenerateResource.Cache
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.exe
+C:\Users\Timofey\Dropbox\BLSC\TestingStrings\LaTeXCompilation\obj\Debug\LaTeXCompilation.pdb
