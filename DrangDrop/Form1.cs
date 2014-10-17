@@ -36,7 +36,7 @@ namespace DrangDrop
         {
             InitializeComponent();
         }
-
+//user control events
         private void button1_MouseDown(object sender, MouseEventArgs e)
         {
             button1.DoDragDrop(button1.Text, DragDropEffects.Copy | DragDropEffects.Move);
@@ -81,13 +81,6 @@ namespace DrangDrop
             field = new Field();
             ABox = new AboutBox1();
 
-        }
-        static public void SerializeToXML(Field field)
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(Field));
-            TextWriter textWriter = new StreamWriter(@field.type + ".xml");
-            serializer.Serialize(textWriter, field);
-            textWriter.Close();
         }
 
         public void button2_Click(object sender, EventArgs e)//test serialisation
@@ -166,6 +159,28 @@ namespace DrangDrop
             }//Здесь мы научились писать и читать xml с данными о размётке
 
         }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in plist[1].Controls)
+            {
+                textBox2.Text += c.Name;
+            }
+        }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            appendPanel();
+        }
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("This is the Biblatex Style creator software, v0.0.0.1\r\n © Timofey Zakrevskiy, 2014","About" , MessageBoxButtons.OK);
+            ABox.Show();
+        }
+
+        private void quitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
 
         private FontStyle clbtoFS(CheckedListBox clb)
         {
@@ -181,6 +196,7 @@ namespace DrangDrop
             return fs;
 
         }
+
         private void FStoCBindex(CheckedListBox clb, FontStyle fs)
         {
 
@@ -203,11 +219,15 @@ namespace DrangDrop
 
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        static public void SerializeToXML(Field field)
         {
-
-            appendPanel();
+            XmlSerializer serializer = new XmlSerializer(typeof(Field));
+            TextWriter textWriter = new StreamWriter(@field.type + ".xml");
+            serializer.Serialize(textWriter, field);
+            textWriter.Close();
         }
+
+//panel works
         private void removePanel(int i)
         {
             //plist[i].Controls.Remove(order[i]);
@@ -231,10 +251,12 @@ namespace DrangDrop
             //I wonder what happens with those poor objects. Does the garbage collector kicks in?
 
         }
+
         private void relocatePanels()
         {
             relocatePanelsIndex(0);
         }
+
         private void relocatePanelsIndex(int index)
         {
 
@@ -245,15 +267,17 @@ namespace DrangDrop
             }
 
         }
-        private void removePanelBtn(object sender, EventArgs e)
+
+        private void appendPanel()
         {
-            //int i = ((Button)sender).Parent.
-            //int index = clBtn.Where<Button>( x => return x  ==(sender as Button); ).Select<Button,int>( x => clBtn.IndexOf(x)).Single<int>();
-            int i = plist.IndexOf((Panel)(((Button)sender).Parent));
-            removePanel(i);
+            int i = plist.Count;
+            plist.Add(new Panel());
+            populatePanel(plist[i - 1]);
+            buttonPlus.Parent = plist[i];
+            this.Controls.Add(plist[i]);
+            relocatePanels();
         }
-
-
+//populate panels
         private void populatePanel(Panel panel)
         {
             panel.BackColor = Color.BurlyWood;
@@ -311,18 +335,6 @@ namespace DrangDrop
             btn.Click += new EventHandler(insertPanelBtn);
         }
 
-        private void insertPanelBtn(object sender, EventArgs e)
-        {
-            //throw new NotImplementedException();
-            int i = plist.IndexOf((Panel)(((Button)sender).Parent))+1;
-            Panel p = new Panel();
-            populatePanel(p);
-            plist.Insert(i, p);
-            p.Visible = false;
-            this.Controls.Add(p);
-            relocatePanels();
-            p.Visible = true;
-        }
 
         private void populateXBtn(Button btn)
         {
@@ -366,15 +378,26 @@ namespace DrangDrop
                 cb.Width = 50;
             }
         }
-        private void appendPanel()
-        {
-            int i = plist.Count;
-            plist.Add(new Panel());
-            populatePanel(plist[i - 1]);
-            buttonPlus.Parent = plist[i];
-            this.Controls.Add(plist[i]);
+        private void insertPanelBtn(object sender, EventArgs e)
+        {//Onclick event for insert buttons of panels
+            //throw new NotImplementedException();
+            int i = plist.IndexOf((Panel)(((Button)sender).Parent)) + 1;
+            Panel p = new Panel();
+            populatePanel(p);
+            plist.Insert(i, p);
+            p.Visible = false;
+            this.Controls.Add(p);
             relocatePanels();
+            p.Visible = true;
         }
+        private void removePanelBtn(object sender, EventArgs e)
+        {//onclick event for remove buttons on panels
+            //int i = ((Button)sender).Parent.
+            //int index = clBtn.Where<Button>( x => return x  ==(sender as Button); ).Select<Button,int>( x => clBtn.IndexOf(x)).Single<int>();
+            int i = plist.IndexOf((Panel)(((Button)sender).Parent));
+            removePanel(i);
+        }
+
         public Field PanelToField(Panel p)
         {
             Field f = new Field();
@@ -382,8 +405,9 @@ namespace DrangDrop
 
             foreach (Control c in p.Controls)
             {
-                if (c.Name.StartsWith("ComboBoxO")){
-                    f.type=(c as ComboBox).Text;
+                if (c.Name.StartsWith("ComboBoxO"))
+                {
+                    f.type = (c as ComboBox).Text;
                 }
                 if (c.Name.StartsWith("ComboBoxP"))
                 {
@@ -407,24 +431,7 @@ namespace DrangDrop
             //    SerializeToXML(field);
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            foreach (Control c in plist[1].Controls)
-            {
-                textBox2.Text += c.Name;
-            }
-        }
 
-        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show("This is the Biblatex Style creator software, v0.0.0.1\r\n © Timofey Zakrevskiy, 2014","About" , MessageBoxButtons.OK);
-            ABox.Show();
-        }
-
-        private void quitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
 
 
