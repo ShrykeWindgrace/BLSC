@@ -10,10 +10,11 @@ using System.Xml.Serialization;
 namespace DrangDrop
 {
     public enum EPunct { space = 2, dot = 3, comma = 4, none = 5, commaspace = 0, dotspace = 1 };
+    //possible punctuation after blocks
 
     [Serializable]
     public class Punct
-    {
+    {//a class that allows to export possible styles in different formats
         public EPunct p;
         public Punct()
         {
@@ -23,7 +24,7 @@ namespace DrangDrop
         {
             p = punct;
         }
-        public string ToCommandString()
+        public string ToCommandString()//exporting to biblatex macro commands
         {
             switch (p)
             {
@@ -48,7 +49,7 @@ namespace DrangDrop
                 //break;
             }
         }
-        public string ToComboString()
+        public string ToComboString()//export to populate  combobox strings
         {
             switch (p)
             {
@@ -68,7 +69,7 @@ namespace DrangDrop
                     return "";
             }
         }
-        public override string ToString()
+        public override string ToString()//override for standard method.
         {
             switch (p)
             {
@@ -98,7 +99,7 @@ namespace DrangDrop
 
     [Serializable]
     public class Punctstyle
-    {
+    {//adding possible font styles to punctuation
 
         public Punct p;
 
@@ -119,7 +120,7 @@ namespace DrangDrop
             fs = FontStyle.Regular;
         }
         public string exportDBD()
-        {
+        {//this method sets a new unit and pushes new delimiter. cf. \setunit* documentation in biblatex.
             string temp = p.ToCommandString();
             temp = Embrace.embraceBibStyle(temp, fs, true);
 
@@ -128,11 +129,11 @@ namespace DrangDrop
 
 
     }
-    public enum Envelope { none = 0, parens = 1, quote = 2 };
+    public enum Envelope { none = 0, parens = 1, quote = 2 };//possible envelopes for a field
 
     [Serializable]
     public class Envelopestyle
-    {
+    {//adding possible font styles
         public Envelope env;
         public FontStyle fs;
         public Envelopestyle(Envelope e, FontStyle s)
@@ -188,7 +189,7 @@ namespace DrangDrop
             return type;
         }
         public string exportDFF()
-        {
+        {//exporting to declare field format. 
             if (!changed)
             {
                 return "%\r\n";
@@ -218,8 +219,9 @@ namespace DrangDrop
         }
 
         public string exportDBD()
-        {
-
+        {//export to bibliography drivers
+            //prone to modifications as not all field might have corresponding macros.
+            //need further studies of the standard styles
             return ps.exportDBD() + "\\usebibmacro{" + type + "}%\r\n";
         }
 
@@ -250,7 +252,7 @@ namespace DrangDrop
     }
 
     public class CBItem
-    {
+    {//a class to make comboboxes with punctuation possible
         //public CBItem() { }
         public CBItem(Punct p)
         {
@@ -272,7 +274,8 @@ namespace DrangDrop
     }
 
     class Embrace
-    {
+    {//a class that collect different typical string operations,
+        //like enveloping in different brackets/parenthesis
         public static string embraceBibQuote(string word, bool doit = false)
         {
 
