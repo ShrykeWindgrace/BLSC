@@ -104,7 +104,7 @@ namespace DrangDrop
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
     }
 }
