@@ -34,6 +34,7 @@ namespace DrangDrop
         }
 
     }
+    [Serializable]
     class Entry
     {
         public List<Field> fields;
@@ -46,11 +47,13 @@ namespace DrangDrop
             fields = new List<Field>();
         }
 
-        public void resetDefault() { }//this will reset the order of elements to default; also it will strike down the flag "changedFlag"
-        public void exportToControlStrings(string FieldFormats, string FieldOrder)
+        public void resetDefault() { changedFlag = false; }//this will reset the order of elements to default; also it will strike down the flag "changedFlag"
+        public Tuple<string,string> exportToControlStrings()
         {
             /*we will put all formatting and envelopes to "declare field formats"
              and try to move all punctuation and ordering to drivers*/
+            Tuple<string, string> t = new Tuple<string, string>("","");
+            //first string contains DFF and the second one contains DBD.
             if (changedFlag)
             {
                 foreach (Field field in fields)
@@ -60,7 +63,7 @@ namespace DrangDrop
 
             }//this will export all the formatting to the corresponding driver
             /*order of elements, punctuation, quotations...*/
-
+            return t;
 
         }
     }
