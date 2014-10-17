@@ -8,7 +8,28 @@ using LaTeXCompilation;
 
 namespace DrangDrop
 {
-    public enum EType {article=0, book =1 };
+    public enum EEType {article=0, book =1 };//entry enummerator. WIP
+    [Serializable]
+    public class EType{
+        public EEType etype;
+        public EType(){
+            etype = EEType.article;
+        }
+        public EType(EEType et){
+            etype=et;
+        }
+        public override string ToString(){
+            switch (etype)
+            case EEType.article:
+
+            return "article";
+            case EEType.book:
+            return "book";
+            default:
+            return "article1";
+        }
+
+    }
     class Entry
     {
         public List<Field> fields;
