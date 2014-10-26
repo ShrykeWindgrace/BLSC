@@ -62,7 +62,7 @@ namespace DrangDrop
             this.MinimizeBox = false;
             this.BackColor = Color.White;
             this.ForeColor = Color.Black;
-            // this.Size = new System.Drawing.Size(655, 265);
+            this.Size = new System.Drawing.Size(1200, 800);
             this.Text = "Test for XML and drag n drop  elements";
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -75,6 +75,9 @@ namespace DrangDrop
             plist = new List<Panel>();
             plist.Add(panel1);
             panel1.Location = new Point(15, ycoord);
+            panel1.Height = 100;
+            panel1.BackColor = Color.BurlyWood;
+            buttonPlus.Dock = DockStyle.Fill;
 
             // clBtn = new List<Button>();
 
@@ -274,6 +277,8 @@ namespace DrangDrop
             plist.Add(new Panel());
             populatePanel(plist[i - 1]);
             buttonPlus.Parent = plist[i];
+            plist[i].Height = 100;
+            buttonPlus.Dock = DockStyle.Fill;
             this.Controls.Add(plist[i]);
             relocatePanels();
         }
@@ -429,6 +434,11 @@ namespace DrangDrop
             //    field.fs = clbtoFS(ostyle[0]);
             //    field.ps.p = (punctuation[0].SelectedItem as CBItem).value;
             //    SerializeToXML(field);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
 

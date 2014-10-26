@@ -1,4 +1,4 @@
-﻿       using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -152,13 +152,13 @@ namespace DrangDrop
             switch (env)
             {
                 case Envelope.none:
-                    temp = word; 
+                    temp = word;
                     break;
                 case Envelope.quote:
-                    temp = Embrace.embraceBibQuote(word, true); 
+                    temp = Embrace.embraceBibQuote(word, true);
                     break;
                 case Envelope.parens:
-                    temp = Embrace.embraceBibParens(word, true); 
+                    temp = Embrace.embraceBibParens(word, true);
                     break;
                 default:
                     temp = word;
@@ -211,7 +211,7 @@ namespace DrangDrop
 
 
 
-                return StringWorks.insymb(temp2, '{') + "%\r\n";// тут надо сильно подумать, насколько мы позволим модифицировать стиль окружающих скобок
+                return StringWorks.insymb(type, '{') + StringWorks.insymb(temp2, '{')+"%\r\n";// тут надо сильно подумать, насколько мы позволим модифицировать стиль окружающих скобок
                 //пока вариант - наследовать или не наследовать стиль от самого текста. Надо проверить, что случится тогда с пустыми полями в скобках.
                 /*текущий подход: снаружи стиль скобок, скобки, потом стиль текста*/
                 //return temp + "\r\n";
@@ -221,7 +221,7 @@ namespace DrangDrop
         public string exportDBD()
         {//export to bibliography drivers
             //prone to modifications as not all field might have corresponding macros.
-            //need further studies of the standard styles
+            //need further studies of the standard styles and \iffieldundef conditions
             return ps.exportDBD() + "\\usebibmacro{" + type + "}%\r\n";
         }
 
