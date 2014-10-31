@@ -26,10 +26,10 @@ namespace DrangDrop
         public Field field;
         public AboutBox1 ABox;
 
-        public const int maxPanels = 5;
+        public const int maxPanels = 4;
         public const int vskip = 5;
         public const int hskip = 5;
-        public const int ycoord = 250;
+        public const int ycoord = 150;
         public int globalCounter = 100;
 
         public Form1()
@@ -62,7 +62,7 @@ namespace DrangDrop
             this.MinimizeBox = false;
             this.BackColor = Color.White;
             this.ForeColor = Color.Black;
-            this.Size = new System.Drawing.Size(1200, 800);
+            this.Size = new System.Drawing.Size(1000, 800);
             this.Text = "Test for XML and drag n drop  elements";
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.StartPosition = FormStartPosition.CenterScreen;
@@ -78,6 +78,40 @@ namespace DrangDrop
             panel1.Height = 100;
             panel1.BackColor = Color.BurlyWood;
             buttonPlus.Dock = DockStyle.Fill;
+
+            button1.Location = new Point(15, menuStrip1.Height+2);
+            textBox1.Location = new Point(button1.Location.X + button1.Width + 5, button1.Location.Y);
+           
+            buttonAddField.Location = new Point(button1.Location.X, button1.Location.Y + button1.Width + vskip);
+            buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
+                buttonAddField.Location.Y);
+            
+            ButtonTestOrderOnPanel.Location = new Point(this.ClientSize.Width - hskip - ButtonTestOrderOnPanel.Width, menuStrip1.Height + vskip);
+            textBox2.Width = ButtonTestOrderOnPanel.Width;
+            textBox2.Location = new Point(ButtonTestOrderOnPanel.Location.X,
+                ButtonTestOrderOnPanel.Location.Y + ButtonTestOrderOnPanel.Height + vskip);
+
+            var anc = AnchorStyles.Right | AnchorStyles.Top; 
+
+            textBox2.Anchor = anc;
+                //Point(this.ClientSize.Width - hskip - buttonTesttSerialisation.Width,
+                //ButtonTestOrderOnPanel.Location.Y+  ButtonTestOrderOnPanel.Height + vskip);
+            
+            buttonTesttSerialisation.Height = 24;
+            buttonTesttSerialisation.Location = new Point(this.ClientSize.Width - hskip - buttonTesttSerialisation.Width,
+                textBox2.Height+textBox2.Location.Y + vskip);
+            buttonTesttSerialisation.Anchor = anc;
+
+            buttonDeserialiseField.Location = new Point(this.ClientSize.Width - hskip - buttonDeserialiseField.Width,
+               buttonTesttSerialisation.Height + buttonTesttSerialisation.Location.Y+hskip);
+
+            buttonDeserialiseField.Anchor = anc;
+
+            buttonPopulateField.Location = new Point(-hskip - buttonPopulateField.Width + buttonDeserialiseField.Location.X,
+                buttonDeserialiseField.Location.Y);
+            buttonPopulateField.Anchor = anc;
+
+ 
 
             // clBtn = new List<Button>();
 
@@ -164,10 +198,14 @@ namespace DrangDrop
         }
         private void button7_Click(object sender, EventArgs e)
         {
-            foreach (Control c in plist[1].Controls)
+            if (plist.Count>=1)
             {
-                textBox2.Text += c.Name;
+                foreach (Control c in plist[0].Controls)
+                {
+                    textBox2.Text += c.Name;
+                }
             }
+            
         }
         private void button8_Click(object sender, EventArgs e)
         {
@@ -278,6 +316,7 @@ namespace DrangDrop
             populatePanel(plist[i - 1]);
             buttonPlus.Parent = plist[i];
             plist[i].Height = 100;
+            plist[i].Width = 224;
             buttonPlus.Dock = DockStyle.Fill;
             this.Controls.Add(plist[i]);
             relocatePanels();
