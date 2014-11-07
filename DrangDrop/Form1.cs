@@ -111,6 +111,15 @@ namespace DrangDrop
                 buttonDeserialiseField.Location.Y);
             buttonPopulateField.Anchor = anc;
 
+            buttonResetEntry.Width = 100;
+            buttonResetEntry.Height = buttonRemLastField.Height; 
+            buttonResetEntry.Location = new Point(buttonRemLastField.Location.X + buttonRemLastField.Width + hskip,
+                buttonRemLastField.Location.Y);
+
+            comboBoxEntrySelector.Location = new Point(buttonAddField.Location.X,
+                buttonAddField.Location.Y - vskip - comboBoxEntrySelector.Height);
+            comboBoxEntrySelector.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEntrySelector.Items.AddRange(Enum.GetNames(typeof(EEType)));
  
 
             // clBtn = new List<Button>();
@@ -205,6 +214,7 @@ namespace DrangDrop
                     textBox2.Text += c.Name;
                 }
             }
+            //resetPanels();
             
         }
         private void button8_Click(object sender, EventArgs e)
@@ -292,6 +302,13 @@ namespace DrangDrop
             //I wonder what happens with those poor objects. Does the garbage collector kicks in?
 
         }
+        private void resetPanels()
+        {
+            while (plist.Count > 1)
+            {
+                removePanel(0);
+            }
+        }
 
         private void relocatePanels()
         {
@@ -320,6 +337,44 @@ namespace DrangDrop
             buttonPlus.Dock = DockStyle.Fill;
             this.Controls.Add(plist[i]);
             relocatePanels();
+        }
+        private void EntryToPanels(Entry e)
+        {
+            resetPanels();
+            foreach (var field in e.fields)
+            {
+                //appendPanel();
+                FieldToLastPanel(field);
+            }
+        }
+
+        private void FieldToLastPanel(Field field)
+        {
+            //throw new NotImplementedException();
+            appendPanel();
+            int i = plist.Count - 1;
+            foreach (Control c in plist[i].Controls)
+            {
+                if (c.Name.StartsWith("ComboBoxO"))
+                {
+                    //f.type = (c as ComboBox).Text;
+                    (c as ComboBox).SelectedIndex = (c as ComboBox).FindStringExact(field.ToString());
+                }
+                if (c.Name.StartsWith("ComboBoxP"))
+                {
+                    (c as ComboBox).SelectedIndex = (c as ComboBox).FindStringExact(field.ps.p.ToComboString());
+                    //f.ps.p = ((c as ComboBox).SelectedItem as CBItem).value;
+                }
+                if (c.Name.StartsWith("CheckedListBoxO"))
+                {
+                    FStoCBindex((c as CheckedListBox), field.fs);
+                }
+                if (c.Name.StartsWith("CheckedListBoxP"))
+                {
+                    FStoCBindex((c as CheckedListBox), field.ps.fs);
+                }
+            }
+
         }
 //populate panels
         private void populatePanel(Panel panel)
@@ -479,6 +534,15 @@ namespace DrangDrop
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                i = i;
+            }
+        }
+
 
 
 
