@@ -537,10 +537,8 @@ namespace DrangDrop
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            for (int i = 0; i < 10; i++)
-            {
-                i = i;
-            }
+            resetPanels();
+            //need to add the method to drop the flag "changed" in the corresponding entry
         }
 
 
