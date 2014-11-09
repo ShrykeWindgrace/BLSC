@@ -185,5 +185,6 @@ FakesAssemblies/
 # Auxiliary projects
 LaTeXCompilation/
 TestingStrings/
+TestsLaTeX/
 
 
