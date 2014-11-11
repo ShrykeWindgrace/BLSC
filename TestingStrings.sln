@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingStrings", "TestingSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTeXCompilation", "LaTeXCompilation\LaTeXCompilation.csproj", "{E441C155-C402-4198-827E-08A8BAC28507}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLSC", "DrangDrop\BLSC.csproj", "{24C51A3F-827E-4ACC-BCCD-7CE3C6562B8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLSC", "BLSC\Main\BLSC.csproj", "{24C51A3F-827E-4ACC-BCCD-7CE3C6562B8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

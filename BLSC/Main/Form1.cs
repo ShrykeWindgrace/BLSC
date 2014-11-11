@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
+using System.Configuration;
 
 namespace DrangDrop
 {
@@ -31,12 +32,13 @@ namespace DrangDrop
         public const int hskip = 5;
         public const int ycoord = 150;
         public int globalCounter = 100;
+        public string currentProj = "";
 
         public Form1()
         {
             InitializeComponent();
         }
-//user control events
+        //user control events
         private void button1_MouseDown(object sender, MouseEventArgs e)
         {
             button1.DoDragDrop(button1.Text, DragDropEffects.Copy | DragDropEffects.Move);
@@ -79,31 +81,31 @@ namespace DrangDrop
             panel1.BackColor = Color.BurlyWood;
             buttonPlus.Dock = DockStyle.Fill;
 
-            button1.Location = new Point(15, menuStrip1.Height+2);
+            button1.Location = new Point(15, menuStrip1.Height + 2);
             textBox1.Location = new Point(button1.Location.X + button1.Width + 5, button1.Location.Y);
-           
+
             buttonAddField.Location = new Point(button1.Location.X, button1.Location.Y + button1.Width + vskip);
             buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
                 buttonAddField.Location.Y);
-            
+
             ButtonTestOrderOnPanel.Location = new Point(this.ClientSize.Width - hskip - ButtonTestOrderOnPanel.Width, menuStrip1.Height + vskip);
             textBox2.Width = ButtonTestOrderOnPanel.Width;
             textBox2.Location = new Point(ButtonTestOrderOnPanel.Location.X,
                 ButtonTestOrderOnPanel.Location.Y + ButtonTestOrderOnPanel.Height + vskip);
 
-            var anc = AnchorStyles.Right | AnchorStyles.Top; 
+            var anc = AnchorStyles.Right | AnchorStyles.Top;
 
             textBox2.Anchor = anc;
-                //Point(this.ClientSize.Width - hskip - buttonTesttSerialisation.Width,
-                //ButtonTestOrderOnPanel.Location.Y+  ButtonTestOrderOnPanel.Height + vskip);
-            
+            //Point(this.ClientSize.Width - hskip - buttonTesttSerialisation.Width,
+            //ButtonTestOrderOnPanel.Location.Y+  ButtonTestOrderOnPanel.Height + vskip);
+
             buttonTesttSerialisation.Height = 24;
             buttonTesttSerialisation.Location = new Point(this.ClientSize.Width - hskip - buttonTesttSerialisation.Width,
-                textBox2.Height+textBox2.Location.Y + vskip);
+                textBox2.Height + textBox2.Location.Y + vskip);
             buttonTesttSerialisation.Anchor = anc;
 
             buttonDeserialiseField.Location = new Point(this.ClientSize.Width - hskip - buttonDeserialiseField.Width,
-               buttonTesttSerialisation.Height + buttonTesttSerialisation.Location.Y+hskip);
+               buttonTesttSerialisation.Height + buttonTesttSerialisation.Location.Y + hskip);
 
             buttonDeserialiseField.Anchor = anc;
 
@@ -112,7 +114,7 @@ namespace DrangDrop
             buttonPopulateField.Anchor = anc;
 
             buttonResetEntry.Width = 100;
-            buttonResetEntry.Height = buttonRemLastField.Height; 
+            buttonResetEntry.Height = buttonRemLastField.Height;
             buttonResetEntry.Location = new Point(buttonRemLastField.Location.X + buttonRemLastField.Width + hskip,
                 buttonRemLastField.Location.Y);
 
@@ -120,12 +122,15 @@ namespace DrangDrop
                 buttonAddField.Location.Y - vskip - comboBoxEntrySelector.Height);
             comboBoxEntrySelector.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxEntrySelector.Items.AddRange(Enum.GetNames(typeof(EEType)));
- 
+
 
             // clBtn = new List<Button>();
 
             field = new Field();
             ABox = new AboutBox1();
+
+            ReadSettings();
+            this.Text = "Working on the project: " + currentProj;
 
         }
 
@@ -207,7 +212,7 @@ namespace DrangDrop
         }
         private void button7_Click(object sender, EventArgs e)
         {
-            if (plist.Count>=1)
+            if (plist.Count >= 1)
             {
                 foreach (Control c in plist[0].Controls)
                 {
@@ -215,7 +220,7 @@ namespace DrangDrop
                 }
             }
             //resetPanels();
-            
+
         }
         private void button8_Click(object sender, EventArgs e)
         {
@@ -278,7 +283,7 @@ namespace DrangDrop
             textWriter.Close();
         }
 
-//panel works
+        //panel works
         private void removePanel(int i)
         {
             //plist[i].Controls.Remove(order[i]);
@@ -376,7 +381,7 @@ namespace DrangDrop
             }
 
         }
-//populate panels
+        //populate panels
         private void populatePanel(Panel panel)
         {
             panel.BackColor = Color.BurlyWood;
@@ -541,9 +546,61 @@ namespace DrangDrop
             //need to add the method to drop the flag "changed" in the corresponding entry
         }
 
+        //Latex
+        private void compileLatex()
+        {
+            string strCmdText = "/C latexmk test -pdf";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+        }
+
+        private void clearAuxLatexFiles()
+        {
+            string strCmdText = "/C latexmk test -c";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
+        }
 
 
 
+        //static private  void ReadAllSettings()
+        //{
+        //    try
+        //    {
+        //        var appSettings = ConfigurationManager.AppSettings;
+
+        //        if (appSettings.Count == 0)
+        //        {
+        //            Console.WriteLine("AppSettings is empty.");
+        //        }
+        //        else
+        //        {
+        //            foreach (var key in appSettings.AllKeys)
+        //            {
+        //                Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);
+        //            }
+        //        }
+        //    }
+        //    catch (ConfigurationErrorsException)
+        //    {
+        //        Console.WriteLine("Error reading app settings");
+        //    }
+        //}
+        private void ReadSettings()
+        {
+            try
+            {
+                var appSettings = ConfigurationManager.AppSettings;
+                if (appSettings.Count > 0)
+                {
+                    //string result
+                    currentProj = appSettings["CP"] ?? "Not Found";
+                }
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error reading app settings");
+            }
+
+        }
 
 
         //private void comboBox3_SelectionChangeCommitted(object sender, EventArgs e)
