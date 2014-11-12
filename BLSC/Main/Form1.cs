@@ -11,7 +11,7 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Configuration;
 
-namespace DrangDrop
+namespace BLSC
 {
     public partial class Form1 : Form
     {

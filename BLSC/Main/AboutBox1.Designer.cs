@@ -1,4 +1,4 @@
-﻿namespace DrangDrop
+﻿namespace BLSC
 {
     public partial class AboutBox1
     {

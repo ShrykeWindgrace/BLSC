@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using LaTeXCompilation;
 
-namespace DrangDrop
+namespace BLSC
 {
     public enum EEType
     {

@@ -7,7 +7,7 @@ using System.Drawing;
 using LaTeXCompilation;
 using System.Xml.Serialization;
 
-namespace DrangDrop
+namespace BLSC
 {
     public enum EPunct { space = 2, dot = 3, comma = 4, none = 5, commaspace = 0, dotspace = 1 };
     //possible punctuation after blocks

@@ -1,4 +1,4 @@
-﻿namespace DrangDrop
+﻿namespace BLSC
 {
     partial class Form1
     {
