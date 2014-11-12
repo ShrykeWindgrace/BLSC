@@ -24,6 +24,9 @@ namespace BLSC
         techreport,
         unpublished
     };//entry enummerator. Supports BibTeX entry types.
+
+
+
     [Serializable]
     public class EType
     {
@@ -87,6 +90,13 @@ namespace BLSC
         public Entry()
         {
             etype = new EType();
+            changedFlag = false;
+            fields = new List<Field>();
+        }
+
+        public Entry(EEType eet)
+        {
+            etype = new EType(eet);
             changedFlag = false;
             fields = new List<Field>();
         }

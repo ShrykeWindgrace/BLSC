@@ -24,6 +24,8 @@ namespace BLSC
         public List<Panel> plist;
         //public List<Button> clBtn;
 
+        public Entry[] entries;
+
         public Field field;
         public AboutBox1 ABox;
 
@@ -65,7 +67,7 @@ namespace BLSC
             this.BackColor = Color.White;
             this.ForeColor = Color.Black;
             this.Size = new System.Drawing.Size(1000, 800);
-            this.Text = "Test for XML and drag n drop  elements";
+            //this.Text = "Test for XML and drag n drop  elements";
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.StartPosition = FormStartPosition.CenterScreen;
 
@@ -131,6 +133,11 @@ namespace BLSC
 
             ReadSettings();
             this.Text = "Working on the project: " + currentProj;
+
+            foreach (var eet in EEType)
+            {
+                entries[(int)eet] = new Entry(eet);
+            }
 
         }
 
