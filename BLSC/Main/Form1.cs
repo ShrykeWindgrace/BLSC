@@ -24,7 +24,7 @@ namespace BLSC
         public List<Panel> plist;
         //public List<Button> clBtn;
 
-        public Entry[] entries;
+        private Entry[] entries;
 
         public Field field;
         public AboutBox1 ABox;
@@ -123,7 +123,15 @@ namespace BLSC
             comboBoxEntrySelector.Location = new Point(buttonAddField.Location.X,
                 buttonAddField.Location.Y - vskip - comboBoxEntrySelector.Height);
             comboBoxEntrySelector.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxEntrySelector.Items.AddRange(Enum.GetNames(typeof(EEType)));
+            //comboBoxEntrySelector.Items.AddRange(Enum.GetNames(typeof(EEType)));
+
+            foreach (EEType eet in Enum.GetValues(typeof(EEType)))
+            {
+                comboBoxEntrySelector.Items.Add(new EType(eet));
+            }
+            comboBoxEntrySelector.SelectedIndex = 0;// comboBoxEntrySelector.FindStringExact("article"); 
+
+
 
 
             // clBtn = new List<Button>();
@@ -134,11 +142,11 @@ namespace BLSC
             ReadSettings();
             this.Text = "Working on the project: " + currentProj;
 
-            foreach (var eet in EEType)
+            entries = new Entry[Enum.GetNames(typeof(EEType)).Length];
+            foreach (EEType eet in Enum.GetValues(typeof(EEType)))
             {
                 entries[(int)eet] = new Entry(eet);
             }
-
         }
 
         public void button2_Click(object sender, EventArgs e)//test serialisation
@@ -550,6 +558,8 @@ namespace BLSC
         private void button2_Click_1(object sender, EventArgs e)
         {
             resetPanels();
+            EEType eet = (comboBoxEntrySelector.SelectedItem as EType).etype;
+            entries[(int)eet] = new Entry(eet);
             //need to add the method to drop the flag "changed" in the corresponding entry
         }
 
