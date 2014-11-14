@@ -164,6 +164,46 @@ namespace BLSC
             insBtn.Name = "ButtonInsertPanel" + globalCounter.ToString();
 
             globalCounter++;//panel is done, all its child controls are activated.
+
+            foreach (ComboBox control in panel.Controls.OfType<ComboBox>())
+            {
+                control.SelectedIndexChanged += new EventHandler(OnContentChanged);
+            }
+            foreach (CheckedListBox control in panel.Controls.OfType<CheckedListBox>())
+            {
+                //clb.
+                control.SelectedIndexChanged += new EventHandler(OnContentChanged);
+            }
+        }
+
+        protected void OnContentChanged(object sender, EventArgs e)
+        {
+            //if (sender is ComboBox)
+            {
+                //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
+                //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
+                entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields
+                   = new List<Field>();
+                entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].changedFlag = true;
+                List<Field> lf = entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields;
+                if (plist.Count > 1)
+                {
+                    for (int i = 0; i < plist.Count - 1; i++)
+                    {
+                        lf.Add(new Field());
+                        PanelToFieldF(plist[i], lf[i]);//почему-то не заполняеются строчки. Даже догадываюсь, почему
+                        lf[i].changed = true;
+
+                        //lf.Add(PanelToField(plist[i]));
+                    }
+                }
+                //MessageBox.Show("we see total fields:",
+                //    //lf.Count.ToString(),
+                //    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields.Count.ToString(),
+                //    MessageBoxButtons.OK);
+
+
+            }
         }
 
         private void populateIBtn(Button btn)
@@ -262,6 +302,32 @@ namespace BLSC
                 }
             }
             return f;
+        }
+        public void PanelToFieldF(Panel p, Field f)
+        {
+            //Field f = new Field();
+            f.ps = new Punctstyle();
+
+            foreach (Control c in p.Controls)
+            {
+                if (c.Name.StartsWith("ComboBoxO"))
+                {
+                    f.type = (c as ComboBox).Text;
+                }
+                if (c.Name.StartsWith("ComboBoxP"))
+                {
+                    f.ps.p = ((c as ComboBox).SelectedItem as CBItem).value;
+                }
+                if (c.Name.StartsWith("CheckedListBoxO"))
+                {
+                    f.fs = clbtoFS((CheckedListBox)c);
+                }
+                if (c.Name.StartsWith("CheckedListBoxP"))
+                {
+                    f.ps.fs = clbtoFS((CheckedListBox)c);
+                }
+            }
+            //return f;
         }
     }
 }

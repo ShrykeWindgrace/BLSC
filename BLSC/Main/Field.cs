@@ -178,7 +178,17 @@ namespace BLSC
         public FontStyle fs;
         public string type;
 
-        public bool changed = false;
+        public bool changed;
+
+        public Field()
+        {
+            type = "null";
+            changed = false;
+            envsl = new List<Envelopestyle>();
+            fs = FontStyle.Regular;
+            ps = new Punctstyle();
+
+        }
         /*this flag is raised whenever we modify the order or punctuation in this entry type
          * this flag is striken whenever we use the "resetDefault" method.
          * if at the moment of style import the flag is down, then we do nothing (i.e. the inherited driver is used)

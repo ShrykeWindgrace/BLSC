@@ -108,6 +108,8 @@ namespace BLSC
              and try to move all punctuation and ordering to drivers*/
             //  Tuple<string, string> t = new Tuple<string, string>("", "");
             //first string contains DFF and the second one contains DBD.
+            DBDString = "";
+            DFFString = "";
             if (changedFlag)
             {
                 DBDString += "\\DeclareBibliographyDriver" + StringWorks.insymb(etype.ToString(), '{') + "{%\r\n";
