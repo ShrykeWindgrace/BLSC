@@ -15,15 +15,7 @@ namespace BLSC
 {
     public partial class Form1 : Form
     {
-
-
-        //public List<ComboBox> order;
-        //public List<ComboBox> punctuation;
-        //public List<CheckedListBox> ostyle;
-        //public List<CheckedListBox> pstyle;
-        //public List<Panel> plist;
-        //public List<Button> clBtn;
-
+        
         private Entry[] entries;
 
         public Field field;
@@ -163,6 +155,7 @@ namespace BLSC
             /*btnexport.location = new point(-hskip + this.clientsize.width - btnexport.width,
                 buttonDeserialiseField.Location.Y+buttonDeserialiseField.Height+vskip);*/
             btnExport.Location = new Point(450, 120);
+            btnExport.Click += new EventHandler(exportToTex);
             this.Controls.Add(btnExport);
 
         }
@@ -375,7 +368,29 @@ namespace BLSC
 
         }
 
-
+        private void exportToTex(object sender, EventArgs e)
+        {
+            //donothing, atm
+            string header = "";
+            header = "test";
+            string formats = "";
+            string drivers = "";
+            foreach (Entry en in entries)
+            {
+                //formats += e.exportToControlStrings();
+                en.exportToControlStrings();
+                formats += en.DFFString;
+                drivers += en.DBDString;
+            }
+            using (StreamWriter writer = new StreamWriter(currentProj+"Style.bbx", false, Encoding.UTF8))
+            {
+                writer.WriteLine(header );//header for the style
+                writer.WriteLine("%code for declarefieldformats");
+                writer.WriteLine(formats);//write options
+                writer.WriteLine("%code for declarebibdrivers");
+                writer.WriteLine(drivers);//write stuff about the article (no quotations/paranthese atm)
+            }
+        }
         //private void comboBox3_SelectionChangeCommitted(object sender, EventArgs e)
         //{
         //    CBItem item = (CBItem)comboBox3.SelectedItem;
