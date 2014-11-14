@@ -21,13 +21,14 @@ namespace BLSC
         //public List<ComboBox> punctuation;
         //public List<CheckedListBox> ostyle;
         //public List<CheckedListBox> pstyle;
-        public List<Panel> plist;
+        //public List<Panel> plist;
         //public List<Button> clBtn;
 
         private Entry[] entries;
 
         public Field field;
         public AboutBox1 ABox;
+        public Button btnExport;
 
         public const int maxPanels = 4;
         public const int vskip = 5;
@@ -106,11 +107,16 @@ namespace BLSC
                 textBox2.Height + textBox2.Location.Y + vskip);
             buttonTesttSerialisation.Anchor = anc;
 
+
+            buttonDeserialiseField.Height = 24;
+            buttonDeserialiseField.Width = 120;
             buttonDeserialiseField.Location = new Point(this.ClientSize.Width - hskip - buttonDeserialiseField.Width,
                buttonTesttSerialisation.Height + buttonTesttSerialisation.Location.Y + hskip);
 
             buttonDeserialiseField.Anchor = anc;
 
+            buttonPopulateField.Height = 24;
+            buttonPopulateField.Width = 120;
             buttonPopulateField.Location = new Point(-hskip - buttonPopulateField.Width + buttonDeserialiseField.Location.X,
                 buttonDeserialiseField.Location.Y);
             buttonPopulateField.Anchor = anc;
@@ -147,6 +153,18 @@ namespace BLSC
             {
                 entries[(int)eet] = new Entry(eet);
             }
+
+            btnExport = new Button();
+            btnExport.Name = "btnExport";
+            btnExport.Text = "Export current project";
+            btnExport.AutoSize = true;
+            btnExport.AutoEllipsis=false;
+            btnExport.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            /*btnexport.location = new point(-hskip + this.clientsize.width - btnexport.width,
+                buttonDeserialiseField.Location.Y+buttonDeserialiseField.Height+vskip);*/
+            btnExport.Location = new Point(450, 120);
+            this.Controls.Add(btnExport);
+
         }
 
         public void button2_Click(object sender, EventArgs e)//test serialisation
@@ -181,22 +199,7 @@ namespace BLSC
             appendPanel();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //int i = order.Count - 1;
-            int j = plist.Count - 1;
-            if (j >= 1)
-            {
-
-
-                this.Controls.Remove(plist[j]);
-                plist[j - 1].Controls.Clear();
-                buttonPlus.Parent = plist[j - 1];
-                buttonPlus.BringToFront();
-                plist.RemoveAt(j);
-            }
-
-        }
+  
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -299,256 +302,9 @@ namespace BLSC
         }
 
         //panel works
-        private void removePanel(int i)
-        {
-            //plist[i].Controls.Remove(order[i]);
-            //plist[i].Controls.Remove(punctuation[i]);
-            //plist[i].Controls.Remove(pstyle[i]);
-            //plist[i].Controls.Remove(ostyle[i]);
-            //plist[i].Controls.Remove(clBtn[i]);
-            // plist[i].Controls.Remove(clBtn[i]);
-            this.Controls.Remove(plist[i]);//removed everything from the form
+         
 
-
-            plist.RemoveAt(i);
-            //order.RemoveAt(i);
-            //ostyle.RemoveAt(i);
-            //pstyle.RemoveAt(i);
-            //clBtn.RemoveAt(i);
-            //punctuation.RemoveAt(i);//removed everything from the lists
-
-            relocatePanelsIndex(i);//reorder panels
-
-            //I wonder what happens with those poor objects. Does the garbage collector kicks in?
-
-        }
-        private void resetPanels()
-        {
-            while (plist.Count > 1)
-            {
-                removePanel(0);
-            }
-        }
-
-        private void relocatePanels()
-        {
-            relocatePanelsIndex(0);
-        }
-
-        private void relocatePanelsIndex(int index)
-        {
-
-            for (int j = index; j < plist.Count; j++)
-            {
-                plist[j].Location = new Point((j % maxPanels == 0) ? 15 : (plist[j - 1].Location.X + plist[j - 1].Width + hskip),
-                  ycoord + ((j == 0) ? 0 : ((j / maxPanels) * (plist[j - 1].Height + vskip))));
-            }
-
-        }
-
-        private void appendPanel()
-        {
-            int i = plist.Count;
-            plist.Add(new Panel());
-            populatePanel(plist[i - 1]);
-            buttonPlus.Parent = plist[i];
-            plist[i].Height = 100;
-            plist[i].Width = 224;
-            buttonPlus.Dock = DockStyle.Fill;
-            this.Controls.Add(plist[i]);
-            relocatePanels();
-        }
-        private void EntryToPanels(Entry e)
-        {
-            resetPanels();
-            foreach (var field in e.fields)
-            {
-                //appendPanel();
-                FieldToLastPanel(field);
-            }
-        }
-
-        private void FieldToLastPanel(Field field)
-        {
-            //throw new NotImplementedException();
-            appendPanel();
-            int i = plist.Count - 1;
-            foreach (Control c in plist[i].Controls)
-            {
-                if (c.Name.StartsWith("ComboBoxO"))
-                {
-                    //f.type = (c as ComboBox).Text;
-                    (c as ComboBox).SelectedIndex = (c as ComboBox).FindStringExact(field.ToString());
-                }
-                if (c.Name.StartsWith("ComboBoxP"))
-                {
-                    (c as ComboBox).SelectedIndex = (c as ComboBox).FindStringExact(field.ps.p.ToComboString());
-                    //f.ps.p = ((c as ComboBox).SelectedItem as CBItem).value;
-                }
-                if (c.Name.StartsWith("CheckedListBoxO"))
-                {
-                    FStoCBindex((c as CheckedListBox), field.fs);
-                }
-                if (c.Name.StartsWith("CheckedListBoxP"))
-                {
-                    FStoCBindex((c as CheckedListBox), field.ps.fs);
-                }
-            }
-
-        }
-        //populate panels
-        private void populatePanel(Panel panel)
-        {
-            panel.BackColor = Color.BurlyWood;
-            panel.Width = 224;
-
-            ComboBox pu = new ComboBox();
-            populateCBP(pu);
-            pu.Parent = panel;
-            pu.Name = "ComboBoxPunct" + globalCounter.ToString();
-
-
-            ComboBox ord = new ComboBox();
-            populateOrd(ord);
-            ord.Parent = panel;
-            ord.Name = "ComboBoxOrder" + globalCounter.ToString();
-
-
-            CheckedListBox ost = new CheckedListBox();
-            populateFS(ost);
-            ost.Parent = panel;
-            ost.Name = "CheckedListBoxOrder" + globalCounter.ToString();
-
-
-            CheckedListBox pst = new CheckedListBox();
-            populateFS(pst, false);
-            pst.Parent = panel;
-            pst.Name = "CheckedListBoxPunct" + globalCounter.ToString();
-
-
-
-            Button clBt = new Button();
-            clBt.Parent = panel;
-            populateXBtn(clBt);
-            clBt.Name = "ButtonClosePanel" + globalCounter.ToString();
-
-            Button insBtn = new Button();
-            insBtn.Parent = panel;
-            populateIBtn(insBtn);
-            insBtn.Name = "ButtonInsertPanel" + globalCounter.ToString();
-
-            //panel.Controls.Add(clBt);
-            //panel.Controls.Add(ord);
-            //panel.Controls.Add(ost);
-            //panel.Controls.Add(pst);
-            //panel.Controls.Add(pu);
-
-            globalCounter++;//panel is done, all its child controls are activated.
-        }
-
-        private void populateIBtn(Button btn)
-        {
-            btn.Text = "+";
-            btn.Width = 24;
-            btn.Dock = DockStyle.Right;
-            btn.Click += new EventHandler(insertPanelBtn);
-        }
-
-
-        private void populateXBtn(Button btn)
-        {
-            btn.Text = "X";
-            btn.Width = 24;
-            btn.Dock = DockStyle.Right;
-            btn.Click += new EventHandler(removePanelBtn);
-        }
-
-        private void populateOrd(ComboBox ord)
-        {
-            ord.Items.Add(new Field() { type = "author1" });
-            ord.Items.Add(new Field() { type = "journal1" });//change this!
-            ord.DropDownStyle = ComboBoxStyle.DropDownList;
-            ord.SelectedIndex = 0;
-            ord.Location = new Point(0, 0);
-        }
-
-        private void populateCBP(ComboBox pu)
-        {
-
-            foreach (EPunct p in Enum.GetValues(typeof(EPunct)))
-            {
-                pu.Items.Add(new CBItem(p));//;
-                //i++;
-            }
-            pu.DropDownStyle = ComboBoxStyle.DropDownList;
-            pu.SelectedIndex = 0;
-            pu.Width = 50;
-            pu.Location = new Point(126, 0);
-
-        }
-        private void populateFS(CheckedListBox cb, bool left = true)
-        {
-            cb.Items.Add("Bold", false);
-            cb.Items.Add("Italic", false);
-            cb.Height = 40;
-            cb.Location = new Point(left ? 0 : 126, 35);
-            if (!left)
-            {
-                cb.Width = 50;
-            }
-        }
-        private void insertPanelBtn(object sender, EventArgs e)
-        {//Onclick event for insert buttons of panels
-            //throw new NotImplementedException();
-            int i = plist.IndexOf((Panel)(((Button)sender).Parent)) + 1;
-            Panel p = new Panel();
-            populatePanel(p);
-            plist.Insert(i, p);
-            p.Visible = false;
-            this.Controls.Add(p);
-            relocatePanels();
-            p.Visible = true;
-        }
-        private void removePanelBtn(object sender, EventArgs e)
-        {//onclick event for remove buttons on panels
-            //int i = ((Button)sender).Parent.
-            //int index = clBtn.Where<Button>( x => return x  ==(sender as Button); ).Select<Button,int>( x => clBtn.IndexOf(x)).Single<int>();
-            int i = plist.IndexOf((Panel)(((Button)sender).Parent));
-            removePanel(i);
-        }
-
-        public Field PanelToField(Panel p)
-        {
-            Field f = new Field();
-            f.ps = new Punctstyle();
-
-            foreach (Control c in p.Controls)
-            {
-                if (c.Name.StartsWith("ComboBoxO"))
-                {
-                    f.type = (c as ComboBox).Text;
-                }
-                if (c.Name.StartsWith("ComboBoxP"))
-                {
-                    f.ps.p = ((c as ComboBox).SelectedItem as CBItem).value;
-                }
-                if (c.Name.StartsWith("CheckedListBoxO"))
-                {
-                    f.fs = clbtoFS((CheckedListBox)c);
-                }
-                if (c.Name.StartsWith("CheckedListBoxP"))
-                {
-                    f.ps.fs = clbtoFS((CheckedListBox)c);
-                }
-            }
-            return f;
-            //    field.type = order[0].Text;
-            //    field.ps = new Punctstyle();
-            //    field.ps.fs = clbtoFS(pstyle[0]);
-            //    field.fs = clbtoFS(ostyle[0]);
-            //    field.ps.p = (punctuation[0].SelectedItem as CBItem).value;
-            //    SerializeToXML(field);
-        }
+              
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
