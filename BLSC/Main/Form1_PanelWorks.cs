@@ -289,7 +289,7 @@ namespace BLSC
             //int index = clBtn.Where<Button>( x => return x  ==(sender as Button); ).Select<Button,int>( x => clBtn.IndexOf(x)).Single<int>();
             int i = plist.IndexOf((Panel)(((Button)sender).Parent));
             removePanel(i);
-            btnSaveCurrentEntry.Enabled = false;
+            btnSaveCurrentEntry.Enabled = true;
         }
 
         public Field PanelToField(Panel p)

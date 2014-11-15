@@ -260,6 +260,7 @@ buttonResetEntry.Location.Y);
         private void button8_Click(object sender, EventArgs e)
         {
             appendPanel();
+            btnSaveCurrentEntry.Enabled = true;
         }
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -480,6 +481,11 @@ buttonResetEntry.Location.Y);
         private void compileTestFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             compileLatex();
+        }
+
+        private void clearAuxFilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clearAuxLatexFiles();
         }
 
     }

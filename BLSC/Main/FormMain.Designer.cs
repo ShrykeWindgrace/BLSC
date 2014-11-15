@@ -56,6 +56,7 @@
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonResetEntry = new System.Windows.Forms.Button();
             this.comboBoxEntrySelector = new System.Windows.Forms.ComboBox();
+            this.clearAuxFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -274,7 +275,8 @@
             // laTeXToolStripMenuItem
             // 
             this.laTeXToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.compileTestFileToolStripMenuItem});
+            this.compileTestFileToolStripMenuItem,
+            this.clearAuxFilesToolStripMenuItem});
             this.laTeXToolStripMenuItem.Name = "laTeXToolStripMenuItem";
             this.laTeXToolStripMenuItem.Size = new System.Drawing.Size(109, 48);
             this.laTeXToolStripMenuItem.Text = "LaTeX";
@@ -311,6 +313,13 @@
             this.comboBoxEntrySelector.Size = new System.Drawing.Size(121, 39);
             this.comboBoxEntrySelector.TabIndex = 12;
             this.comboBoxEntrySelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxEntrySelector_SelectedIndexChanged);
+            // 
+            // clearAuxFilesToolStripMenuItem
+            // 
+            this.clearAuxFilesToolStripMenuItem.Name = "clearAuxFilesToolStripMenuItem";
+            this.clearAuxFilesToolStripMenuItem.Size = new System.Drawing.Size(311, 46);
+            this.clearAuxFilesToolStripMenuItem.Text = "Clear aux files";
+            this.clearAuxFilesToolStripMenuItem.Click += new System.EventHandler(this.clearAuxFilesToolStripMenuItem_Click);
             // 
             // FormMain
             // 
@@ -375,6 +384,7 @@
         private System.Windows.Forms.ToolStripMenuItem exportStyleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem laTeXToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem compileTestFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearAuxFilesToolStripMenuItem;
     }
 }
 
