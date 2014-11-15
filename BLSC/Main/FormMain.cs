@@ -513,6 +513,7 @@ buttonResetEntry.Location.Y);
                     if (!(String.IsNullOrEmpty(s)))
                     {
                         SerializeProjectToXML(s);
+                        MessageBox.Show("Project saved", "Done", MessageBoxButtons.OK); 
                     }
                     else
                     {
@@ -523,6 +524,15 @@ buttonResetEntry.Location.Y);
             catch (ConfigurationErrorsException)
             {
                 Console.WriteLine("Error reading app settings");
+            }
+        }
+
+        private void FormMain_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.S)
+            {
+                //SerializeProjectToXML()
+                saveToolStripMenuItem_Click(null, null);
             }
         }
 
