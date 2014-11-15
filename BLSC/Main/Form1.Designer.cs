@@ -52,6 +52,9 @@
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonResetEntry = new System.Windows.Forms.Button();
             this.comboBoxEntrySelector = new System.Windows.Forms.ComboBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.exportStyleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -186,7 +189,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1414, 47);
+            this.menuStrip1.Size = new System.Drawing.Size(1414, 50);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -197,12 +200,14 @@
             this.toolStripSeparator3,
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem,
-            this.exportStyleAsToolStripMenuItem,
             this.saveAsToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.exportStyleToolStripMenuItem,
+            this.exportStyleAsToolStripMenuItem,
             this.toolStripSeparator1,
             this.quitToolStripMenuItem1});
             this.FileToolStripMenuItem1.Name = "FileToolStripMenuItem1";
-            this.FileToolStripMenuItem1.Size = new System.Drawing.Size(75, 45);
+            this.FileToolStripMenuItem1.Size = new System.Drawing.Size(75, 48);
             this.FileToolStripMenuItem1.Text = "File";
             // 
             // newToolStripMenuItem
@@ -255,7 +260,7 @@
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(112, 45);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(112, 48);
             this.AboutToolStripMenuItem.Text = "About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -278,11 +283,32 @@
             this.comboBoxEntrySelector.TabIndex = 12;
             this.comboBoxEntrySelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxEntrySelector_SelectedIndexChanged);
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(1154, 488);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 72);
+            this.checkedListBox1.TabIndex = 13;
+            // 
+            // exportStyleToolStripMenuItem
+            // 
+            this.exportStyleToolStripMenuItem.Name = "exportStyleToolStripMenuItem";
+            this.exportStyleToolStripMenuItem.Size = new System.Drawing.Size(293, 46);
+            this.exportStyleToolStripMenuItem.Text = "Export Style";
+            this.exportStyleToolStripMenuItem.Click += new System.EventHandler(this.exportStyleToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(290, 6);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1414, 824);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.comboBoxEntrySelector);
             this.Controls.Add(this.buttonResetEntry);
@@ -337,6 +363,9 @@
         private System.Windows.Forms.Button buttonResetEntry;
         private System.Windows.Forms.ComboBox comboBoxEntrySelector;
         private System.Windows.Forms.ToolStripMenuItem exportStyleAsToolStripMenuItem;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem exportStyleToolStripMenuItem;
     }
 }
 

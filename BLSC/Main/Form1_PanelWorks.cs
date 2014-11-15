@@ -92,6 +92,7 @@ namespace BLSC
                 //appendPanel();
                 FieldToLastPanel(field);
             }
+            btnSaveCurrentEntry.Enabled = false;
         }
 
         private void FieldToLastPanel(Field field)
@@ -173,8 +174,13 @@ namespace BLSC
             foreach (CheckedListBox control in panel.Controls.OfType<CheckedListBox>())
             {
                 //clb.
-                control.SelectedIndexChanged += new EventHandler(OnContentChanged);
+                control.ItemCheck += new ItemCheckEventHandler(OnCheckedItemChange);//new ItemCheckEventHandler(OnContentChanged);
             }
+        }
+
+        private void OnCheckedItemChange(object sender, ItemCheckEventArgs e)
+        {
+            OnContentChanged(sender, null);
         }
 
         protected void OnContentChanged(object sender, EventArgs e)
@@ -228,8 +234,12 @@ namespace BLSC
 
         private void populateOrd(ComboBox ord)
         {
-            ord.Items.Add(new Field() { type = "author1" });
-            ord.Items.Add(new Field() { type = "journal1" });//change this!
+            //ord.Items.Add(new Field() { type = "author1" });
+            //ord.Items.Add(new Field() { type = "journal1" });//change this!
+            foreach (EFType eft in Enum.GetValues(typeof(EFType)))
+            {
+                ord.Items.Add(new Type(eft));
+            }
             ord.DropDownStyle = ComboBoxStyle.DropDownList;
             ord.SelectedIndex = 0;
             ord.Location = new Point(0, 0);
@@ -271,6 +281,7 @@ namespace BLSC
             this.Controls.Add(p);
             relocatePanels();
             p.Visible = true;
+            btnSaveCurrentEntry.Enabled = true;
         }
         private void removePanelBtn(object sender, EventArgs e)
         {//onclick event for remove buttons on panels
@@ -278,6 +289,7 @@ namespace BLSC
             //int index = clBtn.Where<Button>( x => return x  ==(sender as Button); ).Select<Button,int>( x => clBtn.IndexOf(x)).Single<int>();
             int i = plist.IndexOf((Panel)(((Button)sender).Parent));
             removePanel(i);
+            btnSaveCurrentEntry.Enabled = false;
         }
 
         public Field PanelToField(Panel p)

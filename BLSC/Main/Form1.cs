@@ -87,7 +87,7 @@ namespace BLSC
             //btnSaveCurrentEntry.Location = new Point(450, 120);
 
             btnSaveCurrentEntry.Click += new EventHandler(SaveEntry);
-            
+
             this.Controls.Add(btnSaveCurrentEntry);
 
             plist = new List<Panel>();
@@ -395,8 +395,10 @@ buttonResetEntry.Location.Y);
         private void exportToTex(object sender, EventArgs e)
         {
             //donothing, atm
-            string header = "";
-            header = "test";
+            //string header = "";
+            string header = "\\ProvidesFile{" + currentProj + ".bbx}[" + DateTime.Today.ToString("yyyy-MM-dd") + " biblatex " + currentProj
+                + " bibliography style]\r\n\\RequireBibliographyStyle{numeric-comp}\r\n\r\n";
+            header += "\\ExecuteBibliographyOptions{ firstinits,  maxnames= 5,  maxcitenames  = 2,\r\n useprefix,}\r\n";
             string formats = "";
             string drivers = "";
             foreach (Entry en in entries)
@@ -436,7 +438,7 @@ buttonResetEntry.Location.Y);
         protected void SaveEntry(object sender, EventArgs e)
         {
             //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
-            btnSaveCurrentEntry.Enabled = false; 
+            btnSaveCurrentEntry.Enabled = false;
             {
                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
                 //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
@@ -463,6 +465,11 @@ buttonResetEntry.Location.Y);
 
 
             }
+        }
+
+        private void exportStyleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            exportToTex(sender, e);
         }
 
     }

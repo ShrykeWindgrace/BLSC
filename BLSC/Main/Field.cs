@@ -9,6 +9,37 @@ using System.Xml.Serialization;
 
 namespace BLSC
 {
+    public enum EFType { author, title, journal, year, pages }//WIP
+    public class Type
+    {
+        EFType t;
+        public Type()
+        {
+            t = EFType.author;
+        }
+        public Type(EFType et)
+        {
+            t = et;
+        }
+        public override string ToString()
+        {
+            switch (t)
+            {
+                case EFType.author:
+                    return "author";
+                case EFType.title:
+                    return "title";
+                case EFType.journal:
+                    return "journal";
+                case EFType.year:
+                    return "year";
+                case EFType.pages:
+                    return "pages";
+                default:
+                    return "none";
+            }
+        }
+    }
     public enum EPunct { space = 2, dot = 3, comma = 4, none = 5, commaspace = 0, dotspace = 1 };
     //possible punctuation after blocks
 
@@ -221,7 +252,7 @@ namespace BLSC
 
 
 
-                return StringWorks.insymb(type, '{') + StringWorks.insymb(temp2, '{')+"%\r\n";// тут надо сильно подумать, насколько мы позволим модифицировать стиль окружающих скобок
+                return StringWorks.insymb(type, '{') + StringWorks.insymb(temp2, '{') + "%\r\n";// тут надо сильно подумать, насколько мы позволим модифицировать стиль окружающих скобок
                 //пока вариант - наследовать или не наследовать стиль от самого текста. Надо проверить, что случится тогда с пустыми полями в скобках.
                 /*текущий подход: снаружи стиль скобок, скобки, потом стиль текста*/
                 //return temp + "\r\n";
