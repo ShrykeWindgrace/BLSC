@@ -18,7 +18,7 @@ using System.Configuration;
 
 namespace BLSC
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
 
         public List<Panel> plist;

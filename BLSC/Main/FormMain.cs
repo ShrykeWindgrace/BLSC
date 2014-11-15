@@ -13,7 +13,7 @@ using System.Configuration;
 
 namespace BLSC
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
 
         private Entry[] entries;
@@ -30,7 +30,7 @@ namespace BLSC
         public int globalCounter = 100;
         public string currentProj = "";
 
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
@@ -408,7 +408,7 @@ buttonResetEntry.Location.Y);
                 formats += en.DFFString;
                 drivers += en.DBDString;
             }
-            using (StreamWriter writer = new StreamWriter(currentProj + "Style.bbx", false, Encoding.UTF8))
+            using (StreamWriter writer = new StreamWriter(currentProj + ".bbx", false, Encoding.UTF8))
             {
                 writer.WriteLine(header);//header for the style
                 writer.WriteLine("%code for declarefieldformats");
@@ -416,6 +416,11 @@ buttonResetEntry.Location.Y);
                 writer.WriteLine("%code for declarebibdrivers");
                 writer.WriteLine(drivers);//write stuff about the article (no quotations/paranthese atm)
             }
+            using (StreamWriter writer = new StreamWriter(currentProj+".cbx", false, Encoding.UTF8))
+            {
+                writer.WriteLine("\\ProvidesFile{"+currentProj+".cbx}[some info]%\r\n\\RequireCitationStyle{numeric-comp}%");
+            }//write citation style
+            MessageBox.Show("Style loaded", "Done", MessageBoxButtons.OK);
         }
 
         private void comboBoxEntrySelector_SelectedIndexChanged(object sender, EventArgs e)
@@ -470,6 +475,11 @@ buttonResetEntry.Location.Y);
         private void exportStyleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             exportToTex(sender, e);
+        }
+
+        private void compileTestFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            compileLatex();
         }
 
     }
