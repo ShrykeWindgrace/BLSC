@@ -45,13 +45,13 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportStyleAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.quitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonResetEntry = new System.Windows.Forms.Button();
             this.comboBoxEntrySelector = new System.Windows.Forms.ComboBox();
-            this.exportStyleAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -228,6 +228,12 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(293, 46);
             this.saveToolStripMenuItem.Text = "Save";
             // 
+            // exportStyleAsToolStripMenuItem
+            // 
+            this.exportStyleAsToolStripMenuItem.Name = "exportStyleAsToolStripMenuItem";
+            this.exportStyleAsToolStripMenuItem.Size = new System.Drawing.Size(293, 46);
+            this.exportStyleAsToolStripMenuItem.Text = "Export Style As";
+            // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
@@ -270,12 +276,7 @@
             this.comboBoxEntrySelector.Name = "comboBoxEntrySelector";
             this.comboBoxEntrySelector.Size = new System.Drawing.Size(121, 39);
             this.comboBoxEntrySelector.TabIndex = 12;
-            // 
-            // exportStyleAsToolStripMenuItem
-            // 
-            this.exportStyleAsToolStripMenuItem.Name = "exportStyleAsToolStripMenuItem";
-            this.exportStyleAsToolStripMenuItem.Size = new System.Drawing.Size(293, 46);
-            this.exportStyleAsToolStripMenuItem.Text = "Export Style As";
+            this.comboBoxEntrySelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxEntrySelector_SelectedIndexChanged);
             // 
             // Form1
             // 

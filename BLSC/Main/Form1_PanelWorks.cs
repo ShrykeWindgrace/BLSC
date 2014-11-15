@@ -98,11 +98,12 @@ namespace BLSC
         {
             //throw new NotImplementedException();
             appendPanel();
-            int i = plist.Count - 1;
+            int i = plist.Count - 2;
             foreach (Control c in plist[i].Controls)
             {
                 if (c.Name.StartsWith("ComboBoxO"))
                 {
+                    MessageBox.Show("Found ComboBoxO", "yes", MessageBoxButtons.OK);
                     //f.type = (c as ComboBox).Text;
                     (c as ComboBox).SelectedIndex = (c as ComboBox).FindStringExact(field.ToString());
                 }
@@ -178,13 +179,14 @@ namespace BLSC
 
         protected void OnContentChanged(object sender, EventArgs e)
         {
-            //if (sender is ComboBox)
-            {
+            btnSaveCurrentEntry.Enabled = true;
+            //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
+           /* {
                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
                 //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
                 entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields
                    = new List<Field>();
-                entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].changedFlag = true;
+                
                 List<Field> lf = entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields;
                 if (plist.Count > 1)
                 {
@@ -192,10 +194,11 @@ namespace BLSC
                     {
                         lf.Add(new Field());
                         PanelToFieldF(plist[i], lf[i]);//почему-то не заполняеются строчки. Даже догадываюсь, почему
-                        lf[i].changed = true;
+                        //lf[i].changed = true;
 
                         //lf.Add(PanelToField(plist[i]));
                     }
+                    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].changedFlag = true;
                 }
                 //MessageBox.Show("we see total fields:",
                 //    //lf.Count.ToString(),
@@ -203,7 +206,7 @@ namespace BLSC
                 //    MessageBoxButtons.OK);
 
 
-            }
+            }*/
         }
 
         private void populateIBtn(Button btn)

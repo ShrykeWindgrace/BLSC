@@ -15,12 +15,13 @@ namespace BLSC
 {
     public partial class Form1 : Form
     {
-        
+
         private Entry[] entries;
 
         public Field field;
         public AboutBox1 ABox;
         public Button btnExport;
+        public Button btnSaveCurrentEntry;
 
         public const int maxPanels = 4;
         public const int vskip = 5;
@@ -69,6 +70,26 @@ namespace BLSC
             //ostyle = new List<CheckedListBox>();
             //pstyle = new List<CheckedListBox>();
 
+            entries = new Entry[Enum.GetNames(typeof(EEType)).Length];
+            foreach (EEType eet in Enum.GetValues(typeof(EEType)))
+            {
+                entries[(int)eet] = new Entry(eet);
+            }
+
+            btnSaveCurrentEntry = new Button();
+            btnSaveCurrentEntry.Name = "btnSaveCurrentEntry";
+            btnSaveCurrentEntry.Text = "save current entry";
+            btnSaveCurrentEntry.AutoSize = true;
+            btnSaveCurrentEntry.AutoEllipsis = false;
+            btnSaveCurrentEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            /*btnSaveCurrentEntry.location = new point(-hskip + this.clientsize.width - btnSaveCurrentEntry.width,
+                buttonDeserialiseField.Location.Y+buttonDeserialiseField.Height+vskip);*/
+            //btnSaveCurrentEntry.Location = new Point(450, 120);
+
+            btnSaveCurrentEntry.Click += new EventHandler(SaveEntry);
+            
+            this.Controls.Add(btnSaveCurrentEntry);
+
             plist = new List<Panel>();
             plist.Add(panel1);
             panel1.Location = new Point(15, ycoord);
@@ -107,6 +128,8 @@ namespace BLSC
 
             buttonDeserialiseField.Anchor = anc;
 
+
+
             buttonPopulateField.Height = 24;
             buttonPopulateField.Width = 120;
             buttonPopulateField.Location = new Point(-hskip - buttonPopulateField.Width + buttonDeserialiseField.Location.X,
@@ -117,6 +140,9 @@ namespace BLSC
             buttonResetEntry.Height = buttonRemLastField.Height;
             buttonResetEntry.Location = new Point(buttonRemLastField.Location.X + buttonRemLastField.Width + hskip,
                 buttonRemLastField.Location.Y);
+
+            btnSaveCurrentEntry.Location = new Point(buttonResetEntry.Location.X + buttonResetEntry.Width + hskip,
+buttonResetEntry.Location.Y);
 
             comboBoxEntrySelector.Location = new Point(buttonAddField.Location.X,
                 buttonAddField.Location.Y - vskip - comboBoxEntrySelector.Height);
@@ -140,23 +166,21 @@ namespace BLSC
             ReadSettings();
             this.Text = "Working on the project: " + currentProj;
 
-            entries = new Entry[Enum.GetNames(typeof(EEType)).Length];
-            foreach (EEType eet in Enum.GetValues(typeof(EEType)))
-            {
-                entries[(int)eet] = new Entry(eet);
-            }
+
 
             btnExport = new Button();
             btnExport.Name = "btnExport";
             btnExport.Text = "Export current project";
             btnExport.AutoSize = true;
-            btnExport.AutoEllipsis=false;
+            btnExport.AutoEllipsis = false;
             btnExport.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             /*btnexport.location = new point(-hskip + this.clientsize.width - btnexport.width,
                 buttonDeserialiseField.Location.Y+buttonDeserialiseField.Height+vskip);*/
             btnExport.Location = new Point(450, 120);
             btnExport.Click += new EventHandler(exportToTex);
             this.Controls.Add(btnExport);
+
+            btnSaveCurrentEntry.Enabled = false;
 
         }
 
@@ -192,7 +216,7 @@ namespace BLSC
             appendPanel();
         }
 
-  
+
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -295,9 +319,9 @@ namespace BLSC
         }
 
         //panel works
-         
 
-              
+
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -382,14 +406,21 @@ namespace BLSC
                 formats += en.DFFString;
                 drivers += en.DBDString;
             }
-            using (StreamWriter writer = new StreamWriter(currentProj+"Style.bbx", false, Encoding.UTF8))
+            using (StreamWriter writer = new StreamWriter(currentProj + "Style.bbx", false, Encoding.UTF8))
             {
-                writer.WriteLine(header );//header for the style
+                writer.WriteLine(header);//header for the style
                 writer.WriteLine("%code for declarefieldformats");
                 writer.WriteLine(formats);//write options
                 writer.WriteLine("%code for declarebibdrivers");
                 writer.WriteLine(drivers);//write stuff about the article (no quotations/paranthese atm)
             }
+        }
+
+        private void comboBoxEntrySelector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OnContentChanged(sender, e);
+            EntryToPanels(entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)]);
+
         }
         //private void comboBox3_SelectionChangeCommitted(object sender, EventArgs e)
         //{
@@ -402,7 +433,37 @@ namespace BLSC
         //    CBItem item = (CBItem)comboBox3.SelectedItem;
         //    textBox2.Text = item.value.ToString();
         //}
+        protected void SaveEntry(object sender, EventArgs e)
+        {
+            //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
+            btnSaveCurrentEntry.Enabled = false; 
+            {
+                //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
+                //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
+                entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields
+                   = new List<Field>();
 
+                List<Field> lf = entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields;
+                if (plist.Count > 1)
+                {
+                    for (int i = 0; i < plist.Count - 1; i++)
+                    {
+                        lf.Add(new Field());
+                        PanelToFieldF(plist[i], lf[i]);//почему-то не заполняеются строчки. Даже догадываюсь, почему
+                        //lf[i].changed = true;
+
+                        //lf.Add(PanelToField(plist[i]));
+                    }
+                    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].changedFlag = true;
+                }
+                //MessageBox.Show("we see total fields:",
+                //    //lf.Count.ToString(),
+                //    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields.Count.ToString(),
+                //    MessageBoxButtons.OK);
+
+
+            }
+        }
 
     }
 }
