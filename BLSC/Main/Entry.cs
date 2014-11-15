@@ -78,7 +78,7 @@ namespace BLSC
 
     }
     [Serializable]
-    class Entry
+    public class Entry
     {
         public List<Field> fields;
         private bool myCF=false;

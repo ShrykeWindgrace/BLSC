@@ -319,6 +319,19 @@ buttonResetEntry.Location.Y);
             textWriter.Close();
         }
 
+        public void SerializeProjectToXML(String fname)
+        {
+            XmlSerializer ser = new XmlSerializer(typeof(Entry));
+            TextWriter tw = new StreamWriter(fname);
+            foreach (Entry e in entries)
+            {
+                ser.Serialize(tw, e);
+            }
+            tw.Close();
+            //ser.Serialize(tw,)
+
+
+        }
         //panel works
 
 
@@ -417,9 +430,9 @@ buttonResetEntry.Location.Y);
                 writer.WriteLine("%code for declarebibdrivers");
                 writer.WriteLine(drivers);//write stuff about the article (no quotations/paranthese atm)
             }
-            using (StreamWriter writer = new StreamWriter(currentProj+".cbx", false, Encoding.UTF8))
+            using (StreamWriter writer = new StreamWriter(currentProj + ".cbx", false, Encoding.UTF8))
             {
-                writer.WriteLine("\\ProvidesFile{"+currentProj+".cbx}[some info]%\r\n\\RequireCitationStyle{numeric-comp}%");
+                writer.WriteLine("\\ProvidesFile{" + currentProj + ".cbx}[some info]%\r\n\\RequireCitationStyle{numeric-comp}%");
             }//write citation style
             MessageBox.Show("Style loaded", "Done", MessageBoxButtons.OK);
         }
@@ -486,6 +499,31 @@ buttonResetEntry.Location.Y);
         private void clearAuxFilesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             clearAuxLatexFiles();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var appSettings = ConfigurationManager.AppSettings;
+                if (appSettings.Count > 0)
+                {
+                    //string result
+                    string s = appSettings.Get("CPFname");
+                    if (!(String.IsNullOrEmpty(s)))
+                    {
+                        SerializeProjectToXML(s);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Problem with application settings: no project file reference", "Warning!", MessageBoxButtons.OK);
+                    }
+                }
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error reading app settings");
+            }
         }
 
     }

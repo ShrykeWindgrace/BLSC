@@ -53,10 +53,10 @@
             this.quitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.laTeXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compileTestFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearAuxFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonResetEntry = new System.Windows.Forms.Button();
             this.comboBoxEntrySelector = new System.Windows.Forms.ComboBox();
-            this.clearAuxFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -235,6 +235,7 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(293, 46);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
@@ -288,6 +289,13 @@
             this.compileTestFileToolStripMenuItem.Text = "Compile test file";
             this.compileTestFileToolStripMenuItem.Click += new System.EventHandler(this.compileTestFileToolStripMenuItem_Click);
             // 
+            // clearAuxFilesToolStripMenuItem
+            // 
+            this.clearAuxFilesToolStripMenuItem.Name = "clearAuxFilesToolStripMenuItem";
+            this.clearAuxFilesToolStripMenuItem.Size = new System.Drawing.Size(311, 46);
+            this.clearAuxFilesToolStripMenuItem.Text = "Clear aux files";
+            this.clearAuxFilesToolStripMenuItem.Click += new System.EventHandler(this.clearAuxFilesToolStripMenuItem_Click);
+            // 
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
@@ -313,13 +321,6 @@
             this.comboBoxEntrySelector.Size = new System.Drawing.Size(121, 39);
             this.comboBoxEntrySelector.TabIndex = 12;
             this.comboBoxEntrySelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxEntrySelector_SelectedIndexChanged);
-            // 
-            // clearAuxFilesToolStripMenuItem
-            // 
-            this.clearAuxFilesToolStripMenuItem.Name = "clearAuxFilesToolStripMenuItem";
-            this.clearAuxFilesToolStripMenuItem.Size = new System.Drawing.Size(311, 46);
-            this.clearAuxFilesToolStripMenuItem.Text = "Clear aux files";
-            this.clearAuxFilesToolStripMenuItem.Click += new System.EventHandler(this.clearAuxFilesToolStripMenuItem_Click);
             // 
             // FormMain
             // 
