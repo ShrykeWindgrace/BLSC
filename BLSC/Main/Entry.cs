@@ -81,7 +81,22 @@ namespace BLSC
     class Entry
     {
         public List<Field> fields;
-        public bool changedFlag;
+        private bool myCF=false;
+        public bool changedFlag
+        {
+            get
+            {
+                return myCF;
+            }
+            set
+            {
+                myCF = value;
+                foreach (Field f in fields)
+                {
+                    f.changed = value;
+                }
+            }
+        }
         public EType etype;
 
         public string DBDString;
@@ -90,15 +105,17 @@ namespace BLSC
         public Entry()
         {
             etype = new EType();
-            changedFlag = false;
+            
             fields = new List<Field>();
+            changedFlag = false;
         }
 
         public Entry(EEType eet)
         {
             etype = new EType(eet);
-            changedFlag = false;
+            
             fields = new List<Field>();
+            changedFlag = false;
         }
 
         public void resetDefault() { changedFlag = false; }//this will reset the order of elements to default; also it will strike down the flag "changedFlag"
