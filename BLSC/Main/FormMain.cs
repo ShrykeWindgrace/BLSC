@@ -28,7 +28,21 @@ namespace BLSC
         public const int hskip = 5;
         public const int ycoord = 150;
         public int globalCounter = 100;
-        public string currentProj = "";
+
+        private string CP = "";
+        public string currentProj
+        {
+            get
+            {
+                return CP;
+            }
+            set
+            {
+                CP = value;
+                this.Text = "Working on project: " + value;
+                AddUpdateAppSettings("CP", value); 
+            }
+        }
 
         public FormMain()
         {
@@ -164,7 +178,7 @@ buttonResetEntry.Location.Y);
             ABox = new AboutBox1();
 
             ReadSettings();
-            this.Text = "Working on the project: " + currentProj;
+            //this.Text = "Working on the project: " + currentProj;
 
 
 
@@ -406,6 +420,30 @@ buttonResetEntry.Location.Y);
 
         }
 
+        static void AddUpdateAppSettings(string key, string value)
+        {
+            try
+            {
+                //var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                var settings = ConfigurationManager.AppSettings;
+                if (settings[key] == null)
+                {
+                    settings.Add(key, value);
+                }
+                else
+                {
+                    settings[key] = value;
+                }
+               // configFile.Save(ConfigurationSaveMode.Modified);
+                //ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+            }
+            catch (ConfigurationErrorsException)
+            {
+                Console.WriteLine("Error writing app settings");
+                MessageBox.Show("can't ", "write settings",MessageBoxButtons.OK);
+            }
+        }
+
         private void exportToTex(object sender, EventArgs e)
         {
             //donothing, atm
@@ -536,6 +574,32 @@ buttonResetEntry.Location.Y);
                 saveToolStripMenuItem_Click(null, null);
             }
         }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Stream myStream;
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "All files (*.*)|*.*|blscxml files (*.blscxml)|*.blscxml";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if (!String.IsNullOrEmpty(saveFileDialog1.FileName))
+                {
+                    SerializeProjectToXML(saveFileDialog1.FileName);
+                    currentProj = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName);
+                }
+                //if ((myStream = saveFileDialog1.OpenFile()) != null)
+                //{
+                //    // Code to write the stream goes here.
+                //    myStream.Close();
+                //}
+            }
+        }
+
+     
 
     }
 }
