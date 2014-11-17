@@ -104,7 +104,7 @@ namespace BLSC
             {
                 if (c.Name.StartsWith("ComboBoxO"))
                 {
-                    MessageBox.Show("Found ComboBoxO", "yes", MessageBoxButtons.OK);
+                    //MessageBox.Show("Found ComboBoxO", "yes", MessageBoxButtons.OK);
                     //f.type = (c as ComboBox).Text;
                     (c as ComboBox).SelectedIndex = (c as ComboBox).FindStringExact(field.ToString());
                 }

@@ -104,7 +104,7 @@ namespace BLSC
             buttonPlus.Dock = DockStyle.Fill;
 
 
-            buttonAddField.Location = new Point(15, menuStrip1.Height + hskip);
+            buttonAddField.Location = new Point(15, menuStrip1.Height + vskip);
             buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
                 buttonAddField.Location.Y);
 
@@ -149,7 +149,7 @@ namespace BLSC
 buttonResetEntry.Location.Y);
 
             comboBoxEntrySelector.Location = new Point(buttonAddField.Location.X,
-                buttonAddField.Location.Y - vskip - comboBoxEntrySelector.Height);
+                buttonAddField.Location.Y + vskip + buttonAddField.Height);
             comboBoxEntrySelector.DropDownStyle = ComboBoxStyle.DropDownList;
 
 
@@ -522,11 +522,11 @@ buttonResetEntry.Location.Y);
         {
             try
             {
-                var appSettings = ConfigurationManager.AppSettings;
-                if (appSettings.Count > 0)
+              //  var appSettings = ConfigurationManager.AppSettings;
+                //if (appSettings.Count > 0)
                 {
                     //string result
-                    string s = appSettings.Get("CPFname");
+                    string s = Properties.Settings.Default.CPFname;
                     if (!(String.IsNullOrEmpty(s)))
                     {
                         SerializeProjectToXML(s);
@@ -538,9 +538,9 @@ buttonResetEntry.Location.Y);
                     }
                 }
             }
-            catch (ConfigurationErrorsException)
+            catch
             {
-                Console.WriteLine("Error reading app settings");
+                MessageBox.Show("Something went wrong with saving", "Error", MessageBoxButtons.OK);
             }
         }
 
