@@ -6,7 +6,7 @@
       <Value Profile="(Default)">test</Value>
     </Setting>
     <Setting Name="CPFname" Type="System.String" Scope="User">
-      <Value Profile="(Default)">test.blscxml</Value>
+      <Value Profile="(Default)">C:\Users\Timofey\Dropbox\BLSC\TestingStrings\BLSC\Main\bin\Debug\test.blscxml</Value>
     </Setting>
   </Settings>
 </SettingsFile>

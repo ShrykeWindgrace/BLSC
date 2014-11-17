@@ -37,7 +37,7 @@ namespace BLSC.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("test.blscxml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Timofey\\Dropbox\\BLSC\\TestingStrings\\BLSC\\Main\\bin\\Debug\\test.blscxml")]
         public string CPFname {
             get {
                 return ((string)(this["CPFname"]));

@@ -16,7 +16,7 @@ namespace BLSC
     public partial class FormMain : Form
     {
 
-        private Entry[] entries;
+        public Project project;
 
         public Field field;
         public AboutBox1 ABox;
@@ -79,11 +79,8 @@ namespace BLSC
             this.StartPosition = FormStartPosition.CenterScreen;
 
 
-            entries = new Entry[Enum.GetNames(typeof(EEType)).Length];
-            foreach (EEType eet in Enum.GetValues(typeof(EEType)))
-            {
-                entries[(int)eet] = new Entry(eet);
-            }
+            // entries = new Entry[Enum.GetNames(typeof(EEType)).Length];
+            project = new Project();
 
             btnSaveCurrentEntry = new Button();
             btnSaveCurrentEntry.Name = "btnSaveCurrentEntry";
@@ -106,8 +103,6 @@ namespace BLSC
             panel1.BackColor = Color.BurlyWood;
             buttonPlus.Dock = DockStyle.Fill;
 
-            //button1.Location = 
-            //textBox1.Location = new Point(button1.Location.X + button1.Width + 5, button1.Location.Y);
 
             buttonAddField.Location = new Point(15, menuStrip1.Height + hskip);
             buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
@@ -156,7 +151,7 @@ buttonResetEntry.Location.Y);
             comboBoxEntrySelector.Location = new Point(buttonAddField.Location.X,
                 buttonAddField.Location.Y - vskip - comboBoxEntrySelector.Height);
             comboBoxEntrySelector.DropDownStyle = ComboBoxStyle.DropDownList;
-            
+
 
             foreach (EEType eet in Enum.GetValues(typeof(EEType)))
             {
@@ -179,13 +174,13 @@ buttonResetEntry.Location.Y);
             btnExport.Click += new EventHandler(exportToTex);
             this.Controls.Add(btnExport);
 
-            
+
 
             //ReadSettings();
             currentProj = Properties.Settings.Default.CP;
             if (LoadFromXml(Properties.Settings.Default.CPFname))
             {
-                EntryToPanels(entries[0]);
+                EntryToPanels(project.entries[0]);
             }
             else
             {
@@ -202,8 +197,25 @@ buttonResetEntry.Location.Y);
 
         private bool LoadFromXml(string p)
         {
-            return false;
-            //throw new NotImplementedException();
+            bool result = true;
+            XmlSerializer serializer = new XmlSerializer(typeof(Project));
+            using (FileStream fileStream = new FileStream(p, FileMode.Open))
+            {
+                try
+                {
+                    project  = (Project)serializer.Deserialize(fileStream);
+                }
+
+                catch (InvalidOperationException)
+                {
+                    result = false;
+                    MessageBox.Show("Something went wrong on deserialisation", "Error", MessageBoxButtons.OK);
+
+                }
+            }
+            return result;
+
+
         }
 
         public void button2_Click(object sender, EventArgs e)//test serialisation
@@ -344,12 +356,11 @@ buttonResetEntry.Location.Y);
 
         public void SerializeProjectToXML(String fname)
         {
-            XmlSerializer ser = new XmlSerializer(typeof(Entry));
+            XmlSerializer ser = new XmlSerializer(typeof(Project));
             TextWriter tw = new StreamWriter(fname);
-            foreach (Entry e in entries)
-            {
-                ser.Serialize(tw, e);
-            }
+
+            ser.Serialize(tw, project);
+
             tw.Close();
             //ser.Serialize(tw,)
 
@@ -369,7 +380,7 @@ buttonResetEntry.Location.Y);
         {
             resetPanels();
             EEType eet = (comboBoxEntrySelector.SelectedItem as EType).etype;
-            entries[(int)eet] = new Entry(eet);
+            project.entries[(int)eet] = new Entry(eet);
             //need to add the method to drop the flag "changed" in the corresponding entry
         }
 
@@ -421,7 +432,7 @@ buttonResetEntry.Location.Y);
             header += "\\ExecuteBibliographyOptions{ firstinits,  maxnames= 5,  maxcitenames  = 2,\r\n useprefix,}\r\n";
             string formats = "";
             string drivers = "";
-            foreach (Entry en in entries)
+            foreach (Entry en in project.entries)
             {
                 //formats += e.exportToControlStrings();
                 en.exportToControlStrings();
@@ -446,7 +457,7 @@ buttonResetEntry.Location.Y);
         private void comboBoxEntrySelector_SelectedIndexChanged(object sender, EventArgs e)
         {
             OnContentChanged(sender, e);
-            EntryToPanels(entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)]);
+            EntryToPanels(project.entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)]);
 
         }
         //private void comboBox3_SelectionChangeCommitted(object sender, EventArgs e)
@@ -467,10 +478,10 @@ buttonResetEntry.Location.Y);
             {
                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
                 //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
-                entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields
+                project.entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields
                    = new List<Field>();
 
-                List<Field> lf = entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields;
+                List<Field> lf = project.entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields;
                 if (plist.Count > 1)
                 {
                     for (int i = 0; i < plist.Count - 1; i++)
@@ -481,7 +492,7 @@ buttonResetEntry.Location.Y);
 
                         //lf.Add(PanelToField(plist[i]));
                     }
-                    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].changedFlag = true;
+                    project.entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].changedFlag = true;
                 }
                 //MessageBox.Show("we see total fields:",
                 //    //lf.Count.ToString(),
