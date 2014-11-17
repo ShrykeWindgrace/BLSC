@@ -108,39 +108,13 @@ namespace BLSC
             buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
                 buttonAddField.Location.Y);
 
-            ButtonTestOrderOnPanel.Location = new Point(this.ClientSize.Width - hskip - ButtonTestOrderOnPanel.Width, menuStrip1.Height + vskip);
-            textBox2.Width = ButtonTestOrderOnPanel.Width;
-            textBox2.Location = new Point(ButtonTestOrderOnPanel.Location.X,
-                ButtonTestOrderOnPanel.Location.Y + ButtonTestOrderOnPanel.Height + vskip);
 
             var anc = AnchorStyles.Right | AnchorStyles.Top;
 
-            textBox2.Anchor = anc;
-            //Point(this.ClientSize.Width - hskip - buttonTesttSerialisation.Width,
-            //ButtonTestOrderOnPanel.Location.Y+  ButtonTestOrderOnPanel.Height + vskip);
-
-            buttonTesttSerialisation.Height = 24;
-            buttonTesttSerialisation.Location = new Point(this.ClientSize.Width - hskip - buttonTesttSerialisation.Width,
-                textBox2.Height + textBox2.Location.Y + vskip);
-            buttonTesttSerialisation.Anchor = anc;
+     
 
 
-            buttonDeserialiseField.Height = 24;
-            buttonDeserialiseField.Width = 120;
-            buttonDeserialiseField.Location = new Point(this.ClientSize.Width - hskip - buttonDeserialiseField.Width,
-               buttonTesttSerialisation.Height + buttonTesttSerialisation.Location.Y + hskip);
-
-            buttonDeserialiseField.Anchor = anc;
-
-
-
-            buttonPopulateField.Height = 24;
-            buttonPopulateField.Width = 120;
-            buttonPopulateField.Location = new Point(-hskip - buttonPopulateField.Width + buttonDeserialiseField.Location.X,
-                buttonDeserialiseField.Location.Y);
-            buttonPopulateField.Anchor = anc;
-
-            buttonResetEntry.Width = 100;
+                   buttonResetEntry.Width = 100;
             buttonResetEntry.Height = buttonRemLastField.Height;
             buttonResetEntry.Location = new Point(buttonRemLastField.Location.X + buttonRemLastField.Width + hskip,
                 buttonRemLastField.Location.Y);
@@ -279,18 +253,7 @@ buttonResetEntry.Location.Y);
             }//Здесь мы научились писать и читать xml с данными о размётке
 
         }
-        private void button7_Click(object sender, EventArgs e)
-        {
-            if (plist.Count >= 1)
-            {
-                foreach (Control c in plist[0].Controls)
-                {
-                    textBox2.Text += c.Name;
-                }
-            }
-            //resetPanels();
 
-        }
         private void button8_Click(object sender, EventArgs e)
         {
             appendPanel();

@@ -28,15 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonTesttSerialisation = new System.Windows.Forms.Button();
             this.buttonAddField = new System.Windows.Forms.Button();
             this.buttonRemLastField = new System.Windows.Forms.Button();
-            this.buttonPopulateField = new System.Windows.Forms.Button();
-            this.buttonDeserialiseField = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonPlus = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ButtonTestOrderOnPanel = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,17 +53,6 @@
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonTesttSerialisation
-            // 
-            this.buttonTesttSerialisation.Location = new System.Drawing.Point(188, 16);
-            this.buttonTesttSerialisation.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonTesttSerialisation.Name = "buttonTesttSerialisation";
-            this.buttonTesttSerialisation.Size = new System.Drawing.Size(95, 35);
-            this.buttonTesttSerialisation.TabIndex = 2;
-            this.buttonTesttSerialisation.Text = "Test serialization";
-            this.buttonTesttSerialisation.UseVisualStyleBackColor = true;
-            this.buttonTesttSerialisation.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonAddField
             // 
@@ -92,28 +76,6 @@
             this.buttonRemLastField.UseVisualStyleBackColor = true;
             this.buttonRemLastField.Click += new System.EventHandler(this.button4_Click);
             // 
-            // buttonPopulateField
-            // 
-            this.buttonPopulateField.Location = new System.Drawing.Point(149, 63);
-            this.buttonPopulateField.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonPopulateField.Name = "buttonPopulateField";
-            this.buttonPopulateField.Size = new System.Drawing.Size(51, 46);
-            this.buttonPopulateField.TabIndex = 5;
-            this.buttonPopulateField.Text = "populate field";
-            this.buttonPopulateField.UseVisualStyleBackColor = true;
-            this.buttonPopulateField.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // buttonDeserialiseField
-            // 
-            this.buttonDeserialiseField.Location = new System.Drawing.Point(219, 63);
-            this.buttonDeserialiseField.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonDeserialiseField.Name = "buttonDeserialiseField";
-            this.buttonDeserialiseField.Size = new System.Drawing.Size(64, 46);
-            this.buttonDeserialiseField.TabIndex = 6;
-            this.buttonDeserialiseField.Text = "deserialise field";
-            this.buttonDeserialiseField.UseVisualStyleBackColor = true;
-            this.buttonDeserialiseField.Click += new System.EventHandler(this.button6_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
@@ -136,26 +98,6 @@
             this.buttonPlus.Text = "+";
             this.buttonPlus.UseVisualStyleBackColor = true;
             this.buttonPlus.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(638, 348);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(57, 39);
-            this.textBox2.TabIndex = 8;
-            // 
-            // ButtonTestOrderOnPanel
-            // 
-            this.ButtonTestOrderOnPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonTestOrderOnPanel.Location = new System.Drawing.Point(1154, 63);
-            this.ButtonTestOrderOnPanel.Margin = new System.Windows.Forms.Padding(1);
-            this.ButtonTestOrderOnPanel.Name = "ButtonTestOrderOnPanel";
-            this.ButtonTestOrderOnPanel.Size = new System.Drawing.Size(260, 24);
-            this.ButtonTestOrderOnPanel.TabIndex = 9;
-            this.ButtonTestOrderOnPanel.Text = "Test the order of elements on a panel";
-            this.ButtonTestOrderOnPanel.UseVisualStyleBackColor = true;
-            this.ButtonTestOrderOnPanel.Click += new System.EventHandler(this.button7_Click);
             // 
             // menuStrip1
             // 
@@ -305,14 +247,9 @@
             this.ClientSize = new System.Drawing.Size(1414, 824);
             this.Controls.Add(this.comboBoxEntrySelector);
             this.Controls.Add(this.buttonResetEntry);
-            this.Controls.Add(this.ButtonTestOrderOnPanel);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.buttonDeserialiseField);
-            this.Controls.Add(this.buttonPopulateField);
             this.Controls.Add(this.buttonRemLastField);
             this.Controls.Add(this.buttonAddField);
-            this.Controls.Add(this.buttonTesttSerialisation);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KeyPreview = true;
@@ -333,15 +270,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonTesttSerialisation;
         private System.Windows.Forms.Button buttonAddField;
         private System.Windows.Forms.Button buttonRemLastField;
-        private System.Windows.Forms.Button buttonPopulateField;
-        private System.Windows.Forms.Button buttonDeserialiseField;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonPlus;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button ButtonTestOrderOnPanel;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
