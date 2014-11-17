@@ -40,7 +40,8 @@ namespace BLSC
             {
                 CP = value;
                 this.Text = "Working on project: " + value;
-                AddUpdateAppSettings("CP", value); 
+                AddUpdateAppSettings("CP", value);
+                AddUpdateAppSettings("myset", "set");
             }
         }
 
@@ -177,7 +178,9 @@ buttonResetEntry.Location.Y);
             field = new Field();
             ABox = new AboutBox1();
 
-            ReadSettings();
+            //ReadSettings();
+            currentProj = Properties.Settings.Default.CP;
+
             //this.Text = "Working on the project: " + currentProj;
 
 
@@ -420,27 +423,50 @@ buttonResetEntry.Location.Y);
 
         }
 
+        //static void AddUpdateAppSettings(string key, string value)
+        //{
+        //    try
+        //    {
+        //        //var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+        //        var settings = ConfigurationManager.AppSettings;
+        //        if (settings[key] == null)
+        //        {
+        //            settings.Add(key, value);
+        //        }
+        //        else
+        //        {
+        //            settings[key] = value;
+        //        }
+        //       // configFile.Save(ConfigurationSaveMode.Modified);
+        //        //ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+        //    }
+        //    catch (ConfigurationErrorsException)
+        //    {
+        //        Console.WriteLine("Error writing app settings");
+        //        MessageBox.Show("can't ", "write settings",MessageBoxButtons.OK);
+        //    }
+        //}
+
         static void AddUpdateAppSettings(string key, string value)
         {
             try
             {
-                //var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                var settings = ConfigurationManager.AppSettings;
+                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                var settings = configFile.AppSettings.Settings;
                 if (settings[key] == null)
                 {
                     settings.Add(key, value);
                 }
                 else
                 {
-                    settings[key] = value;
+                    settings[key].Value = value;
                 }
-               // configFile.Save(ConfigurationSaveMode.Modified);
-                //ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
+                configFile.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
             }
             catch (ConfigurationErrorsException)
             {
                 Console.WriteLine("Error writing app settings");
-                MessageBox.Show("can't ", "write settings",MessageBoxButtons.OK);
             }
         }
 
@@ -590,6 +616,9 @@ buttonResetEntry.Location.Y);
                 {
                     SerializeProjectToXML(saveFileDialog1.FileName);
                     currentProj = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName);
+                    Properties.Settings.Default.CP = currentProj;
+                    Properties.Settings.Default.Save();
+
                 }
                 //if ((myStream = saveFileDialog1.OpenFile()) != null)
                 //{

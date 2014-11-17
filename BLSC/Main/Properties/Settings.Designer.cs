@@ -22,5 +22,29 @@ namespace BLSC.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("test")]
+        public string CP {
+            get {
+                return ((string)(this["CP"]));
+            }
+            set {
+                this["CP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("test.blscxml")]
+        public string CPFname {
+            get {
+                return ((string)(this["CPFname"]));
+            }
+            set {
+                this["CPFname"] = value;
+            }
+        }
     }
 }
