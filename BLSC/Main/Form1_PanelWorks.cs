@@ -92,7 +92,7 @@ namespace BLSC
                 //appendPanel();
                 FieldToLastPanel(field);
             }
-            btnSaveCurrentEntry.Enabled = false;
+            NeedsSaving = false;
         }
 
         private void FieldToLastPanel(Field field)
@@ -185,7 +185,7 @@ namespace BLSC
 
         protected void OnContentChanged(object sender, EventArgs e)
         {
-            btnSaveCurrentEntry.Enabled = true;
+            NeedsSaving = true;
             //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
            /* {
                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
@@ -281,7 +281,7 @@ namespace BLSC
             this.Controls.Add(p);
             relocatePanels();
             p.Visible = true;
-            btnSaveCurrentEntry.Enabled = true;
+            NeedsSaving = true;
         }
         private void removePanelBtn(object sender, EventArgs e)
         {//onclick event for remove buttons on panels
@@ -289,7 +289,7 @@ namespace BLSC
             //int index = clBtn.Where<Button>( x => return x  ==(sender as Button); ).Select<Button,int>( x => clBtn.IndexOf(x)).Single<int>();
             int i = plist.IndexOf((Panel)(((Button)sender).Parent));
             removePanel(i);
-            btnSaveCurrentEntry.Enabled = true;
+            NeedsSaving = true;
         }
 
         public Field PanelToField(Panel p)

@@ -40,8 +40,21 @@ namespace BLSC
             {
                 CP = value;
                 this.Text = "Working on project: " + value;
-                AddUpdateAppSettings("CP", value);
-                AddUpdateAppSettings("myset", "set");
+                //AddUpdateAppSettings("CP", value);
+                //AddUpdateAppSettings("myset", "set");
+            }
+        }
+        private bool NS;//need saving
+        public bool NeedsSaving
+        {
+            get
+            {
+                return NS;
+            }
+            set
+            {
+                NS = value;
+                btnSaveCurrentEntry.Enabled = value;
             }
         }
 
@@ -178,13 +191,6 @@ buttonResetEntry.Location.Y);
             field = new Field();
             ABox = new AboutBox1();
 
-            //ReadSettings();
-            currentProj = Properties.Settings.Default.CP;
-
-            //this.Text = "Working on the project: " + currentProj;
-
-
-
             btnExport = new Button();
             btnExport.Name = "btnExport";
             btnExport.Text = "Export current project";
@@ -197,8 +203,32 @@ buttonResetEntry.Location.Y);
             btnExport.Click += new EventHandler(exportToTex);
             this.Controls.Add(btnExport);
 
-            btnSaveCurrentEntry.Enabled = false;
+            //nee = false;
 
+            //ReadSettings();
+            currentProj = Properties.Settings.Default.CP;
+            LoadFromXml(Properties.Settings.Default.CPFname);
+            ShowPanels(EEType.article);
+            NeedsSaving = false;
+
+            //this.Text = "Working on the project: " + currentProj;
+
+
+
+
+
+            //currentProj = pr
+
+        }
+
+        private void ShowPanels(EEType e)
+        {
+            //throw new NotImplementedException();
+        }
+
+        private void LoadFromXml(string p)
+        {
+            //throw new NotImplementedException();
         }
 
         public void button2_Click(object sender, EventArgs e)//test serialisation
@@ -277,7 +307,8 @@ buttonResetEntry.Location.Y);
         private void button8_Click(object sender, EventArgs e)
         {
             appendPanel();
-            btnSaveCurrentEntry.Enabled = true;
+            NeedsSaving = true;
+
         }
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -405,70 +436,6 @@ buttonResetEntry.Location.Y);
         //        Console.WriteLine("Error reading app settings");
         //    }
         //}
-        private void ReadSettings()
-        {
-            try
-            {
-                var appSettings = ConfigurationManager.AppSettings;
-                if (appSettings.Count > 0)
-                {
-                    //string result
-                    currentProj = appSettings["CP"] ?? "Not Found";
-                }
-            }
-            catch (ConfigurationErrorsException)
-            {
-                Console.WriteLine("Error reading app settings");
-            }
-
-        }
-
-        //static void AddUpdateAppSettings(string key, string value)
-        //{
-        //    try
-        //    {
-        //        //var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-        //        var settings = ConfigurationManager.AppSettings;
-        //        if (settings[key] == null)
-        //        {
-        //            settings.Add(key, value);
-        //        }
-        //        else
-        //        {
-        //            settings[key] = value;
-        //        }
-        //       // configFile.Save(ConfigurationSaveMode.Modified);
-        //        //ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
-        //    }
-        //    catch (ConfigurationErrorsException)
-        //    {
-        //        Console.WriteLine("Error writing app settings");
-        //        MessageBox.Show("can't ", "write settings",MessageBoxButtons.OK);
-        //    }
-        //}
-
-        static void AddUpdateAppSettings(string key, string value)
-        {
-            try
-            {
-                var configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                var settings = configFile.AppSettings.Settings;
-                if (settings[key] == null)
-                {
-                    settings.Add(key, value);
-                }
-                else
-                {
-                    settings[key].Value = value;
-                }
-                configFile.Save(ConfigurationSaveMode.Modified);
-                ConfigurationManager.RefreshSection(configFile.AppSettings.SectionInformation.Name);
-            }
-            catch (ConfigurationErrorsException)
-            {
-                Console.WriteLine("Error writing app settings");
-            }
-        }
 
         private void exportToTex(object sender, EventArgs e)
         {
@@ -521,7 +488,7 @@ buttonResetEntry.Location.Y);
         protected void SaveEntry(object sender, EventArgs e)
         {
             //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
-            btnSaveCurrentEntry.Enabled = false;
+            NeedsSaving = false;
             {
                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
                 //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
@@ -616,6 +583,8 @@ buttonResetEntry.Location.Y);
                 {
                     SerializeProjectToXML(saveFileDialog1.FileName);
                     currentProj = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName);
+                    string CPFname = saveFileDialog1.FileName;
+                    MessageBox.Show(CPFname, currentProj, MessageBoxButtons.OK);
                     Properties.Settings.Default.CP = currentProj;
                     Properties.Settings.Default.Save();
 
@@ -628,7 +597,7 @@ buttonResetEntry.Location.Y);
             }
         }
 
-     
+
 
     }
 }
