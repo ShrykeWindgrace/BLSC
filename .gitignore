@@ -187,4 +187,6 @@ LaTeXCompilation/
 TestingStrings/
 TestsLaTeX/
 
+#some pieces of code that are useful somewhere, but not here
+scrap*.*
 
