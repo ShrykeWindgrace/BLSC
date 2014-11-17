@@ -144,7 +144,8 @@ buttonResetEntry.Location.Y);
             btnExport.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             /*btnexport.location = new point(-hskip + this.clientsize.width - btnexport.width,
                 buttonDeserialiseField.Location.Y+buttonDeserialiseField.Height+vskip);*/
-            btnExport.Location = new Point(450, 120);
+            btnExport.Location = new Point(btnSaveCurrentEntry.Location.X,
+                btnSaveCurrentEntry.Location.Y+vskip+btnSaveCurrentEntry.Height);
             btnExport.Click += new EventHandler(exportToTex);
             this.Controls.Add(btnExport);
 
