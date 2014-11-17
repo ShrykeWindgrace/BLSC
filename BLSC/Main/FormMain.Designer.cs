@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonTesttSerialisation = new System.Windows.Forms.Button();
             this.buttonAddField = new System.Windows.Forms.Button();
             this.buttonRemLastField = new System.Windows.Forms.Button();
@@ -60,29 +58,6 @@
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(8, 15);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 41);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button with drag text";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button1_MouseDown);
-            // 
-            // textBox1
-            // 
-            this.textBox1.AllowDrop = true;
-            this.textBox1.Location = new System.Drawing.Point(91, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(95, 39);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "accepts drag";
-            this.textBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox1_DragDrop);
-            this.textBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox1_DragEnter);
             // 
             // buttonTesttSerialisation
             // 
@@ -164,7 +139,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(112, 38);
+            this.textBox2.Location = new System.Drawing.Point(638, 348);
             this.textBox2.Margin = new System.Windows.Forms.Padding(1);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(57, 39);
@@ -192,7 +167,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1414, 50);
+            this.menuStrip1.Size = new System.Drawing.Size(1414, 47);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -210,7 +185,7 @@
             this.toolStripSeparator1,
             this.quitToolStripMenuItem1});
             this.FileToolStripMenuItem1.Name = "FileToolStripMenuItem1";
-            this.FileToolStripMenuItem1.Size = new System.Drawing.Size(75, 48);
+            this.FileToolStripMenuItem1.Size = new System.Drawing.Size(75, 45);
             this.FileToolStripMenuItem1.Text = "File";
             // 
             // newToolStripMenuItem
@@ -280,7 +255,7 @@
             this.compileTestFileToolStripMenuItem,
             this.clearAuxFilesToolStripMenuItem});
             this.laTeXToolStripMenuItem.Name = "laTeXToolStripMenuItem";
-            this.laTeXToolStripMenuItem.Size = new System.Drawing.Size(109, 48);
+            this.laTeXToolStripMenuItem.Size = new System.Drawing.Size(109, 45);
             this.laTeXToolStripMenuItem.Text = "LaTeX";
             // 
             // compileTestFileToolStripMenuItem
@@ -300,7 +275,7 @@
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(112, 48);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(112, 45);
             this.AboutToolStripMenuItem.Text = "About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -328,7 +303,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1414, 824);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.comboBoxEntrySelector);
             this.Controls.Add(this.buttonResetEntry);
             this.Controls.Add(this.ButtonTestOrderOnPanel);
@@ -339,8 +313,7 @@
             this.Controls.Add(this.buttonRemLastField);
             this.Controls.Add(this.buttonAddField);
             this.Controls.Add(this.buttonTesttSerialisation);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -360,8 +333,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button buttonTesttSerialisation;
         private System.Windows.Forms.Button buttonAddField;
         private System.Windows.Forms.Button buttonRemLastField;

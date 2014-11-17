@@ -63,23 +63,8 @@ namespace BLSC
             InitializeComponent();
         }
         //user control events
-        private void button1_MouseDown(object sender, MouseEventArgs e)
-        {
-            button1.DoDragDrop(button1.Text, DragDropEffects.Copy | DragDropEffects.Move);
-        }
 
-        private void textBox1_DragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.Text))
-                e.Effect = DragDropEffects.Copy;
-            else
-                e.Effect = DragDropEffects.None;
-        }
 
-        private void textBox1_DragDrop(object sender, DragEventArgs e)
-        {
-            textBox1.Text += e.Data.GetData(DataFormats.Text).ToString();
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -93,10 +78,6 @@ namespace BLSC
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            //order = new List<ComboBox>();
-            //punctuation = new List<ComboBox>();
-            //ostyle = new List<CheckedListBox>();
-            //pstyle = new List<CheckedListBox>();
 
             entries = new Entry[Enum.GetNames(typeof(EEType)).Length];
             foreach (EEType eet in Enum.GetValues(typeof(EEType)))
@@ -125,10 +106,10 @@ namespace BLSC
             panel1.BackColor = Color.BurlyWood;
             buttonPlus.Dock = DockStyle.Fill;
 
-            button1.Location = new Point(15, menuStrip1.Height + 2);
-            textBox1.Location = new Point(button1.Location.X + button1.Width + 5, button1.Location.Y);
+            //button1.Location = 
+            //textBox1.Location = new Point(button1.Location.X + button1.Width + 5, button1.Location.Y);
 
-            buttonAddField.Location = new Point(button1.Location.X, button1.Location.Y + button1.Width + vskip);
+            buttonAddField.Location = new Point(15, menuStrip1.Height + hskip);
             buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
                 buttonAddField.Location.Y);
 
@@ -175,18 +156,13 @@ buttonResetEntry.Location.Y);
             comboBoxEntrySelector.Location = new Point(buttonAddField.Location.X,
                 buttonAddField.Location.Y - vskip - comboBoxEntrySelector.Height);
             comboBoxEntrySelector.DropDownStyle = ComboBoxStyle.DropDownList;
-            //comboBoxEntrySelector.Items.AddRange(Enum.GetNames(typeof(EEType)));
+            
 
             foreach (EEType eet in Enum.GetValues(typeof(EEType)))
             {
                 comboBoxEntrySelector.Items.Add(new EType(eet));
             }
-            comboBoxEntrySelector.SelectedIndex = 0;// comboBoxEntrySelector.FindStringExact("article"); 
-
-
-
-
-            // clBtn = new List<Button>();
+            comboBoxEntrySelector.SelectedIndex = 0;
 
             field = new Field();
             ABox = new AboutBox1();
@@ -203,31 +179,30 @@ buttonResetEntry.Location.Y);
             btnExport.Click += new EventHandler(exportToTex);
             this.Controls.Add(btnExport);
 
-            //nee = false;
+            
 
             //ReadSettings();
             currentProj = Properties.Settings.Default.CP;
-            LoadFromXml(Properties.Settings.Default.CPFname);
-            ShowPanels(EEType.article);
+            if (LoadFromXml(Properties.Settings.Default.CPFname))
+            {
+                EntryToPanels(entries[0]);
+            }
+            else
+            {
+                MessageBox.Show("Loading of the file " + Properties.Settings.Default.CPFname + " failed",
+                    "Error",
+                    MessageBoxButtons.OK);
+            }
+            //ShowPanels(EEType.article);
             NeedsSaving = false;
 
-            //this.Text = "Working on the project: " + currentProj;
-
-
-
-
-
-            //currentProj = pr
-
         }
 
-        private void ShowPanels(EEType e)
-        {
-            //throw new NotImplementedException();
-        }
 
-        private void LoadFromXml(string p)
+
+        private bool LoadFromXml(string p)
         {
+            return false;
             //throw new NotImplementedException();
         }
 
