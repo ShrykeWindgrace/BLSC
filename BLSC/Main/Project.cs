@@ -10,7 +10,8 @@ namespace BLSC
     public class Project
     {
         public Entry[] entries;
-        public String name = "";
+        public String name = "";//name of the future style. Not necessarily the same as the filename
+        public String inheritedCS = "numeric-comp";
         //public something to implement other settings
         public Project()
         {
@@ -20,6 +21,7 @@ namespace BLSC
                 entries[(int)eet] = new Entry(eet);
             }
             name = "test";
+            //inheritedCS = 
         }
         public Project(String pname)
         {
