@@ -526,38 +526,10 @@ buttonResetEntry.Location.Y);
 
         }
 
-        private void wipeProject()
-        {//wipe the project;
-            // throw new NotImplementedException(); 
-        }
+     
 
 
 
-        private bool closeProject(clSource ClSource)
-        {
-            if (ProjectNeedsSaving)
-            {
-                DialogResult DR = MessageBox.Show("The current project has some unsaved changes." + MessageStrings.Mstring(ClSource),
-                    "Attention", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
-                switch (DR)
-                {
-                    case DialogResult.Cancel:
-                        return false;
-                    case DialogResult.No:
-                        return true;
-                    case DialogResult.Yes:
-                        SaveEntry(null, null);
-                        saveToolStripMenuItem_Click(null, null);
-                        return true;
-                    default:
-                        return false;
-                }
-            }
-            else
-            {
-                return true;
-            }
-        }
 
 
 

@@ -33,30 +33,5 @@ namespace BLSC
             name = pname;
         }
     }
-    public enum clSource { regular = 0, newproject = 1, formclose = 2, openproject }
-    public static class MessageStrings
-    {
-        public static String Mstring(clSource cs)
-        {
-            String res = "Would you like to save changes before ";
-            switch (cs)
-            {
-                case clSource.regular:
-                    res += "closing this project?";
-                    break;
-                case clSource.newproject:
-                    res += "starting new project?";
-                    break;
-                case clSource.formclose:
-                    res += "closing this program?";
-                    break;
-                case clSource.openproject:
-                    res += "opening another project?";
-                    break;
-                //default:
-                //    break;
-            }
-            return res;
-        }
-    }
+    
 }
