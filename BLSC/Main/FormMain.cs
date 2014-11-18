@@ -44,20 +44,42 @@ namespace BLSC
                 //AddUpdateAppSettings("myset", "set");
             }
         }
-        private bool NS;//need saving
-        public bool NeedsSaving
+        private bool ENS;//entry need saving
+        private bool PNS;//project needs saving
+        public bool EntryNeedsSaving
         {
             get
             {
-                return NS;
+                return ENS;
             }
             set
             {
-                NS = value;
+                ENS = value;
                 btnSaveCurrentEntry.Enabled = value;
+                if (value)
+                {
+                    ProjectNeedsSaving = value;//i.e. if we need to save internally one entry, then we need to save the project, too.
+                }
+            }
+        }//А может, ну его лесом? Пусть данные форм сохраняются немедленно по изменению контрола?
+        //И все изменения останутся только в текущем состоянии, в текст-то ничего же не уйдёт
+        //Пока идея мне нравится
+
+        //Ещё  нужна кнопка на ресет текущего проекта
+        //и на закрытие текущего проекта
+        public bool ProjectNeedsSaving
+        {
+            get
+            {
+                return PNS;
+            }
+            set
+            {
+                PNS = value;
+                //btnSaveCurrentEntry.Enabled = value;
+
             }
         }
-
         public FormMain()
         {
             InitializeComponent();
@@ -111,10 +133,10 @@ namespace BLSC
 
             var anc = AnchorStyles.Right | AnchorStyles.Top;
 
-     
 
 
-                   buttonResetEntry.Width = 100;
+
+            buttonResetEntry.Width = 100;
             buttonResetEntry.Height = buttonRemLastField.Height;
             buttonResetEntry.Location = new Point(buttonRemLastField.Location.X + buttonRemLastField.Width + hskip,
                 buttonRemLastField.Location.Y);
@@ -145,7 +167,7 @@ buttonResetEntry.Location.Y);
             /*btnexport.location = new point(-hskip + this.clientsize.width - btnexport.width,
                 buttonDeserialiseField.Location.Y+buttonDeserialiseField.Height+vskip);*/
             btnExport.Location = new Point(btnSaveCurrentEntry.Location.X,
-                btnSaveCurrentEntry.Location.Y+vskip+btnSaveCurrentEntry.Height);
+                btnSaveCurrentEntry.Location.Y + vskip + btnSaveCurrentEntry.Height);
             btnExport.Click += new EventHandler(exportToTex);
             this.Controls.Add(btnExport);
 
@@ -164,7 +186,7 @@ buttonResetEntry.Location.Y);
                     MessageBoxButtons.OK);
             }
             //ShowPanels(EEType.article);
-            NeedsSaving = false;
+            EntryNeedsSaving = false;
 
         }
 
@@ -178,7 +200,7 @@ buttonResetEntry.Location.Y);
             {
                 try
                 {
-                    project  = (Project)serializer.Deserialize(fileStream);
+                    project = (Project)serializer.Deserialize(fileStream);
                 }
 
                 catch (InvalidOperationException)
@@ -258,7 +280,7 @@ buttonResetEntry.Location.Y);
         private void button8_Click(object sender, EventArgs e)
         {
             appendPanel();
-            NeedsSaving = true;
+            EntryNeedsSaving = true;
 
         }
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -362,31 +384,6 @@ buttonResetEntry.Location.Y);
         }
 
 
-
-        //static private  void ReadAllSettings()
-        //{
-        //    try
-        //    {
-        //        var appSettings = ConfigurationManager.AppSettings;
-
-        //        if (appSettings.Count == 0)
-        //        {
-        //            Console.WriteLine("AppSettings is empty.");
-        //        }
-        //        else
-        //        {
-        //            foreach (var key in appSettings.AllKeys)
-        //            {
-        //                Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);
-        //            }
-        //        }
-        //    }
-        //    catch (ConfigurationErrorsException)
-        //    {
-        //        Console.WriteLine("Error reading app settings");
-        //    }
-        //}
-
         private void exportToTex(object sender, EventArgs e)
         {
             //donothing, atm
@@ -438,7 +435,7 @@ buttonResetEntry.Location.Y);
         protected void SaveEntry(object sender, EventArgs e)
         {
             //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
-            NeedsSaving = false;
+            EntryNeedsSaving = false;
             {
                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
                 //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
@@ -486,7 +483,7 @@ buttonResetEntry.Location.Y);
         {
             try
             {
-              //  var appSettings = ConfigurationManager.AppSettings;
+                //  var appSettings = ConfigurationManager.AppSettings;
                 //if (appSettings.Count > 0)
                 {
                     //string result
@@ -494,11 +491,12 @@ buttonResetEntry.Location.Y);
                     if (!(String.IsNullOrEmpty(s)))
                     {
                         SerializeProjectToXML(s);
-                        MessageBox.Show("Project saved", "Done", MessageBoxButtons.OK);
+                        MessageBox.Show("Project saved", "Done", MessageBoxButtons.OK);//need to catch some exceptions here imho
                     }
                     else
                     {
-                        MessageBox.Show("Problem with application settings: no project file reference", "Warning!", MessageBoxButtons.OK);
+                        //MessageBox.Show("Problem with application settings: no project file reference", "Warning!", MessageBoxButtons.OK);
+                        saveAsToolStripMenuItem_Click(sender, e);
                     }
                 }
             }
@@ -516,15 +514,73 @@ buttonResetEntry.Location.Y);
                 SaveEntry(sender, e);
                 saveToolStripMenuItem_Click(null, null);
             }
+            if (e.Control && e.KeyCode == Keys.W)//closing the project. У нас проблема - проект закрывать умеет
+            //просто закрытие, открытие нового, закрытие формы. Всё у них одинаково, только сообщения различаются. 
+            //Собственно, их и будем передавать
+            {
+                if (closeProject(clSource.regular))
+                {
+                    wipeProject();
+                }
+            }
+
         }
 
+        private void wipeProject()
+        {//wipe the project;
+            // throw new NotImplementedException(); 
+        }
+
+
+
+        private bool closeProject(clSource ClSource)
+        {
+            if (ProjectNeedsSaving)
+            {
+                DialogResult DR = MessageBox.Show("The current project has some unsaved changes." + MessageStrings.Mstring(ClSource),
+                    "Attention", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                switch (DR)
+                {
+                    case DialogResult.Cancel:
+                        return false;
+                    case DialogResult.No:
+                        return true;
+                    case DialogResult.Yes:
+                        SaveEntry(null, null);
+                        saveToolStripMenuItem_Click(null, null);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
+
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Saved())
+            {
+                MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK,MessageBoxIcon.None);
+            }
+            else
+            {
+                MessageBox.Show("Problems with saving", currentProj, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool Saved()
         {
             //Stream myStream;
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
 
             saveFileDialog1.Filter = "All files (*.*)|*.*|blscxml files (*.blscxml)|*.blscxml";
             saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.FileName = Properties.Settings.Default.CP;
             saveFileDialog1.RestoreDirectory = true;
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -533,8 +589,9 @@ buttonResetEntry.Location.Y);
                 {
                     SerializeProjectToXML(saveFileDialog1.FileName);
                     currentProj = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName);
-                    string CPFname = saveFileDialog1.FileName;
-                    MessageBox.Show(CPFname, currentProj, MessageBoxButtons.OK);
+                    //string CPFname = saveFileDialog1.FileName;
+                    Properties.Settings.Default.CPFname = saveFileDialog1.FileName;
+                    
                     Properties.Settings.Default.CP = currentProj;
                     Properties.Settings.Default.Save();
 
@@ -544,6 +601,20 @@ buttonResetEntry.Location.Y);
                 //    // Code to write the stream goes here.
                 //    myStream.Close();
                 //}
+            }
+            return (saveFileDialog1.ShowDialog() == DialogResult.OK);
+        }
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = !closeProject(clSource.formclose);
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (closeProject(clSource.regular))
+            {
+                wipeProject();
             }
         }
 

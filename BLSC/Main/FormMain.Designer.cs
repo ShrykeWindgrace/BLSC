@@ -50,6 +50,7 @@
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonResetEntry = new System.Windows.Forms.Button();
             this.comboBoxEntrySelector = new System.Windows.Forms.ComboBox();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +110,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1414, 47);
+            this.menuStrip1.Size = new System.Drawing.Size(1414, 50);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -121,13 +122,14 @@
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
+            this.closeToolStripMenuItem,
             this.toolStripSeparator2,
             this.exportStyleToolStripMenuItem,
             this.exportStyleAsToolStripMenuItem,
             this.toolStripSeparator1,
             this.quitToolStripMenuItem1});
             this.FileToolStripMenuItem1.Name = "FileToolStripMenuItem1";
-            this.FileToolStripMenuItem1.Size = new System.Drawing.Size(75, 45);
+            this.FileToolStripMenuItem1.Size = new System.Drawing.Size(75, 48);
             this.FileToolStripMenuItem1.Text = "File";
             // 
             // newToolStripMenuItem
@@ -197,7 +199,7 @@
             this.compileTestFileToolStripMenuItem,
             this.clearAuxFilesToolStripMenuItem});
             this.laTeXToolStripMenuItem.Name = "laTeXToolStripMenuItem";
-            this.laTeXToolStripMenuItem.Size = new System.Drawing.Size(109, 45);
+            this.laTeXToolStripMenuItem.Size = new System.Drawing.Size(109, 48);
             this.laTeXToolStripMenuItem.Text = "LaTeX";
             // 
             // compileTestFileToolStripMenuItem
@@ -217,7 +219,7 @@
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(112, 45);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(112, 48);
             this.AboutToolStripMenuItem.Text = "About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -240,6 +242,13 @@
             this.comboBoxEntrySelector.TabIndex = 12;
             this.comboBoxEntrySelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxEntrySelector_SelectedIndexChanged);
             // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(293, 46);
+            this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -257,6 +266,7 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "FormMain";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormMain_KeyDown);
             this.panel1.ResumeLayout(false);
@@ -292,6 +302,7 @@
         private System.Windows.Forms.ToolStripMenuItem laTeXToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem compileTestFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearAuxFilesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
     }
 }
 
