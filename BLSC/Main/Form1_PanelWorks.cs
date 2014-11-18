@@ -83,6 +83,7 @@ namespace BLSC
             buttonPlus.Dock = DockStyle.Fill;
             this.Controls.Add(plist[i]);
             relocatePanels();
+            EntryNeedsSaving = true;
         }
         private void EntryToPanels(Entry e)
         {

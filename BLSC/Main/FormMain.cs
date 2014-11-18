@@ -130,12 +130,6 @@ namespace BLSC
             buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
                 buttonAddField.Location.Y);
 
-
-           // var anc = AnchorStyles.Right | AnchorStyles.Top;
-
-
-
-
             buttonResetEntry.Width = 100;
             buttonResetEntry.Height = buttonRemLastField.Height;
             buttonResetEntry.Location = new Point(buttonRemLastField.Location.X + buttonRemLastField.Width + hskip,
@@ -175,7 +169,7 @@ buttonResetEntry.Location.Y);
 
             //ReadSettings();
             currentProj = Properties.Settings.Default.CP;
-            if (LoadFromXml(Properties.Settings.Default.CPFname))
+            if (LoadProjectFromXml(Properties.Settings.Default.CPFname))
             {
                 EntryToPanels(project.entries[0]);
             }
@@ -187,33 +181,13 @@ buttonResetEntry.Location.Y);
             }
             //ShowPanels(EEType.article);
             EntryNeedsSaving = false;
+            ProjectNeedsSaving = false;
 
         }
 
 
 
-        private bool LoadFromXml(string p)
-        {
-            bool result = true;
-            XmlSerializer serializer = new XmlSerializer(typeof(Project));
-            using (FileStream fileStream = new FileStream(p, FileMode.Open))
-            {
-                try
-                {
-                    project = (Project)serializer.Deserialize(fileStream);
-                }
 
-                catch (InvalidOperationException)
-                {
-                    result = false;
-                    MessageBox.Show("Something went wrong on deserialisation", "Error", MessageBoxButtons.OK);
-
-                }
-            }
-            return result;
-
-
-        }
 
      
 
@@ -242,7 +216,8 @@ buttonResetEntry.Location.Y);
 
         private void quitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+           // FormMain_FormClosing(sender, e);
         }
 
 
@@ -283,31 +258,15 @@ buttonResetEntry.Location.Y);
 
         }
 
-        static public void SerializeToXML(Field field)
-        {
-            XmlSerializer serializer = new XmlSerializer(typeof(Field));
-            TextWriter textWriter = new StreamWriter(@field.type + ".xml");
-            serializer.Serialize(textWriter, field);
-            textWriter.Close();
-        }
+        //static public void SerializeToXML(Field field)
+        //{
+        //    XmlSerializer serializer = new XmlSerializer(typeof(Field));
+        //    TextWriter textWriter = new StreamWriter(@field.type + ".xml");
+        //    serializer.Serialize(textWriter, field);
+        //    textWriter.Close();
+        //}
 
-        public void SerializeProjectToXML(String fname)
-        {
-            XmlSerializer ser = new XmlSerializer(typeof(Project));
-            TextWriter tw = new StreamWriter(fname);
-
-            ser.Serialize(tw, project);
-
-            tw.Close();
-            //ser.Serialize(tw,)
-
-
-        }
-        //panel works
-
-
-
-
+    
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -430,32 +389,7 @@ buttonResetEntry.Location.Y);
             clearAuxLatexFiles();
         }
 
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                //  var appSettings = ConfigurationManager.AppSettings;
-                //if (appSettings.Count > 0)
-                {
-                    //string result
-                    string s = Properties.Settings.Default.CPFname;
-                    if (!(String.IsNullOrEmpty(s)))
-                    {
-                        SerializeProjectToXML(s);
-                        MessageBox.Show("Project saved", "Done", MessageBoxButtons.OK);//need to catch some exceptions here imho
-                    }
-                    else
-                    {
-                        //MessageBox.Show("Problem with application settings: no project file reference", "Warning!", MessageBoxButtons.OK);
-                        saveAsToolStripMenuItem_Click(sender, e);
-                    }
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Something went wrong with saving", "Error", MessageBoxButtons.OK);
-            }
-        }
+       
 
         private void FormMain_KeyDown(object sender, KeyEventArgs e)
         {
@@ -475,6 +409,7 @@ buttonResetEntry.Location.Y);
                 }
             }
 
+
         }
 
      
@@ -484,50 +419,9 @@ buttonResetEntry.Location.Y);
 
 
 
-        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (Saved())
-            {
-                MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK,MessageBoxIcon.None);
-            }
-            else
-            {
-                MessageBox.Show("Problems with saving", currentProj, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
-        private bool Saved()
-        {
-            //Stream myStream;
-            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
 
-            saveFileDialog1.Filter = "All files (*.*)|*.*|blscxml files (*.blscxml)|*.blscxml";
-            saveFileDialog1.FilterIndex = 2;
-            saveFileDialog1.FileName = Properties.Settings.Default.CP;
-            saveFileDialog1.RestoreDirectory = true;
-
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                if (!String.IsNullOrEmpty(saveFileDialog1.FileName))
-                {
-                    SerializeProjectToXML(saveFileDialog1.FileName);
-                    currentProj = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName);
-                    //string CPFname = saveFileDialog1.FileName;
-                    Properties.Settings.Default.CPFname = saveFileDialog1.FileName;
-                    
-                    Properties.Settings.Default.CP = currentProj;
-                    Properties.Settings.Default.Save();
-
-                }
-                //if ((myStream = saveFileDialog1.OpenFile()) != null)
-                //{
-                //    // Code to write the stream goes here.
-                //    myStream.Close();
-                //}
-            }
-            return (saveFileDialog1.ShowDialog() == DialogResult.OK);
-        }
-
+      
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = !closeProject(clSource.formclose);

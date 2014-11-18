@@ -20,12 +20,154 @@ namespace BLSC
 {
     public partial class FormMain : Form
     {//here we hide everything related to saving/opening/closing/managing projects.
-        
+        private bool LoadProjectFromXml(string p)
+        {
+            bool result = true;
+            XmlSerializer serializer = new XmlSerializer(typeof(Project));
+            using (FileStream fileStream = new FileStream(p, FileMode.Open))
+            {
+                try
+                {
+                    project = (Project)serializer.Deserialize(fileStream);
+                }
+
+                catch //(InvalidOperationException)
+                {
+                    result = false;
+                    MessageBox.Show("Something went wrong on deserialisation", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+            return result;
+        }
 
         private void wipeProject()
         {//wipe the project;
             // throw new NotImplementedException(); 
+            project = new Project();
+            ProjectToControls(project);
         }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Saved())
+            {
+                MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
+            else
+            {
+                MessageBox.Show("Problems with saving", currentProj, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (SavedAs())
+            {
+                MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
+            else
+            {
+                MessageBox.Show("Problems with saving", currentProj, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool Saved()
+        {
+            bool result = true;
+            try
+            {
+
+                //string result
+                string s = Properties.Settings.Default.CPFname;
+                if (!(String.IsNullOrEmpty(s)))
+                {
+                    if (SerializeProjectToXML(s))
+                    {
+                        MessageBox.Show("Project saved", "Done", MessageBoxButtons.OK);//need to catch some exceptions here imho
+                        ProjectNeedsSaving = false; 
+                    }
+                    else
+                    {
+                        result = false;
+                    }
+                }
+                else
+                {
+                    //MessageBox.Show("Problem with application settings: no project file reference", "Warning!", MessageBoxButtons.OK);
+                    result = SavedAs();
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("Something went wrong with saving", "Error", MessageBoxButtons.OK);
+                result = false;
+            }
+            return result;
+        }
+
+        private bool SavedAs()//here goes the code for "saving as"
+        {
+            //Stream myStream;
+            bool result = true;
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+            saveFileDialog1.Filter = "All files (*.*)|*.*|blscxml files (*.blscxml)|*.blscxml";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.FileName = Properties.Settings.Default.CP;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                if (!String.IsNullOrEmpty(saveFileDialog1.FileName))
+                {
+                    if (SerializeProjectToXML(saveFileDialog1.FileName))
+                    {
+                        currentProj = Path.GetFileNameWithoutExtension(saveFileDialog1.FileName);
+                        //string CPFname = saveFileDialog1.FileName;
+                        Properties.Settings.Default.CPFname = saveFileDialog1.FileName;
+
+                        Properties.Settings.Default.CP = currentProj;
+                        Properties.Settings.Default.Save();
+                        ProjectNeedsSaving = false;
+                    }
+                    else
+                    {
+                        result = false;
+                    }
+
+                }
+                else
+                {
+                    result = false;
+                }
+            }
+            return result;
+        }
+
+        public bool SerializeProjectToXML(String fname)
+        {
+            bool result = true;
+            XmlSerializer ser = new XmlSerializer(typeof(Project));
+            try
+            {
+                TextWriter tw = new StreamWriter(fname);
+
+                ser.Serialize(tw, project);
+
+                tw.Close();
+                //ser.Serialize(tw,)
+            }
+            catch
+            {
+                MessageBox.Show("Error with serialisation", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                result = false;
+            }
+            return result;
+
+        }
+
 
         private bool closeProject(clSource ClSource)
         {
@@ -41,8 +183,8 @@ namespace BLSC
                         return true;
                     case DialogResult.Yes:
                         SaveEntry(null, null);
-                        saveToolStripMenuItem_Click(null, null);
-                        return true;
+                      //  saveToolStripMenuItem_Click(null, null);
+                        return Saved();
                     default:
                         return false;
                 }
