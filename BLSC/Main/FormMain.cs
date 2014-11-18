@@ -59,6 +59,11 @@ namespace BLSC
                 if (value)
                 {
                     ProjectNeedsSaving = value;//i.e. if we need to save internally one entry, then we need to save the project, too.
+
+                }
+                else
+                {
+                    //SaveEntry(null, null);
                 }
             }
         }//А может, ну его лесом? Пусть данные форм сохраняются немедленно по изменению контрола?
@@ -169,16 +174,9 @@ buttonResetEntry.Location.Y);
 
             //ReadSettings();
             currentProj = Properties.Settings.Default.CP;
-            if (LoadProjectFromXml(Properties.Settings.Default.CPFname))
-            {
-                EntryToPanels(project.entries[0]);
-            }
-            else
-            {
-                MessageBox.Show("Loading of the file " + Properties.Settings.Default.CPFname + " failed",
-                    "Error",
-                    MessageBoxButtons.OK);
-            }
+
+            LoadAndShowProject(Properties.Settings.Default.CPFname);
+          
             //ShowPanels(EEType.article);
             EntryNeedsSaving = false;
             ProjectNeedsSaving = false;
@@ -216,7 +214,7 @@ buttonResetEntry.Location.Y);
 
         private void quitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
            // FormMain_FormClosing(sender, e);
         }
 
@@ -345,7 +343,7 @@ buttonResetEntry.Location.Y);
         protected void SaveEntry(object sender, EventArgs e)
         {
             //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
-            EntryNeedsSaving = false;
+            
             {
                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
                 //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
@@ -369,7 +367,7 @@ buttonResetEntry.Location.Y);
                 //    //lf.Count.ToString(),
                 //    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields.Count.ToString(),
                 //    MessageBoxButtons.OK);
-
+                EntryNeedsSaving = false;
 
             }
         }
@@ -408,6 +406,14 @@ buttonResetEntry.Location.Y);
                     wipeProject();
                 }
             }
+            if (e.Control && e.KeyCode == Keys.Q)
+            {
+                Application.Exit();
+            }
+            if (e.Control && e.KeyCode == Keys.O)
+            {
+                openToolStripMenuItem_Click(null, null);
+            }
 
 
         }
@@ -435,7 +441,10 @@ buttonResetEntry.Location.Y);
             }
         }
 
+     
+
 
 
     }
 }
+//Где в проект вписывается измененность - как только я открываю новую вкладку, но ничего на ней не делаю.
