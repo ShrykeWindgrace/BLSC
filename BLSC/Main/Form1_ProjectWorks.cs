@@ -23,20 +23,32 @@ namespace BLSC
         private bool LoadProjectFromXml(string p)
         {
             bool result = true;
-            XmlSerializer serializer = new XmlSerializer(typeof(Project));
-            using (FileStream fileStream = new FileStream(p, FileMode.Open))
+            if (String.IsNullOrEmpty(p))
             {
-                try
+                return false;
+            }
+            XmlSerializer serializer = new XmlSerializer(typeof(Project));
+            try
+            {
+                using (FileStream fileStream = new FileStream(p, FileMode.Open))
                 {
+
                     project = (Project)serializer.Deserialize(fileStream);
                 }
+            }
+            catch //(InvalidOperationException)
+            {
+                result = false;
+                MessageBox.Show("Something went wrong on deserialisation", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                catch //(InvalidOperationException)
-                {
-                    result = false;
-                    MessageBox.Show("Something went wrong on deserialisation", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
+            }
+            if (result)
+            {
+                currentProj = project.name;
+            }
+            else
+            {
+                currentProj = "";
             }
             return result;
         }
@@ -52,7 +64,7 @@ namespace BLSC
         {
             if (Saved())
             {
-                MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK, MessageBoxIcon.None);
+                //MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK, MessageBoxIcon.None);
             }
             else
             {
@@ -62,14 +74,7 @@ namespace BLSC
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (SavedAs())
-            {
-                MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK, MessageBoxIcon.None);
-            }
-            else
-            {
-                MessageBox.Show("Problems with saving", currentProj, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            SavedAs();
         }
 
         private bool Saved()
@@ -85,7 +90,7 @@ namespace BLSC
                     if (SerializeProjectToXML(s))
                     {
                         MessageBox.Show("Project saved", "Done", MessageBoxButtons.OK);//need to catch some exceptions here imho
-                        ProjectNeedsSaving = false; 
+                        ProjectNeedsSaving = false;
                     }
                     else
                     {
@@ -131,10 +136,12 @@ namespace BLSC
                         Properties.Settings.Default.CP = currentProj;
                         Properties.Settings.Default.Save();
                         ProjectNeedsSaving = false;
+                        MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK, MessageBoxIcon.None);
                     }
                     else
                     {
                         result = false;
+                        MessageBox.Show("Problems with saving", currentProj, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                 }
@@ -143,7 +150,11 @@ namespace BLSC
                     result = false;
                 }
             }
-            return result;
+            else
+            {
+                result = false;
+            }
+            return result;//Надо всё переписать, слишком много условий
         }
 
         public bool SerializeProjectToXML(String fname)
@@ -183,7 +194,7 @@ namespace BLSC
                         return true;
                     case DialogResult.Yes:
                         SaveEntry(null, null);
-                      //  saveToolStripMenuItem_Click(null, null);
+                        //  saveToolStripMenuItem_Click(null, null);
                         return Saved();
                     default:
                         return false;
@@ -192,6 +203,34 @@ namespace BLSC
             else
             {
                 return true;
+            }
+        }
+
+        private bool LoadAndShowProject(String fname)
+        {
+            bool result = false;
+            if (LoadProjectFromXml(fname))
+            {
+                EntryToPanels(project.entries[0]);
+                result = true;
+                currentProj = project.name;
+            }
+            else
+            {
+                MessageBox.Show("Loading of the file " + fname + " failed",
+                    "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return result;
+        }
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "All files (*.*)|*.*|blscxml files (*.blscxml)|*.blscxml";
+            ofd.FilterIndex = 2;
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                LoadAndShowProject(ofd.FileName);
             }
         }
 
