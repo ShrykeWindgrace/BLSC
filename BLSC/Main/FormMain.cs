@@ -131,7 +131,7 @@ namespace BLSC
                 buttonAddField.Location.Y);
 
 
-            var anc = AnchorStyles.Right | AnchorStyles.Top;
+           // var anc = AnchorStyles.Right | AnchorStyles.Top;
 
 
 
@@ -215,32 +215,7 @@ buttonResetEntry.Location.Y);
 
         }
 
-        public void button2_Click(object sender, EventArgs e)//test serialisation
-        {
-            Field test = new Field();
-            test.type = "title";
-            test.changed = true;
-            test.fs = FontStyle.Bold;
-            test.ps = new Punctstyle(EPunct.comma, FontStyle.Regular);
-            test.envsl = new List<Envelopestyle>();
-            test.envsl.Add(new Envelopestyle());
-            test.envsl.Add(new Envelopestyle(Envelope.quote, FontStyle.Italic));
-            // test.ps.symb = Punct.none;
-            //Field test2 = new Field();
-            SerializeToXML(test);
-
-
-
-
-
-
-
-            //XmlSerializer serializer = new XmlSerializer(typeof(Punctstyle));
-            //TextWriter textWriter = new StreamWriter(@"ps.xml");
-            //serializer.Serialize(textWriter, test.ps);
-            //textWriter.Close();
-
-        }
+     
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -249,33 +224,9 @@ buttonResetEntry.Location.Y);
 
 
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            //int i = plist.Count;
-            //if (i != 0)
-            //{
-            //    field.type = order[0].Text;
-            //    field.ps = new Punctstyle();
-            //    field.ps.fs = clbtoFS(pstyle[0]);
-            //    field.fs = clbtoFS(ostyle[0]);
-            //    field.ps.p = (punctuation[0].SelectedItem as CBItem).value;
-            //    SerializeToXML(field);
-            //}
-        }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            int i = plist.Count - 1;
-            if (i == 0) { button3_Click(null, null); }
-            XmlSerializer serializer = new XmlSerializer(typeof(Field));
-            using (FileStream fileStream = new FileStream("author2.xml", FileMode.Open))
-            {
-                Field result = (Field)serializer.Deserialize(fileStream);
-                //SerializeToXML(result);
-                //plist[0].SelectedIndex = (int)result.ps.p.p; не умеем влазить в панельку
-            }//Здесь мы научились писать и читать xml с данными о размётке
 
-        }
+
 
         private void button8_Click(object sender, EventArgs e)
         {
