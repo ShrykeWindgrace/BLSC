@@ -85,21 +85,30 @@ namespace BLSC
             relocatePanels();
 
             EntryNeedsSaving = true;//extenal artifact, unfortunately; need to find a better way
+            if (!IsLoading)
+            {
+                int j = comboBoxEntrySelector.SelectedIndex;
+                project.entries[j].fields.Add(PanelToField(plist[i - 1]));
+            }
+
         }
         private void EntryToPanels(Entry e)
         {
             resetPanels();
+            IsLoading = true;
             foreach (var field in e.fields)
             {
                 //appendPanel();
                 FieldToLastPanel(field);
             }
+            IsLoading = false;
             EntryNeedsSaving = false;
         }
 
         private void FieldToLastPanel(Field field)
         {
             //throw new NotImplementedException();
+            IsLoading = true; 
             appendPanel();
             int i = plist.Count - 2;
             foreach (Control c in plist[i].Controls)
@@ -124,6 +133,7 @@ namespace BLSC
                     FStoCBindex((c as CheckedListBox), field.ps.fs);
                 }
             }
+            IsLoading = false;
 
         }
         //populate panels
@@ -171,7 +181,8 @@ namespace BLSC
 
             foreach (ComboBox control in panel.Controls.OfType<ComboBox>())
             {
-                control.SelectedIndexChanged += new EventHandler(OnContentChanged);
+                //control.SelectedIndexChanged += new EventHandler(OnContentChanged);
+                control.SelectedIndexChanged += new EventHandler(UpdateField);
             }
             foreach (CheckedListBox control in panel.Controls.OfType<CheckedListBox>())
             {
