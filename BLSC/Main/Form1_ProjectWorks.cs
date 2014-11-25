@@ -184,7 +184,7 @@ namespace BLSC
         {
             if (ProjectNeedsSaving)
             {
-                DialogResult DR = MessageBox.Show("The current project has some unsaved changes." + MessageStrings.Mstring(ClSource),
+                DialogResult DR = MessageBox.Show("The current project has some unsaved changes. " + MessageStrings.Mstring(ClSource),
                     "Attention", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
                 switch (DR)
                 {
