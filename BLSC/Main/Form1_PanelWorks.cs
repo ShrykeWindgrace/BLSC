@@ -45,8 +45,13 @@ namespace BLSC
 
             this.Controls.Remove(plist[i]);//removed everything from the form
             plist.RemoveAt(i);
+
             relocatePanelsIndex(i);//reorder panels
             //I wonder what happens with those poor objects. Does the garbage collector kicks in?
+            if (!IsLoading)
+            {
+                project.entries[comboBoxEntrySelector.SelectedIndex].fields.RemoveAt(i);//remove the corresponding field
+            }
         }
         private void resetPanels()
         {
@@ -108,7 +113,7 @@ namespace BLSC
         private void FieldToLastPanel(Field field)
         {
             //throw new NotImplementedException();
-            IsLoading = true; 
+            IsLoading = true;
             appendPanel();
             int i = plist.Count - 2;
             foreach (Control c in plist[i].Controls)
@@ -200,32 +205,32 @@ namespace BLSC
         {
             EntryNeedsSaving = true;
             //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
-           /* {
-                //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
-                //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
-                entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields
-                   = new List<Field>();
+            /* {
+                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
+                 //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
+                 entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields
+                    = new List<Field>();
                 
-                List<Field> lf = entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields;
-                if (plist.Count > 1)
-                {
-                    for (int i = 0; i < plist.Count - 1; i++)
-                    {
-                        lf.Add(new Field());
-                        PanelToFieldF(plist[i], lf[i]);//почему-то не заполняеются строчки. Даже догадываюсь, почему
-                        //lf[i].changed = true;
+                 List<Field> lf = entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields;
+                 if (plist.Count > 1)
+                 {
+                     for (int i = 0; i < plist.Count - 1; i++)
+                     {
+                         lf.Add(new Field());
+                         PanelToFieldF(plist[i], lf[i]);//почему-то не заполняеются строчки. Даже догадываюсь, почему
+                         //lf[i].changed = true;
 
-                        //lf.Add(PanelToField(plist[i]));
-                    }
-                    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].changedFlag = true;
-                }
-                //MessageBox.Show("we see total fields:",
-                //    //lf.Count.ToString(),
-                //    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields.Count.ToString(),
-                //    MessageBoxButtons.OK);
+                         //lf.Add(PanelToField(plist[i]));
+                     }
+                     entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].changedFlag = true;
+                 }
+                 //MessageBox.Show("we see total fields:",
+                 //    //lf.Count.ToString(),
+                 //    entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)].fields.Count.ToString(),
+                 //    MessageBoxButtons.OK);
 
 
-            }*/
+             }*/
         }
 
         private void populateIBtn(Button btn)
@@ -286,15 +291,18 @@ namespace BLSC
         private void insertPanelBtn(object sender, EventArgs e)
         {//Onclick event for insert buttons of panels
             //throw new NotImplementedException();
+            IsLoading = true;
             int i = plist.IndexOf((Panel)(((Button)sender).Parent)) + 1;
             Panel p = new Panel();
             populatePanel(p);
             plist.Insert(i, p);
+            project.entries[comboBoxEntrySelector.SelectedIndex].fields.Insert(i, PanelToField(p));
             p.Visible = false;
             this.Controls.Add(p);
             relocatePanels();
             p.Visible = true;
             EntryNeedsSaving = true;
+            IsLoading = false;
         }
         private void removePanelBtn(object sender, EventArgs e)
         {//onclick event for remove buttons on panels

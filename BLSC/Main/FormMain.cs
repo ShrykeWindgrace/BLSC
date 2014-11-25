@@ -46,6 +46,7 @@ namespace BLSC
         }
         private bool ENS;//entry need saving
         private bool PNS;//project needs saving
+        private bool IsLoading = true;// this is a flag that distinguishes the origin of controls' changes true for programmatical, false for user
         public bool EntryNeedsSaving
         {
             get
@@ -176,10 +177,11 @@ buttonResetEntry.Location.Y);
             currentProj = Properties.Settings.Default.CP;
 
             LoadAndShowProject(Properties.Settings.Default.CPFname);
-          
+
             //ShowPanels(EEType.article);
             EntryNeedsSaving = false;
             ProjectNeedsSaving = false;
+            //IsLoading = false;
 
         }
 
@@ -187,7 +189,7 @@ buttonResetEntry.Location.Y);
 
 
 
-     
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -215,7 +217,7 @@ buttonResetEntry.Location.Y);
         private void quitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-           // FormMain_FormClosing(sender, e);
+            // FormMain_FormClosing(sender, e);
         }
 
 
@@ -264,7 +266,7 @@ buttonResetEntry.Location.Y);
         //    textWriter.Close();
         //}
 
-    
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -326,7 +328,9 @@ buttonResetEntry.Location.Y);
         private void comboBoxEntrySelector_SelectedIndexChanged(object sender, EventArgs e)
         {
             OnContentChanged(sender, e);
-            EntryToPanels(project.entries[(int)((comboBoxEntrySelector.SelectedItem as EType).etype)]);
+            IsLoading = true; 
+            EntryToPanels(project.entries[comboBoxEntrySelector.SelectedIndex]);
+            IsLoading = false;
 
         }
         //private void comboBox3_SelectionChangeCommitted(object sender, EventArgs e)
@@ -343,7 +347,7 @@ buttonResetEntry.Location.Y);
         protected void SaveEntry(object sender, EventArgs e)
         {
             //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
-            
+
             {
                 //int i = plist.IndexOf( ((sender as ComboBox).Parent as Panel));
                 //we can do a very unefficient algorithm of total rewriting of fields upon cnaging one of them
@@ -387,7 +391,7 @@ buttonResetEntry.Location.Y);
             clearAuxLatexFiles();
         }
 
-       
+
 
         private void FormMain_KeyDown(object sender, KeyEventArgs e)
         {
@@ -418,7 +422,6 @@ buttonResetEntry.Location.Y);
 
         }
 
-     
 
 
 
@@ -427,7 +430,8 @@ buttonResetEntry.Location.Y);
 
 
 
-      
+
+
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = !closeProject(clSource.formclose);
@@ -441,10 +445,24 @@ buttonResetEntry.Location.Y);
             }
         }
 
-     
+        protected void UpdateField(object sender, EventArgs e)
+        {//this will be the autoupdate event for automatic saving of fields in current entries
+            if (!IsLoading)
+            {
+                int i = plist.IndexOf((sender as Control).Parent as Panel);
+                //EEType eet = (EEType)(comboBoxEntrySelector.SelectedItem);
+                int j = comboBoxEntrySelector.SelectedIndex;
+                project.entries[j].fields[i] = PanelToField(plist[i]);//проблема - количетсво полей не совпадает с количеством панелей
+                EntryNeedsSaving = false;
+            }
+        }
 
 
 
     }
 }
 //Где в проект вписывается измененность - как только я открываю новую вкладку, но ничего на ней не делаю.
+// Нужна вменяемая процедура сохранения.
+// В текущей модели автоматического сохранения панелек есть большая проблема с перегрузкой - сохранение выдаёт новую панельку. А надо бы шевелить старую.
+// isLoading - это тот ещё костыль. Хотелосб его замменить на проверку отправителя, но ведь и на запись, и на считывание отправитель у них один и тот же.
+// Нужна проверка на многоопределённость полей

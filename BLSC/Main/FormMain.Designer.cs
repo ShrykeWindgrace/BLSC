@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonAddField = new System.Windows.Forms.Button();
             this.buttonRemLastField = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -51,6 +52,7 @@
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonResetEntry = new System.Windows.Forms.Button();
             this.comboBoxEntrySelector = new System.Windows.Forms.ComboBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -110,7 +112,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1414, 50);
+            this.menuStrip1.Size = new System.Drawing.Size(1414, 47);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -129,7 +131,7 @@
             this.toolStripSeparator1,
             this.quitToolStripMenuItem1});
             this.FileToolStripMenuItem1.Name = "FileToolStripMenuItem1";
-            this.FileToolStripMenuItem1.Size = new System.Drawing.Size(75, 48);
+            this.FileToolStripMenuItem1.Size = new System.Drawing.Size(75, 45);
             this.FileToolStripMenuItem1.Text = "File";
             // 
             // newToolStripMenuItem
@@ -207,7 +209,7 @@
             this.compileTestFileToolStripMenuItem,
             this.clearAuxFilesToolStripMenuItem});
             this.laTeXToolStripMenuItem.Name = "laTeXToolStripMenuItem";
-            this.laTeXToolStripMenuItem.Size = new System.Drawing.Size(109, 48);
+            this.laTeXToolStripMenuItem.Size = new System.Drawing.Size(109, 45);
             this.laTeXToolStripMenuItem.Text = "LaTeX";
             // 
             // compileTestFileToolStripMenuItem
@@ -227,7 +229,7 @@
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(112, 48);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(112, 45);
             this.AboutToolStripMenuItem.Text = "About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -249,6 +251,11 @@
             this.comboBoxEntrySelector.Size = new System.Drawing.Size(121, 39);
             this.comboBoxEntrySelector.TabIndex = 12;
             this.comboBoxEntrySelector.SelectedIndexChanged += new System.EventHandler(this.comboBoxEntrySelector_SelectedIndexChanged);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // FormMain
             // 
@@ -304,6 +311,7 @@
         private System.Windows.Forms.ToolStripMenuItem compileTestFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearAuxFilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 
