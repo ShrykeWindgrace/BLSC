@@ -40,8 +40,6 @@ namespace BLSC
             {
                 CP = value;
                 this.Text = "Working on project: " + value;
-                //AddUpdateAppSettings("CP", value);
-                //AddUpdateAppSettings("myset", "set");
             }
         }
         private bool ENS;//entry need saving
@@ -67,12 +65,8 @@ namespace BLSC
                     //SaveEntry(null, null);
                 }
             }
-        }//А может, ну его лесом? Пусть данные форм сохраняются немедленно по изменению контрола?
-        //И все изменения останутся только в текущем состоянии, в текст-то ничего же не уйдёт
-        //Пока идея мне нравится
+        }
 
-        //Ещё  нужна кнопка на ресет текущего проекта
-        //и на закрытие текущего проекта
         public bool ProjectNeedsSaving
         {
             get
@@ -131,8 +125,9 @@ namespace BLSC
             panel1.BackColor = Color.BurlyWood;
             buttonPlus.Dock = DockStyle.Fill;
 
+            toolStrip1.Location = new Point(0, menuStrip1.Height);
 
-            buttonAddField.Location = new Point(15, menuStrip1.Height + vskip);
+            buttonAddField.Location = new Point(15, toolStrip1.Location.Y+ toolStrip1.Height + vskip);
             buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
                 buttonAddField.Location.Y);
 
@@ -210,7 +205,6 @@ buttonResetEntry.Location.Y);
         }
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("This is the Biblatex Style creator software, v0.0.0.1\r\n © Timofey Zakrevskiy, 2014","About" , MessageBoxButtons.OK);
             ABox.Show();
         }
 
@@ -328,22 +322,12 @@ buttonResetEntry.Location.Y);
         private void comboBoxEntrySelector_SelectedIndexChanged(object sender, EventArgs e)
         {
             OnContentChanged(sender, e);
-            IsLoading = true; 
+            IsLoading = true;
             EntryToPanels(project.entries[comboBoxEntrySelector.SelectedIndex]);
             IsLoading = false;
 
         }
-        //private void comboBox3_SelectionChangeCommitted(object sender, EventArgs e)
-        //{
-        //    CBItem item = (CBItem)comboBox3.SelectedItem;
-        //    textBox2.Text = item.value.ToString();
-        //}
 
-        //private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    CBItem item = (CBItem)comboBox3.SelectedItem;
-        //    textBox2.Text = item.value.ToString();
-        //}
         protected void SaveEntry(object sender, EventArgs e)
         {
             //if (!((sender as ComboBox).Name == "comboBoxEntrySelector"))
@@ -446,15 +430,37 @@ buttonResetEntry.Location.Y);
         }
 
         protected void UpdateField(object sender, EventArgs e)
-        {//this will be the autoupdate event for automatic saving of fields in current entries
+        {
+            //this will be the autoupdate event for automatic saving of fields in current entries
             if (!IsLoading)
             {
                 int i = plist.IndexOf((sender as Control).Parent as Panel);
                 //EEType eet = (EEType)(comboBoxEntrySelector.SelectedItem);
                 int j = comboBoxEntrySelector.SelectedIndex;
-                project.entries[j].fields[i] = PanelToField(plist[i]);//проблема - количетсво полей не совпадает с количеством панелей
+                PanelToFieldF(plist[i], project.entries[j].fields[i]);
+                //project.entries[j].fields[i] = PanelToField(plist[i]);
                 EntryNeedsSaving = false;
             }
+        }
+
+        private void newToolStripButton_Click(object sender, EventArgs e)
+        {
+            //donothing
+        }
+
+        private void openToolStripButton_Click(object sender, EventArgs e)
+        {
+            openToolStripMenuItem_Click(sender, e);
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //donothing
+        }
+
+        private void saveToolStripButton_Click(object sender, EventArgs e)
+        {
+            saveToolStripMenuItem_Click(sender, e);
         }
 
 
@@ -463,6 +469,4 @@ buttonResetEntry.Location.Y);
 }
 //Где в проект вписывается измененность - как только я открываю новую вкладку, но ничего на ней не делаю.
 // Нужна вменяемая процедура сохранения.
-// В текущей модели автоматического сохранения панелек есть большая проблема с перегрузкой - сохранение выдаёт новую панельку. А надо бы шевелить старую.
-// isLoading - это тот ещё костыль. Хотелосб его замменить на проверку отправителя, но ведь и на запись, и на считывание отправитель у них один и тот же.
 // Нужна проверка на многоопределённость полей

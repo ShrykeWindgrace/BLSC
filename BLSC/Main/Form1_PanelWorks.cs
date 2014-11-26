@@ -192,7 +192,8 @@ namespace BLSC
             foreach (CheckedListBox control in panel.Controls.OfType<CheckedListBox>())
             {
                 //clb.
-                control.ItemCheck += new ItemCheckEventHandler(OnCheckedItemChange);//new ItemCheckEventHandler(OnContentChanged);
+                //control.ItemCheck += new ItemCheckEventHandler(OnCheckedItemChange);//new ItemCheckEventHandler(OnContentChanged);
+                control.ItemCheck += new ItemCheckEventHandler(UpdateField);//new ItemCheckEventHandler(OnContentChanged);
             }
         }
 
