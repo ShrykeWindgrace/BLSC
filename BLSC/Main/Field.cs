@@ -12,7 +12,7 @@ namespace BLSC
     public enum EFType { author, title, journal, year, pages }//WIP
     public class Type
     {
-        EFType t;
+        public EFType t;
         public Type()
         {
             t = EFType.author;
@@ -207,13 +207,13 @@ namespace BLSC
         public Punctstyle ps;
         public List<Envelopestyle> envsl;
         public FontStyle fs;
-        public string type;
+        public Type type;
 
         public bool changed;
 
         public Field()
         {
-            type = "null";
+            type = new Type();
             changed = false;
             envsl = new List<Envelopestyle>();
             fs = FontStyle.Regular;
@@ -227,7 +227,7 @@ namespace BLSC
          */
         public override string ToString()
         {
-            return type;
+            return type.ToString();
         }
         public string exportDFF()
         {//exporting to declare field format. 
@@ -252,7 +252,7 @@ namespace BLSC
 
 
 
-                return StringWorks.insymb(type, '{') + StringWorks.insymb(temp2, '{') + "%\r\n";// тут надо сильно подумать, насколько мы позволим модифицировать стиль окружающих скобок
+                return StringWorks.insymb(type.ToString(), '{') + StringWorks.insymb(temp2, '{') + "%\r\n";// тут надо сильно подумать, насколько мы позволим модифицировать стиль окружающих скобок
                 //пока вариант - наследовать или не наследовать стиль от самого текста. Надо проверить, что случится тогда с пустыми полями в скобках.
                 /*текущий подход: снаружи стиль скобок, скобки, потом стиль текста*/
                 //return temp + "\r\n";
