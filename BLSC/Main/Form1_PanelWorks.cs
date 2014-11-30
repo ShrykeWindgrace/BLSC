@@ -323,7 +323,7 @@ namespace BLSC
             {
                 if (c.Name.StartsWith("ComboBoxO"))
                 {
-                    f.type = (c as ComboBox).Text;
+                    f.type = ((c as ComboBox).SelectedItem as Type);
                 }
                 if (c.Name.StartsWith("ComboBoxP"))
                 {
@@ -349,7 +349,7 @@ namespace BLSC
             {
                 if (c.Name.StartsWith("ComboBoxO"))
                 {
-                    f.type = (c as ComboBox).Text;
+                    f.type = ((c as ComboBox).SelectedItem as Type);
                 }
                 if (c.Name.StartsWith("ComboBoxP"))
                 {

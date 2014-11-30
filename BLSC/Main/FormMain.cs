@@ -379,29 +379,29 @@ buttonResetEntry.Location.Y);
 
         private void FormMain_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Control && e.KeyCode == Keys.S)
-            {
-                //SerializeProjectToXML()
-                SaveEntry(sender, e);
-                saveToolStripMenuItem_Click(null, null);
-            }
-            if (e.Control && e.KeyCode == Keys.W)//closing the project. У нас проблема - проект закрывать умеет
-            //просто закрытие, открытие нового, закрытие формы. Всё у них одинаково, только сообщения различаются. 
-            //Собственно, их и будем передавать
-            {
-                if (closeProject(clSource.regular))
-                {
-                    wipeProject();
-                }
-            }
-            if (e.Control && e.KeyCode == Keys.Q)
-            {
-                Application.Exit();
-            }
-            if (e.Control && e.KeyCode == Keys.O)
-            {
-                openToolStripMenuItem_Click(null, null);
-            }
+            //if (e.Control && e.KeyCode == Keys.S)
+            //{
+            //    //SerializeProjectToXML()
+            //    SaveEntry(sender, e);
+            //saveToolStripMenuItem_Click(null, null);
+            //}
+            //if (e.Control && e.KeyCode == Keys.W)//closing the project. У нас проблема - проект закрывать умеет
+            ////просто закрытие, открытие нового, закрытие формы. Всё у них одинаково, только сообщения различаются. 
+            ////Собственно, их и будем передавать
+            //{
+            //    if (closeProject(clSource.regular))
+            //    {
+            //        wipeProject();
+            //    }
+            //}
+            //if (e.Control && e.KeyCode == Keys.Q)
+            //{
+            //    Application.Exit();
+            //}
+            //if (e.Control && e.KeyCode == Keys.O)
+            //{
+            //    openToolStripMenuItem_Click(null, null);
+            //}
 
 
         }

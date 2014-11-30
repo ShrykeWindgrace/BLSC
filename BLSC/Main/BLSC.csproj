@@ -57,6 +57,7 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="CommandManager.cs" />
     <Compile Include="Form1_ProjectWorks.cs">
       <SubType>Form</SubType>
     </Compile>

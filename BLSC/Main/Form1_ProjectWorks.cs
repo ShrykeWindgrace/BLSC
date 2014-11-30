@@ -62,6 +62,7 @@ namespace BLSC
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            SaveEntry(null, null);
             if (Saved())
             {
                 //MessageBox.Show("Saved", currentProj, MessageBoxButtons.OK, MessageBoxIcon.None);

@@ -25,32 +25,42 @@ namespace BLSC
         public ChangeCBO(FieldWrap fw, EFType et)
         {
             _fw = fw;
-            oldType = fw._f.type.t;
+            oldType = fw.FieldType;
             newType = et;
         }
 
         public override void Execute()
         {
             //throw new NotImplementedException();
-            _fw._f.type.t = newType;
+            _fw.SwitchToType(newType);
         }
         public override void Undo()
         {
             //throw new NotImplementedException();
-            _fw._f.type.t = oldType;
+            _fw.SwitchToType(oldType);
         }
     }
     public class FieldWrap
     {
-        public Field _f;
-
+        private Field _f;
+        public EFType FieldType
+        {
+            get
+            {
+                return _f.type.t;
+            }
+            set
+            {
+                _f.type.t = value;
+            }
+        }
         public FieldWrap(Field f)
         {
             _f = f;
         }
-        public void SwitchIndex(int i)
+        public void SwitchToType(EFType eft)
         {
-            //donothing
+            FieldType = eft;
         }
     }
     public class CommandManager
