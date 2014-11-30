@@ -127,7 +127,7 @@ namespace BLSC
 
             toolStrip1.Location = new Point(0, menuStrip1.Height);
 
-            buttonAddField.Location = new Point(15, toolStrip1.Location.Y+ toolStrip1.Height + vskip);
+            buttonAddField.Location = new Point(15, toolStrip1.Location.Y + toolStrip1.Height + vskip);
             buttonRemLastField.Location = new Point(buttonAddField.Location.X + buttonAddField.Width + hskip,
                 buttonAddField.Location.Y);
 
@@ -463,6 +463,17 @@ buttonResetEntry.Location.Y);
             saveToolStripMenuItem_Click(sender, e);
         }
 
+        private void compileLAtexToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            compileTestFileToolStripMenuItem_Click(sender, e);
+        }
+
+        private void clearAuxLAtexFilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //clearAuxLAtexFilesToolStripMenuItem_Click(sender, e);
+            clearAuxFilesToolStripMenuItem_Click(sender, e);
+        }
+
 
 
     }
@@ -470,3 +481,14 @@ buttonResetEntry.Location.Y);
 //Где в проект вписывается измененность - как только я открываю новую вкладку, но ничего на ней не делаю.
 // Нужна вменяемая процедура сохранения.
 // Нужна проверка на многоопределённость полей
+/* Известные баги:
+ * dff без форматирования выдаёт некомпилирующийся макрос
+ * откуда-то появились пустые dff
+ * какие-то точки перед некоторыми записями
+ * 
+ * надо сделать:
+ * разобраться с неправильным макросом - проверка на пустоту форматирования
+ * провести внешнее тестирование на поведение этих точек
+ * можно гонять на другом тестовом файлике - пара статей, пара книг, мануал
+ * реализовать создание нового проекта
+*/

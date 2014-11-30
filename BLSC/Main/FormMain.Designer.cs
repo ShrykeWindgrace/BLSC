@@ -64,6 +64,9 @@
             this.pasteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
+            this.compileLAtexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearAuxLAtexFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -71,7 +74,7 @@
             // 
             // buttonAddField
             // 
-            this.buttonAddField.Location = new System.Drawing.Point(4, 63);
+            this.buttonAddField.Location = new System.Drawing.Point(372, 514);
             this.buttonAddField.Margin = new System.Windows.Forms.Padding(1);
             this.buttonAddField.Name = "buttonAddField";
             this.buttonAddField.Size = new System.Drawing.Size(63, 46);
@@ -82,7 +85,7 @@
             // 
             // buttonRemLastField
             // 
-            this.buttonRemLastField.Location = new System.Drawing.Point(76, 63);
+            this.buttonRemLastField.Location = new System.Drawing.Point(641, 650);
             this.buttonRemLastField.Margin = new System.Windows.Forms.Padding(1);
             this.buttonRemLastField.Name = "buttonRemLastField";
             this.buttonRemLastField.Size = new System.Drawing.Size(60, 46);
@@ -95,7 +98,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.panel1.Controls.Add(this.buttonPlus);
-            this.panel1.Location = new System.Drawing.Point(404, 36);
+            this.panel1.Location = new System.Drawing.Point(664, 394);
             this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(208, 87);
@@ -248,7 +251,7 @@
             // 
             // buttonResetEntry
             // 
-            this.buttonResetEntry.Location = new System.Drawing.Point(616, 45);
+            this.buttonResetEntry.Location = new System.Drawing.Point(912, 322);
             this.buttonResetEntry.Name = "buttonResetEntry";
             this.buttonResetEntry.Size = new System.Drawing.Size(231, 78);
             this.buttonResetEntry.TabIndex = 11;
@@ -259,7 +262,7 @@
             // comboBoxEntrySelector
             // 
             this.comboBoxEntrySelector.FormattingEnabled = true;
-            this.comboBoxEntrySelector.Location = new System.Drawing.Point(895, 66);
+            this.comboBoxEntrySelector.Location = new System.Drawing.Point(1006, 550);
             this.comboBoxEntrySelector.Name = "comboBoxEntrySelector";
             this.comboBoxEntrySelector.Size = new System.Drawing.Size(121, 39);
             this.comboBoxEntrySelector.TabIndex = 12;
@@ -281,7 +284,8 @@
             this.copyToolStripButton,
             this.pasteToolStripButton,
             this.toolStripSeparator4,
-            this.helpToolStripButton});
+            this.helpToolStripButton,
+            this.toolStripSplitButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 47);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1414, 48);
@@ -364,6 +368,32 @@
             this.helpToolStripButton.Size = new System.Drawing.Size(23, 45);
             this.helpToolStripButton.Text = "He&lp";
             // 
+            // toolStripSplitButton1
+            // 
+            this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripSplitButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.compileLAtexToolStripMenuItem,
+            this.clearAuxLAtexFilesToolStripMenuItem});
+            this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
+            this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripSplitButton1.Name = "toolStripSplitButton1";
+            this.toolStripSplitButton1.Size = new System.Drawing.Size(32, 45);
+            this.toolStripSplitButton1.Text = "toolStripSplitButton1";
+            // 
+            // compileLAtexToolStripMenuItem
+            // 
+            this.compileLAtexToolStripMenuItem.Name = "compileLAtexToolStripMenuItem";
+            this.compileLAtexToolStripMenuItem.Size = new System.Drawing.Size(404, 46);
+            this.compileLAtexToolStripMenuItem.Text = "Compile test LaTeX File";
+            this.compileLAtexToolStripMenuItem.Click += new System.EventHandler(this.compileLAtexToolStripMenuItem_Click);
+            // 
+            // clearAuxLAtexFilesToolStripMenuItem
+            // 
+            this.clearAuxLAtexFilesToolStripMenuItem.Name = "clearAuxLAtexFilesToolStripMenuItem";
+            this.clearAuxLAtexFilesToolStripMenuItem.Size = new System.Drawing.Size(404, 46);
+            this.clearAuxLAtexFilesToolStripMenuItem.Text = "Clear aux LaTeX Files";
+            this.clearAuxLAtexFilesToolStripMenuItem.Click += new System.EventHandler(this.clearAuxLAtexFilesToolStripMenuItem_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -432,6 +462,9 @@
         private System.Windows.Forms.ToolStripButton pasteToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton helpToolStripButton;
+        private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
+        private System.Windows.Forms.ToolStripMenuItem compileLAtexToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearAuxLAtexFilesToolStripMenuItem;
     }
 }
 
