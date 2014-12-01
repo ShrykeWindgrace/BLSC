@@ -21,8 +21,8 @@ namespace BLSC
         //private Field _field;
         private EFType newType;
         private EFType oldType;
-        private FieldWrap _fw;
-        public ChangeCBO(FieldWrap fw, EFType et)
+        private FieldWrapO _fw;
+        public ChangeCBO(FieldWrapO fw, EFType et)
         {
             _fw = fw;
             oldType = fw.FieldType;
@@ -40,7 +40,31 @@ namespace BLSC
             _fw.SwitchToType(oldType);
         }
     }
-    public class FieldWrap
+    public class ChangeCBP : UndoableCommand
+    {
+        //private Field _field;
+        private EPunct newType;
+        private EPunct oldType;
+        private FieldWrapP _fw;
+        public ChangeCBP(FieldWrapP fw, EPunct ep)
+        {
+            _fw = fw;
+            oldType = fw.ep;
+            newType = ep;
+        }
+
+        public override void Execute()
+        {
+            //throw new NotImplementedException();
+            _fw.SwitchToType(newType);
+        }
+        public override void Undo()
+        {
+            //throw new NotImplementedException();
+            _fw.SwitchToType(oldType);
+        }
+    }
+    public class FieldWrapO
     {
         private Field _f;
         public EFType FieldType
@@ -54,13 +78,36 @@ namespace BLSC
                 _f.type.t = value;
             }
         }
-        public FieldWrap(Field f)
+        public FieldWrapO(Field f)
         {
             _f = f;
         }
         public void SwitchToType(EFType eft)
         {
             FieldType = eft;
+        }
+    }
+    public class FieldWrapP
+    {
+        private Field _f;
+        public EPunct ep
+        {
+            get
+            {
+                return _f.ps.p.p;
+            }
+            set
+            {
+                _f.ps.p.p = value;
+            }
+        }
+        public FieldWrapP(Field f)
+        {
+            _f = f;
+        }
+        public void SwitchToType(EPunct eft)
+        {
+            ep = eft;
         }
     }
     public class CommandManager

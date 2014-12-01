@@ -451,14 +451,22 @@ buttonResetEntry.Location.Y);
                     //int i = plist.IndexOf((sender as ComboBox).Parent as Panel);
                     Field f = project.entries[j].fields[i];
                     EFType k = ((sender as ComboBox).SelectedItem as Type).t;
-                    CM.ExecuteCommand(new ChangeCBO(new FieldWrap(f), k));
+                    CM.ExecuteCommand(new ChangeCBO(new FieldWrapO(f), k));
+                    return;
                 }
-
-                //EEType eet = (EEType)(comboBoxEntrySelector.SelectedItem);
-                else
+                if ((sender is ComboBox) && ((sender as ComboBox).Name.StartsWith("ComboBoxP")))
                 {
-                    PanelToFieldF(plist[i], project.entries[j].fields[i]);
+                    //int i = plist.IndexOf((sender as ComboBox).Parent as Panel);
+                    Field f = project.entries[j].fields[i];
+                    EPunct k = ((sender as ComboBox).SelectedItem as CBItem).value.p;
+                    CM.ExecuteCommand(new ChangeCBP(new FieldWrapP(f), k));
+                    return;
                 }
+                //EEType eet = (EEType)(comboBoxEntrySelector.SelectedItem);
+                //else
+                //{
+                    PanelToFieldF(plist[i], project.entries[j].fields[i]);
+                //}
                 //project.entries[j].fields[i] = PanelToField(plist[i]);
                 EntryNeedsSaving = false;
             }
