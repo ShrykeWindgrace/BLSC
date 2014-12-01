@@ -23,6 +23,8 @@ namespace BLSC
         public Button btnExport;
         public Button btnSaveCurrentEntry;
 
+        public CommandManager CM = new CommandManager();
+
         public const int maxPanels = 4;
         public const int vskip = 5;
         public const int hskip = 5;
@@ -425,7 +427,15 @@ buttonResetEntry.Location.Y);
         {
             if (closeProject(clSource.regular))
             {
-                wipeProject();
+                IsLoading = true;
+                try
+                {
+                    wipeProject();
+                }
+                finally
+                {
+                    IsLoading = false;
+                }
             }
         }
 
@@ -435,9 +445,20 @@ buttonResetEntry.Location.Y);
             if (!IsLoading)
             {
                 int i = plist.IndexOf((sender as Control).Parent as Panel);
-                //EEType eet = (EEType)(comboBoxEntrySelector.SelectedItem);
                 int j = comboBoxEntrySelector.SelectedIndex;
-                PanelToFieldF(plist[i], project.entries[j].fields[i]);
+                if ((sender is ComboBox) && ((sender as ComboBox).Name.StartsWith("ComboBoxO")))
+                {
+                    //int i = plist.IndexOf((sender as ComboBox).Parent as Panel);
+                    Field f = project.entries[j].fields[i];
+                    EFType k = ((sender as ComboBox).SelectedItem as Type).t;
+                    CM.ExecuteCommand(new ChangeCBO(new FieldWrap(f), k));
+                }
+
+                //EEType eet = (EEType)(comboBoxEntrySelector.SelectedItem);
+                else
+                {
+                    PanelToFieldF(plist[i], project.entries[j].fields[i]);
+                }
                 //project.entries[j].fields[i] = PanelToField(plist[i]);
                 EntryNeedsSaving = false;
             }
@@ -472,6 +493,24 @@ buttonResetEntry.Location.Y);
         {
             //clearAuxLAtexFilesToolStripMenuItem_Click(sender, e);
             clearAuxFilesToolStripMenuItem_Click(sender, e);
+        }
+
+        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IsLoading = true;
+            try
+            {
+                if (CM.count > 0)
+                {
+                    CM.Undo();
+                    ProjectToControls(project, comboBoxEntrySelector.SelectedIndex);
+                }
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+            //if(plist.c)
         }
 
 
