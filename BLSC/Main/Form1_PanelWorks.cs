@@ -141,6 +141,37 @@ namespace BLSC
             IsLoading = false;
 
         }
+        private void FieldToPanel(Field field, Panel p)
+        {
+            //throw new NotImplementedException();
+            IsLoading = true;
+            //appendPanel();
+            int i = plist.Count - 2;
+            foreach (Control c in p.Controls)
+            {
+                if (c.Name.StartsWith("ComboBoxO"))
+                {
+                    //MessageBox.Show("Found ComboBoxO", "yes", MessageBoxButtons.OK);
+                    //f.type = (c as ComboBox).Text;
+                    (c as ComboBox).SelectedIndex = (c as ComboBox).FindStringExact(field.ToString());
+                }
+                if (c.Name.StartsWith("ComboBoxP"))
+                {
+                    (c as ComboBox).SelectedIndex = (c as ComboBox).FindStringExact(field.ps.p.ToComboString());
+                    //f.ps.p = ((c as ComboBox).SelectedItem as CBItem).value;
+                }
+                if (c.Name.StartsWith("CheckedListBoxO"))
+                {
+                    FStoCBindex((c as CheckedListBox), field.fs);
+                }
+                if (c.Name.StartsWith("CheckedListBoxP"))
+                {
+                    FStoCBindex((c as CheckedListBox), field.ps.fs);
+                }
+            }
+            IsLoading = false;
+
+        }
         //populate panels
         private void populatePanel(Panel panel)
         {
@@ -366,7 +397,7 @@ namespace BLSC
             }
             //return f;
         }
-        private void ProjectToControls(Project p)
+        private void ProjectToControls(Project p, int k=0)
         {
             EntryToPanels(p.entries[0]);//essentially, when we lauтch this with new Project(), we wipe out the visible content
             //some other code
