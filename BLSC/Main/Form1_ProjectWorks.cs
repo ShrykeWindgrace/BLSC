@@ -234,6 +234,17 @@ namespace BLSC
                 LoadAndShowProject(ofd.FileName);
             }
         }
+        private int FindFieldinProject(Field f)
+        {
+            int i = 0;
+            for ( i = 0; i < project.entries.Length; i++)
+            {
+                if (project.entries[i].fields.Contains(f))
+                    return i;
+            }
+            return -1;//returns the index of entry;
+
+        }
 
     }
     public enum clSource { regular = 0, newproject = 1, formclose = 2, openproject }
