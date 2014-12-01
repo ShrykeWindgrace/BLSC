@@ -66,6 +66,13 @@ namespace BLSC
     public class CommandManager
     {
         private Stack commandStack = new Stack();
+        public int count
+        {
+            get
+            {
+                return commandStack.Count;
+            }
+        }
 
         public void ExecuteCommand(Command cmd)
         {
