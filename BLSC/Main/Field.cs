@@ -10,6 +10,7 @@ using System.Xml.Serialization;
 namespace BLSC
 {
     public enum EFType { author, title, journal, year, pages }//WIP
+    [Serializable]
     public class Type
     {
         public EFType t;
