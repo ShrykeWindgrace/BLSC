@@ -140,4 +140,52 @@ namespace BLSC
         }
     }
 
+    public class DeleteField : UndoableCommand
+    {
+        private EntryWrapDF ewdf;
+
+        public DeleteField(Entry e, int w)
+        {
+            ewdf = new EntryWrapDF(e, w);
+        }
+
+        public override void Execute()
+        {
+            ewdf.delete();
+        }
+        public override void Undo()
+        {
+            ewdf.undelete();
+        }
+    }
+
+    public class EntryWrapDF
+    {
+        private Entry _e;
+        private Field _f;
+        private int where;
+        //public EntryWrapDF(Entry e, Field f)
+        //{
+        //    _e = e;
+        //    _f = f;
+        //    where = e.fields.IndexOf(f);
+        //}
+        public EntryWrapDF(Entry e, int w)
+        {
+            where = w;
+            _e = e;
+            _f = e.fields[w];
+        }
+        //public Field del;
+
+        public void delete()
+        {
+            _e.fields.RemoveAt(where);
+        }
+        public void undelete()
+        {
+            _e.fields.Insert(where, _f);
+        }
+    }
+
 }
