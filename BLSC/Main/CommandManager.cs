@@ -155,7 +155,24 @@ namespace BLSC
         }
         public override void Undo()
         {
-            ewdf.undelete();
+            ewdf.insert();
+        }
+    }
+
+    public class InsertField : UndoableCommand
+    {
+        private EntryWrapDF ewdf;
+        public InsertField(Entry e, int w)
+        {
+            ewdf = new EntryWrapDF(e, new Field(), w);
+        }
+        public override void Execute()
+        {
+            ewdf.insert();
+        }
+        public override void Undo()
+        {
+            ewdf.delete();
         }
     }
 
@@ -163,16 +180,16 @@ namespace BLSC
     {
         private Entry _e;
         private Field _f;
-        private int where;
-        //public EntryWrapDF(Entry e, Field f)
-        //{
-        //    _e = e;
-        //    _f = f;
-        //    where = e.fields.IndexOf(f);
-        //}
+        private int _where;
+        public EntryWrapDF(Entry e, Field f, int where)
+        {
+            _e = e;
+            _f = f;
+            _where = where;
+        }
         public EntryWrapDF(Entry e, int w)
         {
-            where = w;
+            _where = w;
             _e = e;
             _f = e.fields[w];
         }
@@ -180,12 +197,13 @@ namespace BLSC
 
         public void delete()
         {
-            _e.fields.RemoveAt(where);
+            _e.fields.RemoveAt(_where);
         }
-        public void undelete()
+        public void insert()
         {
-            _e.fields.Insert(where, _f);
+            _e.fields.Insert(_where, _f);
         }
+
     }
 
 }
