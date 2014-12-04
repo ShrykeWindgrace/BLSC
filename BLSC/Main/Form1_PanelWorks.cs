@@ -50,7 +50,7 @@ namespace BLSC
             //I wonder what happens with those poor objects. Does the garbage collector kicks in?
             if (!IsLoading)
             {
-                project.entries[comboBoxEntrySelector.SelectedIndex].fields.RemoveAt(i);//remove the corresponding field
+  //              project.entries[comboBoxEntrySelector.SelectedIndex].fields.RemoveAt(i);//remove the corresponding field
             }
         }
         private void resetPanels()
@@ -341,8 +341,13 @@ namespace BLSC
             //int i = ((Button)sender).Parent.
             //int index = clBtn.Where<Button>( x => return x  ==(sender as Button); ).Select<Button,int>( x => clBtn.IndexOf(x)).Single<int>();
             int i = plist.IndexOf((Panel)(((Button)sender).Parent));
+            int j = comboBoxEntrySelector.SelectedIndex;
+
+            CM.ExecuteCommand(new DeleteField(project.entries[j], i));
+
             removePanel(i);
-            EntryNeedsSaving = true;
+            //EntryNeedsSaving = true;
+            ProjectNeedsSaving = true; 
         }
 
         public Field PanelToField(Panel p)
@@ -399,7 +404,7 @@ namespace BLSC
         }
         private void ProjectToControls(Project p, int k=0)
         {
-            EntryToPanels(p.entries[0]);//essentially, when we lauтch this with new Project(), we wipe out the visible content
+            EntryToPanels(p.entries[k]);//essentially, when we lauтch this with new Project(), we wipe out the visible content
             //some other code
         }
     }
