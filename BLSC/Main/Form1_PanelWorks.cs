@@ -325,16 +325,28 @@ namespace BLSC
             //throw new NotImplementedException();
             IsLoading = true;
             int i = plist.IndexOf((Panel)(((Button)sender).Parent)) + 1;
-            Panel p = new Panel();
-            populatePanel(p);
-            plist.Insert(i, p);
-            project.entries[comboBoxEntrySelector.SelectedIndex].fields.Insert(i, PanelToField(p));
-            p.Visible = false;
-            this.Controls.Add(p);
-            relocatePanels();
-            p.Visible = true;
-            EntryNeedsSaving = true;
-            IsLoading = false;
+            int j = comboBoxEntrySelector.SelectedIndex;
+            CM.ExecuteCommand(new InsertField(project.entries[j], i));
+
+            IsLoading = true;
+            try
+            {
+                //ProjectToControls(project, j);
+                Panel p = new Panel();
+                populatePanel(p);
+                plist.Insert(i, p);
+                p.Visible = false;
+                this.Controls.Add(p);
+                relocatePanels();
+                p.Visible = true;
+            }
+            finally
+            {
+                IsLoading = false;
+            }
+            
+            //EntryNeedsSaving = true;
+            //IsLoading = false;
         }
         private void removePanelBtn(object sender, EventArgs e)
         {//onclick event for remove buttons on panels
